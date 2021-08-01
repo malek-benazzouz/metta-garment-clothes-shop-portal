@@ -1,0 +1,19 @@
+@import "style/variables";
+@import "~bootstrap/scss/bootstrap";
+
+@import "style/fonts";
+
+// Global styles
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: $background-color;
+  color: $text-color;
+  min-width: 350px;
+  overflow: auto;
+}
