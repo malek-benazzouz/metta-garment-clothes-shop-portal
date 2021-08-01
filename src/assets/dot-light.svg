@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 6.5385644 6.5385646"
+   height="24.712687"
+   width="24.712687"
+   sodipodi:docname="Point Sunny Gold Hover VF.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     id="namedview7"
+     showgrid="false"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     inkscape:zoom="2.759558"
+     inkscape:cx="96.665877"
+     inkscape:cy="14.797226"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8"
+     inkscape:document-rotation="0"
+     lock-margins="true" />
+  <defs
+     id="defs2">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter12582-7-59-0"
+       x="-0.30000001"
+       width="1.6"
+       y="-0.30000001"
+       height="1.6">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.3410828"
+         id="feGaussianBlur12584-3-2-5" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g12650-5-7-8"
+     transform="matrix(0.26458333,0,0,0.26458333,2623.775,1564.0172)">
+    <path
+       style="fill:#dcce87;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.03432;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;filter:url(#filter12582-7-59-0)"
+       id="path11751-7-4-1-6-2-1-9-4-9-4"
+       sodipodi:type="arc"
+       sodipodi:cx="-9940.1865"
+       sodipodi:cy="-6007.5"
+       sodipodi:rx="9.3643312"
+       sodipodi:ry="9.3643312"
+       sodipodi:start="0.017850529"
+       sodipodi:end="0.01607546"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       transform="matrix(0.82469468,0,0,0.82469468,-1706.6547,-944.53658)"
+       d="m -9930.8237,-6007.3329 a 9.3643312,9.3643312 0 0 1 -9.5258,9.1958 9.3643312,9.3643312 0 0 1 -9.2,-9.5217 9.3643312,9.3643312 0 0 1 9.5177,-9.2043 9.3643312,9.3643312 0 0 1 9.2084,9.5136" />
+    <path
+       style="fill:#dcce87;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.741437;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+       id="path11751-7-4-1-6-2-7-94-2-5"
+       sodipodi:type="arc"
+       sodipodi:cx="-9904.2656"
+       sodipodi:cy="-5898.9209"
+       sodipodi:rx="6.7126808"
+       sodipodi:ry="6.7126808"
+       sodipodi:start="0.017850529"
+       sodipodi:end="0.01607546"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="m -9897.554,-5898.8011 a 6.7126808,6.7126808 0 0 1 -6.8285,6.5919 6.7126808,6.7126808 0 0 1 -6.5948,-6.8256 6.7126808,6.7126808 0 0 1 6.8226,-6.5979 6.7126808,6.7126808 0 0 1 6.6009,6.8197" />
+  </g>
+</svg>

@@ -4,14 +4,8 @@
 
 $grid-breakpoints: (xxs: 0, xs: 480px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1440px);
 
-$primary: #D3DAD0;
-$primary-dark: #8a8e88;
-$secondary: #ce0058;
-$tertiary: #495057;
-
 @import "~bootstrap/scss/variables";
 
-// Custom variables
+// Add other custom variables here
 
-$background-color: $white;
-$text-color: $gray-700;
+

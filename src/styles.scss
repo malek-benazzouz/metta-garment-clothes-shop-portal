@@ -1,7 +1,11 @@
+// Variables (including Bootstrap overrides), then Bootstrap
 @import "style/variables";
 @import "~bootstrap/scss/bootstrap";
 
+// Application theme
 @import "style/fonts";
+@import "style/typography";
+@import "style/colors";
 
 // Global styles
 
@@ -10,10 +14,9 @@ html {
 }
 
 body {
-  font-size: 18px;
-  font-weight: 500;
-  background-color: $background-color;
-  color: $text-color;
+  @extend .typo-main;
+  background-color: $background-plain-color;
+  color: $text-primary-color;
   min-width: 350px;
   overflow: auto;
 }
