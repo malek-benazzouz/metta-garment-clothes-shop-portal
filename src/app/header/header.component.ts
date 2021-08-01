@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  shouldShowPhilosophyGroup = false;
+  shouldShowGarmentGroup = false;
 
-  ngOnInit(): void {
+  constructor() {}
+
+  ngOnInit(): void {}
+
+  showPhilosophyGroup(): void {
+    this.shouldShowPhilosophyGroup = true;
+  }
+
+  hidePhilosophyGroup(): void {
+    this.shouldShowPhilosophyGroup = false;
   }
 
 }
