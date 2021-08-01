@@ -1,0 +1,35 @@
+@import "fonts";
+@import "colors";
+
+.typo-main {
+  @extend .font-family-be-vietnam;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25em;
+  letter-spacing: 0.25px;
+}
+
+.typo-dot-menu {
+  @extend .font-family-apoc-revelations;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 1.5px;
+}
+
+.typo-nav-group {
+  @extend .font-family-be-vietnam;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 1.25px;
+}
+
+.typo-nav-link {
+  @extend .font-family-be-vietnam;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 0.87em;
+  letter-spacing: 0.1px;
+}
+
