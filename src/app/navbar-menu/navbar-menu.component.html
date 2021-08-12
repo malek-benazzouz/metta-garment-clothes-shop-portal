@@ -1,0 +1,32 @@
+<ul class="navbar-nav">
+
+  <!-- Nav group: Philosophy -->
+  <li class="nav-item" ngbDropdown id="philosophy-dropdown" #philosophyDropdown="ngbDropdown">
+    <a class="nav-link nav-title" ngbDropdownToggle id="philosophy-toggle" role="button"
+       (mouseenter)="onMenuEnter(philosophyDropdown, $event, 'philosophy-dropdown')"
+       (mouseleave)="onMenuLeave(philosophyDropdown, $event, 'philosophy-dropdown')">
+      PHILOSOPHY
+    </a>
+    <div class="philosophy-menu" ngbDropdownMenu aria-labelledby="philosophy-toggle"
+         (mouseleave)="onMenuLeave(philosophyDropdown, $event, 'philosophy-dropdown')">
+      <a ngbDropdownItem href="#">Les 7 Cieux</a>
+      <a ngbDropdownItem href="#">The Mettägony</a>
+      <a ngbDropdownItem href="#">Metaphorical Clothing</a>
+    </div>
+  </li>
+
+  <!-- Nav group: Garment -->
+  <li class="nav-item" ngbDropdown id="garment-dropdown" #garmentDropdown="ngbDropdown">
+    <a class="nav-link nav-title" ngbDropdownAnchor id="garment-toggle" role="button"
+       (mouseenter)="onMenuEnter(garmentDropdown, $event, 'garment-dropdown')"
+       (mouseleave)="onMenuLeave(garmentDropdown, $event, 'garment-dropdown')">
+      GARMENT
+    </a>
+    <div class="garments-menu" ngbDropdownMenu aria-labelledby="garment-toggle"
+         (mouseleave)="onMenuLeave(garmentDropdown, $event, 'garment-dropdown')">
+      <a ngbDropdownItem href="#">An item</a>
+      <a ngbDropdownItem href="#">Another item</a>
+    </div>
+  </li>
+
+</ul>

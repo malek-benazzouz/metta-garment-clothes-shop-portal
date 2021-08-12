@@ -13,6 +13,7 @@ import { ResponsiveDebugComponent } from './debug/responsive-debug/responsive-de
 import { TreeComponent } from './tree/tree.component';
 import { DotMenuComponent } from './dot-menu/dot-menu.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { NavbarMenuComponent } from './navbar-menu/navbar-menu.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatMenuModule } from '@angular/material/menu';
     FooterComponent,
     ResponsiveDebugComponent,
     TreeComponent,
-    DotMenuComponent
+    DotMenuComponent,
+    NavbarMenuComponent
   ],
   imports: [
     BrowserModule,

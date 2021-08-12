@@ -1,0 +1,33 @@
+@import "src/style/typography";
+@import "src/style/colors";
+
+.nav-title {
+  @extend .typo-nav-title;
+  color: $text-primary-color !important;
+
+  &:hover {
+    color: $sunny-gold !important;
+  }
+
+  &:after {
+    display: none; // Hide dropdown arrow
+  }
+}
+
+.dropdown-menu {
+  background: none;
+  border: none;
+  margin-top: 0;
+  padding-top: 25px;
+}
+
+.dropdown-item {
+  @extend .typo-nav-link;
+  color: $text-primary-color !important;
+  padding: 0.25rem 0.5rem;
+
+  &:hover, &:focus {
+    background: none;
+    font-weight: bold;
+  }
+}

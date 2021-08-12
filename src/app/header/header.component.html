@@ -1,42 +1,20 @@
-<nav id="header" class="navbar navbar-expand-md navbar-light d-flex justify-content-between">
-  <!-- TODO make dot always centered -->
-  <!-- TODO nav groups should expand on hover -> try to keep them accessible -->
+<nav id="header" class="navbar navbar-expand-md navbar-light d-flex justify-content-center">
 
   <!-- Metta logo -->
-  <a class="navbar-brand" href="#">
-    <img src="assets/metta-logo-dark.svg" alt="Metta logo">
-  </a>
+  <span class="header-left-part">
+    <a class="navbar-brand" href="#">
+      <img src="assets/metta-logo-dark.svg" alt="Metta logo">
+    </a>
+  </span>
 
   <!-- Dot menu -->
-  <app-dot-menu></app-dot-menu>
+  <span class="header-center-part">
+    <app-dot-menu></app-dot-menu>
+  </span>
 
-  <!-- Nav links -->
-  <ul class="navbar-nav">
-
-    <!-- Nav group: Philosophy -->
-    <li class="nav-item">
-      <a class="nav-link nav-group" tabindex="0" id="philosophy-nav-group" role="button"
-         (mouseenter)="showPhilosophyGroup()" (focusin)="showPhilosophyGroup()"
-         (mouseleave)="hidePhilosophyGroup()" (focusout)="hidePhilosophyGroup()">
-        Philosophy
-      </a>
-      <div class="nav-group-content" *ngIf="shouldShowPhilosophyGroup">
-        <a tabindex="0" href="#">Item 1</a>
-        <a tabindex="0" href="#">Item 2</a>
-      </div>
-    </li>
-
-    <!-- Nav group: Garment -->
-    <li class="nav-item" ngbDropdown display="dynamic">
-      <a class="nav-link" tabindex="0" ngbDropdownToggle id="garment-nav-group" role="button">
-        Garment
-      </a>
-      <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
-        <a ngbDropdownItem href="#">Item 1</a>
-        <a ngbDropdownItem href="#">Item 2</a>
-      </div>
-    </li>
-
-  </ul>
+  <!-- Navbar menu -->
+  <span class="header-right-part">
+    <app-navbar-menu></app-navbar-menu>
+  </span>
 
 </nav>
