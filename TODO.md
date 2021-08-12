@@ -2,7 +2,8 @@
 
 ## General
 
--
+- Fix css warnings on ng serve
+- Loading animation while pre-loading all images (same as mcm)
 
 ## Legal
 

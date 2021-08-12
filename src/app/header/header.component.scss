@@ -1,28 +1,13 @@
-@import "src/style/typography";
-@import "src/style/colors";
-
-.navbar-nav .nav-link {
-  @extend .typo-nav-group;
-  color: $text-primary-color !important;
-
-  &:hover {
-    color: $text-secondary-color !important;
-  }
-
-  &:after {
-    display: none; // Hide dropdown arrow
-  }
+.navbar {
+  height: 65px;
 }
 
-.navbar-nav .dropdown-menu {
-  @extend .typo-nav-link;
-  color: $text-primary-color !important;
-  background: none;
-  border: none;
-  margin-top: 20px;
+.header-left-part {
+  position: absolute;
+  left: 25px;
+}
 
-  .dropdown-item:hover {
-    background: none;
-    color: $text-secondary-color !important;
-  }
+.header-right-part {
+  position: absolute;
+  right: 25px;
 }

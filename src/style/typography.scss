@@ -17,16 +17,16 @@
   letter-spacing: 1.5px;
 }
 
-.typo-nav-group {
+.typo-nav-title {
   @extend .font-family-be-vietnam;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.5em;
   letter-spacing: 1.25px;
 }
 
 .typo-nav-link {
-  @extend .font-family-be-vietnam;
+  @extend .font-family-apoc-revelations;
   font-size: 14px;
   font-weight: 400;
   line-height: 0.87em;
