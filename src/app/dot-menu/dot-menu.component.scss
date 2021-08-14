@@ -1,12 +1,99 @@
-#dot-menu {
-  height: 16px;
-  width: 16px;
-  background: #0a0a00;
-  border-radius: 50%;
-  cursor: pointer;
+@import "src/style/typography";
 
-  &:hover, &:focus {
-    background: rgb(220, 206, 135) !important;
-    box-shadow: 0 0 4px 2px rgb(220, 206, 135);
+// TODO When screen height is small, the bottom of the menu is not shown, without a way to scroll
+//  (probably because of position: fixed)
+
+#dot-menu {
+  position: fixed;
+  left: 0;
+  top: 64px; // Header height minus 1px
+  width: 100%;
+  height: calc(100% - 64px); // All the screen height minus header height
+  border: none;
+  background: rgba(255, 255, 255, 0.7); // White with 70% opacity
+}
+
+.dot-sub-menu {
+  .sub-menu-toggle-icon {
+    position: relative;
+    top: -3px;
+    display: inline-block;
+    width: 22px;
+  }
+
+  .sub-menu-content {
+    position: relative;
+    width: 100%;
+    border: none;
+    background: none;
   }
 }
+
+.dot-menu-title, .dot-menu-item {
+  color: $text-primary-color;
+  background: none;
+
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+.dot-menu-title {
+  @extend .typo-dot-menu-title;
+}
+
+.dot-menu-item {
+  @extend .typo-dot-menu-item;
+}
+
+// Submenus and links specifics
+
+#philosophy-sub-menu {
+  text-align: right;
+
+  .label {
+    position: relative;
+    right: 45%;
+  }
+
+  .sub-label {
+    position: relative;
+    left: 20%;
+  }
+}
+
+#garment-sub-menu {
+  text-align: right;
+
+  .label {
+    position: relative;
+    right: 40%;
+  }
+
+  .sub-label {
+    position: relative;
+    right: 20%;
+  }
+}
+
+#instagram-link {
+  .label {
+    position: relative;
+    left: 50%;
+  }
+}
+
+#pinterest-link {
+  .label {
+    position: relative;
+    left: 40%;
+  }
+}
+
+#youtube-link {
+  .label {
+    position: relative;
+    left: 45%;
+  }
+}
+

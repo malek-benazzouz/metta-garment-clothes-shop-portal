@@ -12,12 +12,15 @@ export class NavbarMenuComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onMenuEnter(dropdown: NgbDropdown, event: MouseEvent, parentId: string): void {
+  // Open the menu on mouse enter
+  onMenuEnter(dropdown: NgbDropdown, event: MouseEvent, dropdownId: string): void {
     dropdown.open();
   }
 
-  onMenuLeave(dropdown: NgbDropdown, event: MouseEvent, parentId: string): void {
-    if ((event as any)?.relatedTarget?.parentElement?.id !== parentId) {
+  // Close the menu on mouse leave
+  onMenuLeave(dropdown: NgbDropdown, event: MouseEvent, dropdownId: string): void {
+    // Do not close the menu if the mouse goes into the dropdown menu
+    if ((event as any)?.relatedTarget?.parentElement?.id !== dropdownId) {
       dropdown.close();
     }
   }

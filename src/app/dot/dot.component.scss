@@ -1,0 +1,12 @@
+#dot {
+  height: 16px;
+  width: 16px;
+  background: #0a0a00;
+  border-radius: 50%;
+  border: none;
+
+  &:hover, &:focus {
+    background: rgb(220, 206, 135) !important;
+    box-shadow: 0 0 4px 2px rgb(220, 206, 135);
+  }
+}

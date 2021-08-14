@@ -1,1 +1,57 @@
-<div id="dot-menu" tabindex="0" aria-label="Main menu" [style.background]="dotColor"></div>
+<div id="dot-menu" ngbDropdownMenu aria-labelledby="dot">
+
+  <!-- Submenu: Philosophy -->
+  <div id="philosophy-sub-menu" class="dot-sub-menu dot-menu-title" ngbDropdownItem ngbDropdown [autoClose]="false"
+       (openChange)="philosophyMenuExpanded = $event">
+    <button class="w-100 dropdown-item dot-menu-title no-dropdown-arrow" ngbDropdownToggle role="button">
+      <span class="label">PHILOSOPHY</span>
+      <span *ngIf="philosophyMenuExpanded" class="sub-menu-toggle-icon">-</span>
+      <span *ngIf="!philosophyMenuExpanded" class="sub-menu-toggle-icon">+</span>
+    </button>
+    <div class="sub-menu-content mb-4" ngbDropdownMenu aria-labelledby="philosophy-submenu-title">
+      <a class="dot-menu-item" ngbDropdownItem href="#">
+        <span class="sub-label">Les 7 Cieux</span>
+      </a>
+      <a class="dot-menu-item" ngbDropdownItem href="#">
+        <span class="sub-label">The Mettägony</span>
+      </a>
+      <a class="dot-menu-item" ngbDropdownItem href="#">
+        <span class="sub-label">Metaphorical Clothing</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Submenu: Garment -->
+  <div id="garment-sub-menu" class="dot-sub-menu dot-menu-title" ngbDropdownItem ngbDropdown [autoClose]="false"
+       (openChange)="garmentMenuExpanded = $event">
+    <button class="w-100 dropdown-item dot-menu-title no-dropdown-arrow" ngbDropdownToggle role="button">
+      <span class="label">GARMENT</span>
+      <span *ngIf="garmentMenuExpanded" class="sub-menu-toggle-icon">-</span>
+      <span *ngIf="!garmentMenuExpanded" class="sub-menu-toggle-icon">+</span>
+    </button>
+    <div class="sub-menu-content mb-4 text-right" ngbDropdownMenu aria-labelledby="philosophy-submenu-title">
+      <a class="dot-menu-item" ngbDropdownItem href="#">
+        <span class="sub-label">Sweaters and Wooden Boxes</span>
+      </a>
+      <a class="dot-menu-item" ngbDropdownItem href="#">
+        <span class="sub-label">Printed T-shirts</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Link: Instagram -->
+  <button id="instagram-link" class="dot-menu-title" ngbDropdownItem>
+    <span class="label">INSTAGRAM</span>
+  </button>
+
+  <!-- Link: Pinterest -->
+  <button id="pinterest-link" class="dot-menu-title" ngbDropdownItem>
+    <span class="label">PINTEREST</span>
+  </button>
+
+  <!-- Link: Youtube -->
+  <button id="youtube-link" class="dot-menu-title" ngbDropdownItem>
+    <span class="label">YOUTUBE</span>
+  </button>
+
+</div>
