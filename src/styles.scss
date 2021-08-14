@@ -20,3 +20,11 @@ body {
   min-width: 350px;
   overflow: auto;
 }
+
+// Hide arrow from a dropdown
+.no-dropdown-arrow {
+  &[ngbDropdownToggle]:after, &[ngbDropdownAnchor]:after {
+    display: none;
+  }
+}
+

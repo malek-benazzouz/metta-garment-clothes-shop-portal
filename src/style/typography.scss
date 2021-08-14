@@ -9,7 +9,7 @@
   letter-spacing: 0.25px;
 }
 
-.typo-dot-menu {
+.typo-dot-menu-title {
   @extend .font-family-apoc-revelations;
   font-size: 40px;
   font-weight: 500;
@@ -17,7 +17,15 @@
   letter-spacing: 1.5px;
 }
 
-.typo-nav-title {
+.typo-dot-menu-item {
+  @extend .font-family-apoc-revelations;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.25em;
+  letter-spacing: 1.5px;
+}
+
+.typo-nav-menu-title {
   @extend .font-family-be-vietnam;
   font-size: 14px;
   font-weight: 600;
@@ -25,7 +33,7 @@
   letter-spacing: 1.25px;
 }
 
-.typo-nav-link {
+.typo-nav-menu-item {
   @extend .font-family-apoc-revelations;
   font-size: 14px;
   font-weight: 400;
