@@ -5,6 +5,7 @@
   border-radius: 50%;
   border: none;
 
+  // TODO when closing the dot menu by clicking on the dot, it remains with hover style
   &:hover, &:focus {
     background: rgb(220, 206, 135) !important;
     box-shadow: 0 0 4px 2px rgb(220, 206, 135);
