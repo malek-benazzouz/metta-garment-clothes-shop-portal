@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="8.133894mm"
+   height="15.013147mm"
+   viewBox="0 0 8.1338939 15.013147"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="Feuille 003 Hover.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="24.393253"
+     inkscape:cy="36.993657"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="958"
+     inkscape:window-height="1018"
+     inkscape:window-x="946"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-111.05981,-153.44955)">
+    <g
+       id="g11237"
+       transform="matrix(0.26458333,0,0,0.26458333,2813.8745,1445.7333)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path38-0-0-3-3-2-8-3-3"
+         d="m -10208.676,-4831.7811 c 0,0 4.528,-4.9314 7.892,-7.1513 3.364,-2.2199 9.654,-8.8532 11.271,-19.4248 1.616,-10.5715 2.14,-20.2062 2.884,-22.6614 0.743,-2.4551 -14.705,-0.7429 -16.633,1.5515 -1.927,2.2944 -7.447,10.3586 -9.006,16.9591 -1.56,6.6005 -1.454,9.6411 0.02,14.5309 1.47,4.8899 3.572,16.196 3.572,16.196 z"
+         style="fill:#fbf7ee;fill-opacity:1;stroke:#112f25;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         sodipodi:nodetypes="csssssccc" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.3525px;line-height:2.86525px;font-family:Respira;-inkscape-font-specification:Respira;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#112f25;fill-opacity:1;stroke:none;stroke-width:0.209999"
+         x="1328.2836"
+         y="-11214.932"
+         id="text8537-8-1-9-8-2-7-6-8-0-0-4-4"
+         transform="rotate(-71.364377)"><tspan
+           sodipodi:role="line"
+           id="tspan8535-8-6-7-8-5-3-2-3-0-8-44-8"
+           x="1328.2836"
+           y="-11214.932"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.3525px;font-family:Respira;-inkscape-font-specification:Respira;fill:#112f25;fill-opacity:1;stroke-width:0.209999">003</tspan></text>
+    </g>
+  </g>
+</svg>
