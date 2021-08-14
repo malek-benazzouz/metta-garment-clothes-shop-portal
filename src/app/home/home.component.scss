@@ -1,6 +1,6 @@
 @import "src/style/colors";
 
 #main {
-  background: $background-gradient;
-  height: 750px; // TODO temporary height, remove when real content is added
+  background: url("../../assets/gradient-background-light.svg");
+  background-size: cover;
 }

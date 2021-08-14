@@ -1,0 +1,16 @@
+// TODO handle screens for which width < 130px (tree 1100 + sun 110 + moon 90)
+
+#sun {
+  margin-left: 67px; // Center the tree (part 1)
+  margin-top: 72px;
+}
+
+#tree {
+
+}
+
+#moon {
+  margin-right: 67px; // Center the tree (part 2)
+  margin-left: -67px; // Center the tree (part 3)
+  margin-top: 93px;
+}
