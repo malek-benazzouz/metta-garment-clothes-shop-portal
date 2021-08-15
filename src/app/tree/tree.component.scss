@@ -1,3 +1,5 @@
+@import "src/style/colors";
+
 // TODO handle screens for which width < 130px (tree 1100 + sun 110 + moon 90)
 
 #sun {
@@ -5,12 +7,64 @@
   margin-top: 72px;
 }
 
-#tree {
-
-}
-
 #moon {
   margin-right: 67px; // Center the tree (part 2)
   margin-left: -67px; // Center the tree (part 3)
   margin-top: 93px;
+}
+
+#sun-product, #moon-product {
+  position: absolute;
+  border: 5px solid $sunny-gold;
+}
+
+#sun-product {
+  margin-left: -70px;
+  margin-top: 90px;
+}
+
+#moon-product {
+  margin-left: -44px;
+  margin-top: 116px;
+}
+
+.leaf {
+  position: absolute;
+  cursor: pointer;
+}
+
+/*
+ * Leaves images, sizes and positioning (for normal and hover states)
+ */
+
+#leaf-001 {
+  top: 588px;
+  margin-left: -56px;
+  background: url("../../assets/tree/leaf-001-dark.svg") no-repeat;
+  width: 52px;
+  height: 26px;
+
+  &:hover {
+    top: 586px;
+    margin-left: -58px;
+    background: url("../../assets/tree/leaf-001-light.svg") no-repeat;
+    width: 57px;
+    height: 30px;
+  }
+}
+
+#leaf-002 {
+  top: 400px;
+  margin-left: 166px;
+  background: url("../../assets/tree/leaf-002-dark.svg") no-repeat;
+  width: 26px;
+  height: 59px;
+
+  &:hover {
+    top: 398px;
+    margin-left: 166px;
+    background: url("../../assets/tree/leaf-002-light.svg") no-repeat;
+    width: 30px;
+    height: 63px;
+  }
 }
