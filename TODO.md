@@ -3,7 +3,7 @@
 ## General
 
 - Fix css warnings on ng serve
-- Loading animation while pre-loading all images (same as mcm)
+- Pre-load all images. Add a loading animation while pre-loading the images (same as mcm)?
 - Resize images (especially products) to a smaller size if possible (for better performance)
 - Remove unused images? (or make sure they are not loaded if not used)
 

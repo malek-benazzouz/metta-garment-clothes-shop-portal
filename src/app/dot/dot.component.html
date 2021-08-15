@@ -1,11 +1,2 @@
-<!-- TODO improve auto close by closing if clicking outside -->
-<div ngbDropdown [autoClose]="false">
-
-  <!-- Toggle: dot-->
-  <button id="dot" class="no-dropdown-arrow" ngbDropdownToggle [style.background]="dotColor" tabindex="0"
-          title="Open our main menu" aria-label="Click to open our main menu"></button>
-
-  <!-- Menu content-->
-  <app-dot-menu></app-dot-menu>
-
-</div>
+<!-- The dot -->
+<button id="dot" title="Open our main menu" [style.background]="dotColor" (click)="onDotClick()"></button>

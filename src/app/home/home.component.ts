@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  isDotExpanded = false; // TODO add animation when expanding/collapsing dot content
 
-  ngOnInit(): void {
+  constructor() {}
+
+  ngOnInit(): void {}
+
+  onToggleDot(isExpanded: boolean): void {
+    this.isDotExpanded = isExpanded;
   }
 
 }

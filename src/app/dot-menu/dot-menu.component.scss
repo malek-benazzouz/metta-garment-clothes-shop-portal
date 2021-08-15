@@ -1,99 +1,51 @@
 @import "src/style/typography";
 
-// TODO When screen height is small, the bottom of the menu is not shown, without a way to scroll
-//  (probably because of position: fixed)
-
-#dot-menu {
-  position: fixed;
-  left: 0;
-  top: 64px; // Header height minus 1px
-  width: 100%;
-  height: calc(100% - 64px); // All the screen height minus header height
-  border: none;
-  background: rgba(255, 255, 255, 0.9); // White with 90% opacity
+.menu-title {
+  @extend .typo-dot-menu-title;
 }
 
-.dot-sub-menu {
-  .sub-menu-toggle-icon {
-    position: relative;
-    top: -3px;
-    display: inline-block;
-    width: 22px;
-  }
-
-  .sub-menu-content {
-    position: relative;
-    width: 100%;
-    border: none;
-    background: none;
-  }
+.menu-item {
+  @extend .typo-dot-menu-item;
 }
 
-.dot-menu-title, .dot-menu-item {
+.menu-title, .menu-item {
   color: $text-primary-color;
-  background: none;
+  text-decoration: none;
 
   &:hover {
     font-weight: bold;
   }
 }
 
-.dot-menu-title {
-  @extend .typo-dot-menu-title;
+.submenu-toggle {
+  cursor: pointer;
 }
 
-.dot-menu-item {
-  @extend .typo-dot-menu-item;
+.submenu-toggle-icon {
+  width: 22px;
+  line-height: 50px;
 }
 
-// Submenus and links specifics
+// Labels positioning
 
-#philosophy-sub-menu {
-  text-align: right;
-
-  .label {
-    position: relative;
-    right: 45%;
-  }
-
-  .sub-label {
-    position: relative;
-    left: 20%;
-  }
+#philosophy-label {
+  margin-right: 140px;
 }
 
-#garment-sub-menu {
-  text-align: right;
-
-  .label {
-    position: relative;
-    right: 40%;
-  }
-
-  .sub-label {
-    position: relative;
-    right: 20%;
-  }
+#garment-label {
+  margin-right: 109px;
 }
 
-#instagram-link {
-  .label {
-    position: relative;
-    left: 50%;
-  }
+#instagram-label {
+  margin-left: 150px;
 }
 
-#pinterest-link {
-  .label {
-    position: relative;
-    left: 40%;
-  }
+#pinterest-label {
+  margin-right: 28px;
 }
 
-#youtube-link {
-  .label {
-    position: relative;
-    left: 45%;
-  }
+#youtube-label {
+  margin-left: 109px;
 }
+
 

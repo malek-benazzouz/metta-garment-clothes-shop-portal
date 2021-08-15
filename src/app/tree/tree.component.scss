@@ -38,14 +38,14 @@
  */
 
 #leaf-001 {
-  top: 588px;
+  margin-top: 475px;
   margin-left: -56px;
   background: url("../../assets/tree/leaf-001-dark.svg") no-repeat;
   width: 52px;
   height: 26px;
 
   &:hover {
-    top: 586px;
+    margin-top: 473px;
     margin-left: -58px;
     background: url("../../assets/tree/leaf-001-light.svg") no-repeat;
     width: 57px;
@@ -54,15 +54,15 @@
 }
 
 #leaf-002 {
-  top: 400px;
-  margin-left: 166px;
+  margin-top: 287px;
+  margin-left: 167px;
   background: url("../../assets/tree/leaf-002-dark.svg") no-repeat;
   width: 26px;
   height: 59px;
 
   &:hover {
-    top: 398px;
-    margin-left: 166px;
+    margin-top: 285px;
+    margin-left: 167px;
     background: url("../../assets/tree/leaf-002-light.svg") no-repeat;
     width: 30px;
     height: 63px;
