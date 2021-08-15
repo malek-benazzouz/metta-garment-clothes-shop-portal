@@ -14,4 +14,12 @@ export class DotMenuComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  togglePhilosophyMenu(): void {
+    this.philosophyMenuExpanded = !this.philosophyMenuExpanded;
+  }
+
+  toggleGarmentMenu(): void {
+    this.garmentMenuExpanded = !this.garmentMenuExpanded;
+  }
+
 }

@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnDestroy, OnInit } from '@angular/core';
+import { Component, ElementRef, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 import { fromEvent, Subscription } from 'rxjs';
 import { throttleTime } from 'rxjs/operators';
 
@@ -9,8 +9,11 @@ import { throttleTime } from 'rxjs/operators';
 })
 export class DotComponent implements OnInit, OnDestroy {
 
+  @Output() toggleDot = new EventEmitter<boolean>(); // True if expanded, false if collapsed
+
   subscription = new Subscription();
 
+  isDotExpanded = false;
   dotColor = 'rgb(10,10,0)';
 
   constructor(private el: ElementRef) {}
@@ -36,6 +39,11 @@ export class DotComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
+  }
+
+  onDotClick(): void {
+    this.isDotExpanded = !this.isDotExpanded;
+    this.toggleDot.emit(this.isDotExpanded);
   }
 
 }

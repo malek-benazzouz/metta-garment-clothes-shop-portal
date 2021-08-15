@@ -1,6 +1,7 @@
 @import "src/style/colors";
 
-#main {
+#main-content {
+  min-height: calc(100% - 65px); // 100% minus header height
   background: url("../../assets/gradient-background-light.svg");
   background-size: cover;
 }
