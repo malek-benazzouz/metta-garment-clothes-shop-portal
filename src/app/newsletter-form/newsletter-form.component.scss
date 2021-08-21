@@ -1,0 +1,16 @@
+:host::ng-deep mat-form-field {
+  width: 250px;
+
+  // Hide form field underline, except when hovering or if form is invalid
+  .mat-form-field-wrapper .mat-form-field-underline {
+    display: none;
+  }
+
+  .mat-form-field-wrapper:hover .mat-form-field-underline {
+    display: inherit;
+  }
+
+  &.mat-form-field-invalid .mat-form-field-wrapper .mat-form-field-underline {
+    display: inherit;
+  }
+}

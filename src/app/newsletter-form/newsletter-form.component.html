@@ -1,0 +1,13 @@
+<form id="newsletter-form">
+
+  <!-- Email input -->
+  <mat-form-field appearance="standard" class="mr-3">
+    <mat-label>ENTER YOUR EMAIL ADDRESS</mat-label>
+    <input matInput placeholder="my@mail.com" [formControl]="emailControl">
+    <mat-error *ngIf="emailControl.invalid">Invalid email address</mat-error>
+  </mat-form-field>
+
+  <!-- Submit button -->
+  <button type="submit">SUBMIT</button>
+
+</form>

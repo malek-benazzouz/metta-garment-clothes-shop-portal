@@ -14,6 +14,14 @@ import { MatMenuModule } from '@angular/material/menu';
 import { NavbarMenuComponent } from './navbar-menu/navbar-menu.component';
 import { DotMenuComponent } from './dot-menu/dot-menu.component';
 import { DotFooterComponent } from './dot-footer/dot-footer.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { LegalInfoComponent } from './legal-info/legal-info.component';
+import { NewsletterFormComponent } from './newsletter-form/newsletter-form.component';
+import { ContactLinksComponent } from './contact-links/contact-links.component';
+import { CopyrightComponent } from './copyright/copyright.component';
+import { LegalLinksComponent } from './legal-links/legal-links.component';
 
 @NgModule({
   declarations: [
@@ -26,14 +34,23 @@ import { DotFooterComponent } from './dot-footer/dot-footer.component';
     DotComponent,
     DotMenuComponent,
     NavbarMenuComponent,
-    DotFooterComponent
+    DotFooterComponent,
+    LegalInfoComponent,
+    NewsletterFormComponent,
+    ContactLinksComponent,
+    CopyrightComponent,
+    LegalLinksComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     NgbModule,
-    MatMenuModule
+    MatMenuModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
