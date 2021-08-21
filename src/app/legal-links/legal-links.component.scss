@@ -1,0 +1,10 @@
+@import "src/style/colors";
+
+.legal-link {
+  color: $text-primary-color !important;
+  text-decoration: none;
+
+  &:hover {
+    color: $sunny-gold !important;
+  }
+}

@@ -1,0 +1,10 @@
+@import "src/style/colors";
+
+.contact-link {
+  color: $text-primary-color !important;
+  text-decoration: none;
+
+  &:hover {
+    color: $sunny-gold !important;
+  }
+}
