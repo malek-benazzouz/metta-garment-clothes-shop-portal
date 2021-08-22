@@ -1,6 +1,8 @@
 @import "src/style/colors";
+@import "src/style/typography";
 
 .contact-link {
+  @extend .typo-footer-link;
   color: $text-primary-color !important;
   text-decoration: none;
 

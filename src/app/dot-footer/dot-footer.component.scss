@@ -1,3 +1,5 @@
+@import "src/style/typography";
+
 .footer-left-part {
   position: absolute;
   left: 25px;
@@ -8,8 +10,9 @@
   right: 25px;
 }
 
-#footer-content { // TODO add correct typography
-  width: 30%;
+#footer-content {
+  @extend .typo-footer;
+  width: 35%;
 }
 
 #footer-look-up {
