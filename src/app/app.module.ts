@@ -22,6 +22,7 @@ import { NewsletterFormComponent } from './newsletter-form/newsletter-form.compo
 import { ContactLinksComponent } from './contact-links/contact-links.component';
 import { CopyrightComponent } from './copyright/copyright.component';
 import { LegalLinksComponent } from './legal-links/legal-links.component';
+import { ProductOverviewComponent } from './product-overview/product-overview.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { LegalLinksComponent } from './legal-links/legal-links.component';
     NewsletterFormComponent,
     ContactLinksComponent,
     CopyrightComponent,
-    LegalLinksComponent
+    LegalLinksComponent,
+    ProductOverviewComponent
   ],
   imports: [
     BrowserModule,

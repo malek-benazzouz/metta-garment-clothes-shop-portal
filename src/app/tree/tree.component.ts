@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from '../../data/product.model';
+import { findProductById } from '../../data/products.data';
 
 @Component({
   selector: 'app-tree',
@@ -7,21 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TreeComponent implements OnInit {
 
-  isSunProductDisplayed = false;
-  isMoonProductDisplayed = false;
+  sunProduct: Product | undefined;
+  moonProduct: Product | undefined;
 
   constructor() {}
 
   ngOnInit(): void {}
 
   showSunProduct(productId: string): void {
-    this.isSunProductDisplayed = true;
-    this.isMoonProductDisplayed = false;
+    this.sunProduct = findProductById(productId);
+    this.moonProduct = undefined;
   }
 
   showMoonProduct(productId: string): void {
-    this.isSunProductDisplayed = false;
-    this.isMoonProductDisplayed = true;
+    this.sunProduct = undefined;
+    this.moonProduct = findProductById(productId);
   }
 
 }

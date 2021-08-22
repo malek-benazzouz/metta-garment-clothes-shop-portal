@@ -1,0 +1,20 @@
+<div class="product-overview" *ngIf="product">
+
+  <!-- Product image -->
+  <div class="product-image">
+    <img [src]="product.imageUrl" [alt]="product.description" width="160">
+  </div>
+
+  <!-- Product name, price, description -->
+  <div class="product-info" [ngClass]="isSunProduct ? 'sun-product' : 'moon-product'">
+    <div class="product-title">
+      <span class="product-name">{{ product.name }}</span>
+    </div>
+    <div class="product-subtitle">
+      <span class="product-price mr-1">{{ product.price }} EUR</span>
+      <span class="dot-separator mr-1">•</span>
+      <span class="product-description">{{ product.description }}</span>
+    </div>
+  </div>
+
+</div>

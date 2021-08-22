@@ -1,7 +1,9 @@
+@import "src/style/colors";
+
 #dot {
   height: 16px;
   width: 16px;
-  background: #0a0a00;
+  background: $dot-color;
   border-radius: 50%;
   border: none;
 

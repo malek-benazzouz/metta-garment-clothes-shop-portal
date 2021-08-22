@@ -1,15 +1,12 @@
 @import "src/style/colors";
 @import "src/style/typography";
 
-#newsletter-form {
-  @extend .typo-newsletter-form;
-}
-
 // Customize the form input field
 :host::ng-deep mat-form-field {
-  width: 210px;
+  width: 228px;
 
   .mat-form-field-wrapper {
+    @extend .typo-newsletter-form;
     cursor: text;
   }
 
@@ -28,12 +25,13 @@
 }
 
 .submit-button {
+  @extend .typo-newsletter-form;
   background: $noctural-green;
   color: $white;
   border: none;
-  padding: 2px 8px;
+  padding: 7px 12px;
 
   &:hover {
-    background: $noctural-green-light;
+    background: $sunny-gold-dark;
   }
 }

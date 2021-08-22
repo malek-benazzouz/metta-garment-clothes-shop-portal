@@ -1,14 +1,17 @@
 @import "variables";
 
 // Colors definition
+$black: #0a0a00;
 $noctural-green: #112f25;
 $noctural-green-light: #2a755c;
+$sunny-gold-dark: #bdad60;
 $sunny-gold: #d4c36c;
 $sunny-gold-light: #dcce87;
 $cream: #fcf7ef;
 $white: #fffffd;
 
 // Theme colors
+$dot-color: $black;
 $text-primary-color: $noctural-green;
 $text-secondary-color: $noctural-green-light;
 $background-plain-color: $white;
