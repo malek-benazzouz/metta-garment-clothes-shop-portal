@@ -1,9 +1,9 @@
 <div class="product-overview" *ngIf="product">
 
   <!-- Product image -->
-  <div class="product-image">
+  <a class="product-image" [href]="'#product/' + product.id">
     <img [src]="product.imageUrl" [alt]="product.description" width="160">
-  </div>
+  </a>
 
   <!-- Product name, price, description -->
   <div class="product-info" [ngClass]="isSunProduct ? 'sun-product' : 'moon-product'">
