@@ -1,0 +1,44 @@
+@import "src/style/colors";
+@import "src/style/typography";
+
+.product-overview {
+  position: absolute;
+  border: 5px solid $sunny-gold;
+}
+
+.product-info {
+  position: absolute;
+
+  &.sun-product {
+    transform: rotate(-90deg);
+    margin-top: 85px;
+    width: 100%;
+
+    .product-subtitle {
+      margin-left: 60px;
+      margin-right: -50px; // Let text go slightly over the image
+    }
+  }
+
+  &.moon-product {
+    top: 42%;
+    left: 185px;
+    white-space: nowrap;
+  }
+}
+
+.product-title {
+  @extend .typo-product-title;
+}
+
+.product-subtitle {
+  @extend .typo-product-subtitle;
+}
+
+.dot-separator {
+  line-height: 0;
+  font-size: 26px;
+  padding-left: 2px;
+  position: relative;
+  bottom: -4px;
+}

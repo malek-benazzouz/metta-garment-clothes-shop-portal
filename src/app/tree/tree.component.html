@@ -4,8 +4,8 @@
   <div id="sun">
     <img src="assets/sun-light.svg" alt="Image: the sun">
     <!-- Sun product -->
-    <div id="sun-product" *ngIf="isSunProductDisplayed">
-      <img src="assets/products/001-kirghizistan.svg" alt="TODO" width="160">
+    <div id="sun-product" *ngIf="sunProduct">
+      <app-product-overview [product]="sunProduct" [isSunProduct]="true"></app-product-overview>
     </div>
   </div>
 
@@ -18,15 +18,19 @@
   <div id="moon">
     <img src="assets/moon-light.svg" alt="Image: the moon">
     <!-- Moon product -->
-    <div id="moon-product" *ngIf="isMoonProductDisplayed">
-      <img src="assets/products/001-kirghizistan.svg" alt="TODO" width="160">
+    <div id="moon-product" *ngIf="moonProduct">
+      <app-product-overview [product]="moonProduct" [isSunProduct]="false"></app-product-overview>
     </div>
   </div>
 
   <!-- Leaves -->
   <div id="leaf-001" class="leaf" tabindex="0"
        (click)="showSunProduct('001')" (mouseenter)="showSunProduct('001')"></div>
+  <div id="leaf-001prime" class="leaf" tabindex="0"
+       (click)="showSunProduct('001prime')" (mouseenter)="showSunProduct('001prime')"></div>
   <div id="leaf-002" class="leaf" tabindex="0"
        (click)="showMoonProduct('002')" (mouseenter)="showMoonProduct('002')"></div>
+  <div id="leaf-002prime" class="leaf" tabindex="0"
+       (click)="showMoonProduct('002prime')" (mouseenter)="showMoonProduct('002prime')"></div>
 
 </div>

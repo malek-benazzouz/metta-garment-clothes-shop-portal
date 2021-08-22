@@ -41,6 +41,22 @@
   letter-spacing: 0.1px;
 }
 
+.typo-product-title {
+  @extend .font-family-be-vietnam;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: 1.25px;
+}
+
+.typo-product-subtitle {
+  @extend .font-family-be-vietnam;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.1px;
+}
+
 .typo-footer {
   @extend .font-family-be-vietnam;
   font-size: 10px;
