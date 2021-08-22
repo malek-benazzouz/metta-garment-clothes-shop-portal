@@ -10,5 +10,6 @@
 - 14aug21: 1.5d
 - 15aug21: 0.4d
 - 21aug21: 0.3d
+- 22aug21: 0.3d
 
-> Total: 4.4d
+> Total: 4.7d

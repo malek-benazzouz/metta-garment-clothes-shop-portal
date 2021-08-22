@@ -1,5 +1,17 @@
+@import "src/style/colors";
+@import "src/style/typography";
+
+#newsletter-form {
+  @extend .typo-newsletter-form;
+}
+
+// Customize the form input field
 :host::ng-deep mat-form-field {
-  width: 250px;
+  width: 210px;
+
+  .mat-form-field-wrapper {
+    cursor: text;
+  }
 
   // Hide form field underline, except when hovering or if form is invalid
   .mat-form-field-wrapper .mat-form-field-underline {
@@ -12,5 +24,16 @@
 
   &.mat-form-field-invalid .mat-form-field-wrapper .mat-form-field-underline {
     display: inherit;
+  }
+}
+
+.submit-button {
+  background: $noctural-green;
+  color: $white;
+  border: none;
+  padding: 2px 8px;
+
+  &:hover {
+    background: $noctural-green-light;
   }
 }
