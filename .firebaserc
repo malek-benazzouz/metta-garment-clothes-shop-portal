@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "metta-backend": {
+      "hosting": {
+        "metta-ui": [
+          "metta-backend"
+        ]
+      }
+    }
+  }
+}
