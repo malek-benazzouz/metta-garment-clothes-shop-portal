@@ -9,7 +9,7 @@ import { NewsletterSubscriptionService } from './newsletter.service';
 })
 export class NewsletterFormComponent implements OnInit {
 
-  emailControl = new FormControl('', [Validators.required, Validators.email]);
+  emailControl = new FormControl('', [Validators.email]);
 
   feedbackMessages: { message: string, isSuccess: boolean }[] = [];
 
@@ -18,7 +18,8 @@ export class NewsletterFormComponent implements OnInit {
   ngOnInit(): void {}
 
   submitForm(): void {
-    if (this.emailControl.dirty && this.emailControl.valid) {
+    // If email address is not empty and valid
+    if (this.emailControl.value && this.emailControl.valid) {
       this.newsletterSubscriptionService.addNewsletterSubscription({
         email: this.emailControl.value,
         subscriptionDate: { timestamp: Date.now(), formatted: new Date().toString() }
@@ -28,6 +29,7 @@ export class NewsletterFormComponent implements OnInit {
             message: `Thank you for subscribing. We will send our latest updates to ${this.emailControl.value}.`,
             isSuccess: true
           });
+          this.emailControl.reset();
         },
         (error) => { // Error
           console.error('An error occurred while trying to add a newsletter subscription: ', error);
@@ -37,6 +39,10 @@ export class NewsletterFormComponent implements OnInit {
           })
         }
       );
+    }
+    // If we are trying to submit, but email address is empty
+    else if (!this.emailControl.value) {
+      this.emailControl.setErrors({ emailRequired: true })
     }
   }
 
