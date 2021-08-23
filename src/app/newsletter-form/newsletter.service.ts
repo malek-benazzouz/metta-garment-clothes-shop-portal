@@ -5,11 +5,14 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 export interface NewsletterSubscription {
+  // Form input
   email: string;
+  // Metadata
+  subscriptionDate: { timestamp: number, formatted: string };
 }
 
 @Injectable({ providedIn: 'root' })
-export class RsvpService {
+export class NewsletterSubscriptionService {
 
   constructor(private store: AngularFirestore, private auth: AngularFireAuth) {}
 
