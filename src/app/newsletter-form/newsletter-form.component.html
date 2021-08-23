@@ -1,4 +1,5 @@
-<form id="newsletter-form">
+<!-- Newsletter form -->
+<form id="newsletter-form" (submit)="submitForm()">
 
   <!-- Email input -->
   <mat-form-field appearance="standard" class="mr-3">
@@ -11,3 +12,20 @@
   <button type="submit" class="submit-button">SUBMIT</button>
 
 </form>
+
+<!-- Feedback messages -->
+<div class="feedbacks">
+  <div class="feedback" *ngFor="let feedback of feedbackMessages">
+
+    <!-- Success toast -->
+    <ngb-toast class="bg-success text-light" [delay]="7000" *ngIf="feedback.isSuccess">
+      {{ feedback.message }}
+    </ngb-toast>
+
+    <!-- Error toast -->
+    <ngb-toast class="bg-danger text-light" [delay]="10000" *ngIf="!feedback.isSuccess">
+      {{ feedback.message }}
+    </ngb-toast>
+
+  </div>
+</div>
