@@ -1,5 +1,6 @@
 @import "fonts";
 @import "colors";
+@import "~bootstrap/scss/mixins";
 
 .typo-main {
   @extend .font-family-be-vietnam;
@@ -7,76 +8,116 @@
   font-weight: 400;
   line-height: 1.25em;
   letter-spacing: 0.25px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 12.65px;
+  }
 }
 
 .typo-dot-menu-title {
   @extend .font-family-apoc-revelations;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 1.5em;
-  letter-spacing: 1.5px;
+  font-size: 51px;
+  font-weight: 400;
+  line-height: 0.94em;
+  letter-spacing: 0;
 }
 
 .typo-dot-menu-item {
-  @extend .font-family-apoc-revelations;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 1.25em;
-  letter-spacing: 1.5px;
+  @extend .font-family-be-vietnam;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 2em;
+  letter-spacing: 0.1px;
 }
 
 .typo-nav-menu-title {
   @extend .font-family-be-vietnam;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5em;
   letter-spacing: 1.25px;
 }
 
 .typo-nav-menu-item {
-  @extend .font-family-apoc-revelations;
+  @extend .font-family-be-vietnam;
   font-size: 14px;
   font-weight: 400;
   line-height: 0.87em;
   letter-spacing: 0.1px;
+
+  &:hover {
+    font-weight: 600;
+  }
 }
 
 .typo-product-title {
   @extend .font-family-be-vietnam;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.5em;
   letter-spacing: 1.25px;
 }
 
 .typo-product-subtitle {
   @extend .font-family-be-vietnam;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 1.5em;
   letter-spacing: 0.1px;
 }
 
-.typo-footer {
+.typo-product-link { // Mobile only
   @extend .font-family-be-vietnam;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 1.5em;
-  letter-spacing: 1.5px;
-}
-
-.typo-footer-link {
-  @extend .font-family-be-vietnam;
-  font-size: 10px;
+  font-size: 12.65px;
   font-weight: 700;
   line-height: 1.5em;
   letter-spacing: 1.5px;
 }
 
-.typo-newsletter-form {
+.typo-footer-text { // Used in Copyright
   @extend .font-family-be-vietnam;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 400;
   line-height: 1.5em;
   letter-spacing: 1.5px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 12.65px;
+  }
+}
+
+.typo-footer-link { // Contact links, legal links
+  @extend .font-family-be-vietnam;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 1.5px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 12.65px;
+  }
+}
+
+.typo-cart-link {
+  @extend .font-family-be-vietnam;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 1.5px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 12.65px;
+  }
+}
+
+.typo-newsletter-form {
+  @extend .font-family-be-vietnam;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 2em;
+  letter-spacing: 1.5px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 12.65px;
+  }
 }
