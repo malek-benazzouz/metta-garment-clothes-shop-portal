@@ -18,7 +18,6 @@
 
 ## Further to checkpoint with Ludo
 
-- Either add Respira font, or replace all leaves images with new ones (containing the right font)
 - Cart in wrapping noctural green rectangle, with an external link on "cart" text
 - Update title attributes or remove them if needed
 - Update fonts: all in beVietnam except dot-menu on Mobile
