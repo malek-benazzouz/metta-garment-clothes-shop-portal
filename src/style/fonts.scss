@@ -2,12 +2,26 @@
  * Exposing custom fonts in CSS classes
  */
 
+.font-family-respira {
+  font-family: 'Respira', sans-serif;
+}
+
 .font-family-apoc-revelations {
-  font-family: 'Apoc Revelations', serif;
+  font-family: 'Apoc Revelations', sans-serif;
 }
 
 .font-family-be-vietnam {
   font-family: 'BeVietnam', sans-serif;
+}
+
+/*
+ * Font face: Respira
+ */
+
+@font-face {
+  font-family: "Respira";
+  src: url("../../src/assets/fonts/Respira/Respira-Black.ttf") format("truetype"),
+  url("../../src/assets/fonts/Respira/Respira-Black.otf") format("opentype");
 }
 
 /*
