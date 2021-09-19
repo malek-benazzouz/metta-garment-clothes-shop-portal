@@ -27,14 +27,14 @@
      inkscape:cx="32.29211"
      inkscape:cy="-45.629607"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="text8537-8-1-9-8-2-7-6-8-0-0-0-7-3-1-7-6-0"
      inkscape:document-rotation="0"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="958"
+     inkscape:window-width="989"
      inkscape:window-height="1018"
      inkscape:window-x="946"
      inkscape:window-y="0"
@@ -61,17 +61,23 @@
        id="path66-0-3-6-0-43-2-5-7-7"
        d="m 122.74754,178.53497 c 0,0 -1.52566,-2.94786 -4.17414,-3.17172 -2.6488,-0.22384 -5.72474,0.26461 -7.03175,1.41552 -1.30702,1.15091 -2.57175,3.37421 -2.57175,3.37421 0,0 0.73704,1.50005 3.50718,1.80956 2.77043,0.30954 5.60541,-0.0214 7.07086,-0.77562 1.46542,-0.75412 3.1996,-2.65195 3.1996,-2.65195 z"
        style="fill:#112f25;fill-opacity:1;stroke:none;stroke-width:0.28961px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.06202px;line-height:0.758097px;font-family:Respira;-inkscape-font-specification:Respira;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#fbf7ee;fill-opacity:1;stroke:none;stroke-width:0.0555622"
-       x="112.83261"
-       y="179.52968"
+    <g
+       aria-label="001"
+       transform="rotate(0.20276713)"
        id="text8537-8-1-9-8-2-7-6-8-0-0-0-7-3-1-7-6-0"
-       transform="rotate(0.20276713)"><tspan
-         sodipodi:role="line"
-         id="tspan8535-8-6-7-8-5-3-2-3-0-8-3-6-4-2-0-0-6"
-         x="112.83261"
-         y="179.52968"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.06202px;font-family:Respira;-inkscape-font-specification:Respira;fill:#fbf7ee;fill-opacity:1;stroke-width:0.0555622">001</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.06202px;line-height:0.758097px;font-family:Respira;-inkscape-font-specification:Respira;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#fbf7ee;fill-opacity:1;stroke:none;stroke-width:0.0555622">
+      <path
+         d="m 114.62667,176.91306 q 0.26403,0 0.46713,0.0745 0.2031,0.0745 0.3385,0.21326 0.13879,0.13878 0.20649,0.33511 0.0711,0.19633 0.0711,0.44344 0,0.19972 -0.0542,0.36558 -0.0542,0.16248 -0.14555,0.2945 -0.0914,0.12863 -0.20987,0.23018 -0.11848,0.0982 -0.24711,0.17264 0.0542,-0.10832 0.0779,-0.26742 0.0237,-0.16248 0.0237,-0.33512 0,-0.29111 -0.0745,-0.49421 -0.0711,-0.2031 -0.2031,-0.32835 -0.13201,-0.12863 -0.31819,-0.18617 -0.18618,-0.0575 -0.41636,-0.0575 -0.18956,0 -0.31142,0.0474 -0.12186,0.0474 -0.18617,0.0812 0.0745,-0.12186 0.16586,-0.23018 0.0914,-0.10832 0.20987,-0.18617 0.11848,-0.0812 0.26742,-0.12525 0.14894,-0.0474 0.3385,-0.0474 z m -0.55514,2.66739 q -0.25049,0 -0.4536,-0.0677 -0.2031,-0.0711 -0.34865,-0.20648 -0.14217,-0.1354 -0.22003,-0.32835 -0.0778,-0.19633 -0.0778,-0.44682 0,-0.18279 0.0575,-0.33173 0.0575,-0.15233 0.14894,-0.27757 0.0948,-0.12864 0.21326,-0.23019 0.12186,-0.10493 0.25049,-0.18617 -0.0542,0.10832 -0.0779,0.24372 -0.0237,0.13202 -0.0237,0.30465 0,0.29111 0.0711,0.4976 0.0745,0.2031 0.20988,0.33173 0.1354,0.12863 0.33173,0.18618 0.19633,0.0575 0.44682,0.0575 0.16925,0 0.27419,-0.0203 0.10493,-0.0237 0.17602,-0.0609 -0.0609,0.10832 -0.14556,0.20649 -0.0812,0.0948 -0.19971,0.16925 -0.1151,0.0745 -0.27081,0.11509 -0.15571,0.044 -0.36219,0.044 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.06202px;font-family:Respira;-inkscape-font-specification:Respira;fill:#fbf7ee;fill-opacity:1;stroke-width:0.0555622"
+         id="path833" />
+      <path
+         d="m 117.65287,176.91306 q 0.26403,0 0.46713,0.0745 0.2031,0.0745 0.3385,0.21326 0.13879,0.13878 0.20649,0.33511 0.0711,0.19633 0.0711,0.44344 0,0.19972 -0.0542,0.36558 -0.0542,0.16248 -0.14556,0.2945 -0.0914,0.12863 -0.20987,0.23018 -0.11848,0.0982 -0.24711,0.17264 0.0542,-0.10832 0.0779,-0.26742 0.0237,-0.16248 0.0237,-0.33512 0,-0.29111 -0.0745,-0.49421 -0.0711,-0.2031 -0.2031,-0.32835 -0.13201,-0.12863 -0.31819,-0.18617 -0.18618,-0.0575 -0.41636,-0.0575 -0.18956,0 -0.31142,0.0474 -0.12186,0.0474 -0.18617,0.0812 0.0745,-0.12186 0.16586,-0.23018 0.0914,-0.10832 0.20987,-0.18617 0.11848,-0.0812 0.26742,-0.12525 0.14894,-0.0474 0.3385,-0.0474 z m -0.55514,2.66739 q -0.25049,0 -0.45359,-0.0677 -0.20311,-0.0711 -0.34866,-0.20648 -0.14217,-0.1354 -0.22003,-0.32835 -0.0778,-0.19633 -0.0778,-0.44682 0,-0.18279 0.0575,-0.33173 0.0576,-0.15233 0.14894,-0.27757 0.0948,-0.12864 0.21326,-0.23019 0.12186,-0.10493 0.25049,-0.18617 -0.0542,0.10832 -0.0778,0.24372 -0.0237,0.13202 -0.0237,0.30465 0,0.29111 0.0711,0.4976 0.0745,0.2031 0.20987,0.33173 0.1354,0.12863 0.33173,0.18618 0.19633,0.0575 0.44682,0.0575 0.16925,0 0.27419,-0.0203 0.10493,-0.0237 0.17602,-0.0609 -0.0609,0.10832 -0.14556,0.20649 -0.0812,0.0948 -0.19971,0.16925 -0.11509,0.0745 -0.27081,0.11509 -0.15571,0.044 -0.36219,0.044 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.06202px;font-family:Respira;-inkscape-font-specification:Respira;fill:#fbf7ee;fill-opacity:1;stroke-width:0.0555622"
+         id="path835" />
+      <path
+         d="m 119.01364,179.52968 q 0.044,-0.0135 0.0711,-0.0305 0.0305,-0.0169 0.0474,-0.0643 0.0203,-0.0474 0.0305,-0.1354 0.0102,-0.088 0.0135,-0.24711 0.003,-0.19971 0.007,-0.38589 0.003,-0.18956 0.007,-0.37574 0.003,-0.18617 0.003,-0.37573 0,-0.19295 0,-0.39605 -0.007,-0.15571 -0.0237,-0.24711 -0.0169,-0.0948 -0.0711,-0.14555 -0.0508,-0.0508 -0.15233,-0.0677 -0.0982,-0.0169 -0.26403,-0.0237 0.42651,0.003 0.7007,-0.0237 0.27757,-0.0271 0.41974,-0.0508 -0.007,0.25726 -0.0102,0.52129 -0.003,0.26065 -0.003,0.51453 0,0.25387 0,0.49759 0.003,0.24034 0.0102,0.45698 0.003,0.18956 0.0169,0.30127 0.0135,0.10832 0.0339,0.16586 0.0203,0.0575 0.0474,0.0812 0.0305,0.0203 0.0677,0.0305 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.06202px;font-family:Respira;-inkscape-font-specification:Respira;fill:#fbf7ee;fill-opacity:1;stroke-width:0.0555622"
+         id="path837" />
+    </g>
   </g>
 </svg>
