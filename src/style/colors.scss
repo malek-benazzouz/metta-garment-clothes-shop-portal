@@ -4,6 +4,8 @@
 $black: #0a0a00;
 $noctural-green: #112f25;
 $noctural-green-light: #2a755c;
+$green: #0f6d55;
+$red: #5f0100;
 $sunny-gold-dark: #bdad60;
 $sunny-gold: #d4c36c;
 $sunny-gold-light: #dcce87;
@@ -16,3 +18,5 @@ $text-primary-color: $noctural-green;
 $text-secondary-color: $noctural-green-light;
 $background-plain-color: $white;
 $background-gradient: linear-gradient(90deg, $cream 0%, $sunny-gold-light 100%);
+$success-color: $green;
+$error-color: $red;

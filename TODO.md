@@ -19,15 +19,20 @@
 ## Further to checkpoint with Ludo
 
 - Cart in wrapping noctural green rectangle, with an external link on "cart" text
-- Update title attributes or remove them if needed
-- Update fonts: all in beVietnam except dot-menu on Mobile
-- Keep dot menu only on mobile - no bold
-- Update font sizes and typographies -> minimum 14px (in web design system, in "Apx, Bpx" -> A = desktop, B = mobile)
 - Footer: align footer links vertically to the door image (see mockup)
-- Newsletter form: connect underline with submit button if possible
-- Update red and green colors for form validation
 - Update positioning of text under sun product image
 - Update positioning of sun product and moon product images (horizontally centered with sun and moon)
-- Increase left margin on Metta logo and right margin on navbar menu
+- Increase left margin on Metta logo and right margin on navbar menu + right margin of footer text
 - Put the right margin between the two navbar menu items
-- Download all the new files (mockups, images...) updated by Ludo, including web design system
+
+## Questions to Ludo 
+
+- Should we update title attributes or remove them? Metta logo + dot
+- Should we remove bold style from dot menu (mobile only) after the click?
+- Do we really want to use font-weight 500 on nav menu items on hover? 600 seems more adapted to me -> compare both options
+- Newsletter form: connect underline with submit button if possible -> I do not recommend, since it creates a color mismatch
+
+## Resources needed from Ludo
+
+- Product images, names, price, description
+- Real links to all pages + link to cart

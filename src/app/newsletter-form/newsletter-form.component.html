@@ -15,15 +15,15 @@
 
 <!-- Feedback messages -->
 <div class="feedbacks">
-  <div class="feedback" *ngFor="let feedback of feedbackMessages">
+  <div class="feedback text-center" *ngFor="let feedback of feedbackMessages">
 
     <!-- Success toast -->
-    <ngb-toast class="bg-success text-light" [delay]="7000" *ngIf="feedback.isSuccess">
+    <ngb-toast class="success-toast text-light" [delay]="7000" *ngIf="feedback.isSuccess">
       {{ feedback.message }}
     </ngb-toast>
 
     <!-- Error toast -->
-    <ngb-toast class="bg-danger text-light" [delay]="10000" *ngIf="!feedback.isSuccess">
+    <ngb-toast class="error-toast text-light" [delay]="10000" *ngIf="!feedback.isSuccess">
       {{ feedback.message }}
     </ngb-toast>
 
