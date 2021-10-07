@@ -20,7 +20,6 @@
 
 - Cart in wrapping noctural green rectangle, with an external link on "cart" text
 - Footer: align footer links vertically to the door image (see mockup)
-- Update positioning of text under sun product image
 - Update positioning of sun product and moon product images (horizontally centered with sun and moon)
 - Increase left margin on Metta logo and right margin on navbar menu + right margin of footer text
 - Put the right margin between the two navbar menu items

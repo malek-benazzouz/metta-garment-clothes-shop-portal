@@ -11,13 +11,11 @@
 
   &.sun-product {
     transform: rotate(-90deg);
-    margin-top: 85px;
-    width: 100%;
-
-    .product-subtitle {
-      margin-left: 60px;
-      margin-right: -50px; // Let text go slightly over the image
-    }
+    width: 150%;
+    left: -75%;
+    margin-left: 50%;
+    margin-top: 115px;
+    text-align: right;
   }
 
   &.moon-product {
