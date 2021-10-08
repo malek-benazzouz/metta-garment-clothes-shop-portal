@@ -2,7 +2,10 @@
 
   <!-- Sun -->
   <div id="sun">
-    <img src="assets/sun-light.svg" alt="Image: the sun">
+    <!-- Sun image -->
+    <div id="sun-image">
+      <img src="assets/sun-light.svg" alt="Image: the sun">
+    </div>
     <!-- Sun product -->
     <div id="sun-product" *ngIf="sunProduct">
       <app-product-overview [product]="sunProduct" [isSunProduct]="true"></app-product-overview>
@@ -16,7 +19,10 @@
 
   <!-- Moon -->
   <div id="moon">
-    <img src="assets/moon-light.svg" alt="Image: the moon">
+    <!-- Moon image -->
+    <div id="moon-image">
+      <img src="assets/moon-light.svg" alt="Image: the moon">
+    </div>
     <!-- Moon product -->
     <div id="moon-product" *ngIf="moonProduct">
       <app-product-overview [product]="moonProduct" [isSunProduct]="false"></app-product-overview>

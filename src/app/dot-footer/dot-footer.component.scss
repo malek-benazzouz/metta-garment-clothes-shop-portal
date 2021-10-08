@@ -2,20 +2,22 @@
 
 .footer-left-part {
   position: absolute;
-  left: 25px;
+  left: 80px;
 }
 
 .footer-right-part {
   position: absolute;
-  right: 25px;
+  right: 80px;
 }
 
 #footer-content {
-  width: 35%;
+  height: 748px; // Same height as Door logo
+  width: 32%;
 }
 
 #footer-look-up {
   margin-top: -35px;
+  margin-bottom: -25px;
   margin-right: 66px;
 }
 

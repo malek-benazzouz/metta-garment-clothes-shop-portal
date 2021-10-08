@@ -1,8 +1,8 @@
-<ul class="navbar-nav">
+<ul class="navbar-nav d-flex align-items-center">
 
   <!-- Nav group: Philosophy -->
-  <li class="nav-item" ngbDropdown id="philosophy-dropdown" #philosophyDropdown="ngbDropdown">
-    <a class="nav-link title no-dropdown-arrow" ngbDropdownAnchor id="philosophy-toggle" role="button"
+  <li class="nav-item mr-4" ngbDropdown id="philosophy-dropdown" #philosophyDropdown="ngbDropdown">
+    <a class="nav-link title no-dropdown-arrow py-0" ngbDropdownAnchor id="philosophy-toggle" role="button"
        (mouseenter)="onMenuEnter(philosophyDropdown, $event, 'philosophy-dropdown')"
        (mouseleave)="onMenuLeave(philosophyDropdown, $event, 'philosophy-dropdown')">
       PHILOSOPHY
@@ -17,7 +17,7 @@
 
   <!-- Nav group: Garment -->
   <li class="nav-item" ngbDropdown id="garment-dropdown" #garmentDropdown="ngbDropdown">
-    <a class="nav-link title no-dropdown-arrow" ngbDropdownAnchor id="garment-toggle" role="button"
+    <a class="nav-link title no-dropdown-arrow py-0" ngbDropdownAnchor id="garment-toggle" role="button"
        (mouseenter)="onMenuEnter(garmentDropdown, $event, 'garment-dropdown')"
        (mouseleave)="onMenuLeave(garmentDropdown, $event, 'garment-dropdown')">
       GARMENT

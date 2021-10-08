@@ -1,11 +1,26 @@
-<app-header (toggleDot)="onToggleDot($event)"></app-header>
+<!-- Fixed banners - Desktop only -->
+<div class="fixed-banner fixed-top"></div>
+<div class="fixed-banner fixed-bottom"></div>
 
-<div *ngIf="isDotExpanded" id="dot-content" class="p-5">
-  <app-dot-content></app-dot-content>
-</div>
+<!-- Fixed cart link - Desktop only -->
+<a id="cart-link" href="#">CART</a>
 
-<div *ngIf="!isDotExpanded" id="main-content" class="d-flex justify-content-center align-items-center p-4">
-  <app-tree></app-tree>
+<!-- App content -->
+<div id="app-wrapper">
+
+  <!-- Header -->
+  <app-header (toggleDot)="onToggleDot($event)"></app-header>
+
+  <!-- Dot content -->
+  <div *ngIf="isDotExpanded" id="dot-content" class="app-body d-flex justify-content-center align-items-center p-5">
+    <app-dot-content></app-dot-content>
+  </div>
+
+  <!-- Main content -->
+  <div *ngIf="!isDotExpanded" id="main-content" class="app-body d-flex justify-content-center align-items-center p-4">
+    <app-tree></app-tree>
+  </div>
+
 </div>
 
 <!-- Debug area -->

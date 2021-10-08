@@ -1,7 +1,36 @@
 @import "src/style/colors";
+@import "src/style/typography";
+
+.fixed-banner {
+  width: 100%;
+  height: 20px;
+  background: $noctural-green;
+}
+
+#app-wrapper {
+  min-height: 100vh;
+  border: 20px solid $noctural-green;
+}
+
+.app-body {
+  min-height: calc(100vh - 65px - 40px); // viewport height minus header height minus cart banners
+}
 
 #main-content {
-  min-height: calc(100% - 65px); // 100% minus header height
   background: url("../../assets/gradient-background-light.svg");
   background-size: cover;
+}
+
+#cart-link {
+  @extend .typo-cart-link;
+  position: fixed;
+  top: 30px;
+  right: -12px;
+  transform: rotate(90deg);
+  color: $white;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $sunny-gold-light;
+  }
 }
