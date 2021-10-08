@@ -16,18 +16,12 @@
 
 - Should we add something in a LICENCE file, or in credits (footer?) related to the fonts used? Same for images.
 
-## Further to checkpoint with Ludo
-
-- Cart in wrapping noctural green rectangle, with an external link on "cart" text
-- Footer: align footer links vertically to the door image (see mockup)
-- Update positioning of sun product and moon product images (horizontally centered with sun and moon)
-- Increase left margin on Metta logo and right margin on navbar menu + right margin of footer text
-- Put the right margin between the two navbar menu items
-
-## Questions to Ludo 
+## Questions/remarks to Ludo 
 
 - Should we update title attributes or remove them? Metta logo + dot
 - Should we remove bold style from dot menu (mobile only) after the click?
+- Margins: I slightly decreased the right and left margins (on Metta logo, navbar menu and footer text), to gain space on smaller screens (most screens are less than 1920px)
+- Navbar menu items alignment: choose between aligned with title, or indented (navbar-menu.component.scss -> .menu-item -> padding: <8px;> OR <8px 16px;>) (I prefer 1st option)
 - Do we really want to use font-weight 500 on nav menu items on hover? 600 seems more adapted to me -> compare both options
 - Newsletter form: connect underline with submit button if possible -> I do not recommend, since it creates a color mismatch
 
