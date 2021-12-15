@@ -17,6 +17,6 @@
 - 07oct21: 0.1d
 - 08oct21: 0.6d
 - 12nov21: 0.4d
-- 15dec21: 0.2d
+- 15dec21: 0.3d
 
-> Total: 7.0d
+> Total: 7.3d

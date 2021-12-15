@@ -2,7 +2,16 @@
 
 // Bootstrap variable overrides. They must be done before Bootstrap variables file import.
 
-$grid-breakpoints: (xxs: 0, xs: 480px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1440px);
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+  xxxl: 1900px
+);
 
 @import "~bootstrap/scss/variables";
 

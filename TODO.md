@@ -5,10 +5,9 @@
 Priority 1
 
 - Handle responsiveness everywhere
-- Update favicon logo and page title (tab title)
 - Firestore DB: set more robust security rules
-- Design a loading theme (skeleton, icon, wheel?) and use it whenever loading is required (e.g. while posting newsletter form)
-- Improve image management:
+- Loading and images:
+  - Design a loading theme (skeleton, icon, wheel?) and use it whenever loading is required (e.g. while posting newsletter form)
   - Pre-load all images. Add a loading animation while pre-loading the images (same as mcm)?
   - Resize images (especially products) to a smaller size if possible (for better performance)
   - Remove unused images? (or make sure they are not loaded if not used)
@@ -16,6 +15,7 @@ Priority 1
 Priority 2
 
 - Fix css warnings on ng serve
+- Favicon: make it work on all browsers, and in dark mode
 
 ## Legal
 
