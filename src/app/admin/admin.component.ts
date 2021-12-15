@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { NewsletterSubscription, NewsletterSubscriptionService } from '../services/newsletter.service';
 import { AuthService } from '../services/auth.service';
-
+import { CsvRow, ExportService } from '../services/export.service';
 
 @Component({
   selector: 'app-admin',
@@ -17,6 +17,8 @@ export class AdminComponent implements OnInit {
 
   newsletterSubscriptionsSummary = '';
 
+  newsletterSubscriptionsAsCsv: CsvRow[];
+
   // Login form
   email: string;
   password: string;
@@ -25,7 +27,8 @@ export class AdminComponent implements OnInit {
 
   constructor(
     private authService: AuthService,
-    private newsletterSubscriptionService: NewsletterSubscriptionService
+    private newsletterSubscriptionService: NewsletterSubscriptionService,
+    private exportService: ExportService
   ) {}
 
   ngOnInit(): void {
@@ -41,6 +44,10 @@ export class AdminComponent implements OnInit {
         this.newsletterSubscriptions$.subscribe((subscriptions: NewsletterSubscription[]) => {
           if (subscriptions) {
             this.newsletterSubscriptionsSummary = `${subscriptions.length} subscription${subscriptions.length > 1 ? 's' : ''}`;
+            this.newsletterSubscriptionsAsCsv = subscriptions.map(s => ({
+              Email: s.email,
+              'Subscription date': s.subscriptionDate.formatted
+            }));
           }
         });
       }
@@ -66,6 +73,12 @@ export class AdminComponent implements OnInit {
       success => { console.log('Logout OK : ', success); },
       error => { console.error('Logout Error : ', error); }
     );
+  }
+
+  exportAsCsv(): void {
+    const filename = 'Metta clothing newsletter subscriptions - '
+      + new Date().toISOString().replace('T', ' ').replace('Z', '').replace(':', 'h').slice(0, -7);
+    this.exportService.exportAsCsv(this.newsletterSubscriptionsAsCsv, filename);
   }
 
 }

@@ -16,8 +16,9 @@
       <h1 class="typo-admin-title py-4">Newsletter subscriptions</h1>
 
       <!-- Subtitle: summary of the subscriptions -->
-      <h2 *ngIf="newsletterSubscriptionsSummary" class="typo-admin-subtitle py-2">
-        {{ newsletterSubscriptionsSummary }}
+      <h2 *ngIf="newsletterSubscriptionsSummary" class="typo-admin-subtitle d-flex justify-content-between py-2">
+        <span>{{ newsletterSubscriptionsSummary }}</span>
+        <button class="btn btn-outline-secondary" (click)="exportAsCsv()">Export as CSV</button>
       </h2>
 
       <!-- Login form - if user is not authenticated -->
