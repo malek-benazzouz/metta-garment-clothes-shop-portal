@@ -27,6 +27,9 @@ import { ContactLinksComponent } from './contact-links/contact-links.component';
 import { CopyrightComponent } from './copyright/copyright.component';
 import { LegalLinksComponent } from './legal-links/legal-links.component';
 import { ProductOverviewComponent } from './product-overview/product-overview.component';
+import { AdminComponent } from './admin/admin.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -45,7 +48,8 @@ import { ProductOverviewComponent } from './product-overview/product-overview.co
     ContactLinksComponent,
     CopyrightComponent,
     LegalLinksComponent,
-    ProductOverviewComponent
+    ProductOverviewComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +63,9 @@ import { ProductOverviewComponent } from './product-overview/product-overview.co
     NgbModule,
     MatMenuModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

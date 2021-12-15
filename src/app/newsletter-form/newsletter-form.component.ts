@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-import { NewsletterSubscriptionService } from './newsletter.service';
+import { NewsletterSubscriptionService } from '../services/newsletter.service';
 
 @Component({
   selector: 'app-newsletter-form',
@@ -22,7 +22,7 @@ export class NewsletterFormComponent implements OnInit {
     if (this.emailControl.value && this.emailControl.valid) {
       this.newsletterSubscriptionService.addNewsletterSubscription({
         email: this.emailControl.value,
-        subscriptionDate: { timestamp: Date.now(), formatted: new Date().toString() }
+        subscriptionDate: { timestamp: Date.now(), formatted: new Date().toUTCString() }
       }).then(
         () => { // Success
           this.feedbackMessages.push({

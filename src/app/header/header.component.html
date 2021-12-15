@@ -8,12 +8,12 @@
   </span>
 
   <!-- Dot menu -->
-  <span class="header-center-part">
+  <span *ngIf="hasDot" class="header-center-part">
     <app-dot (toggleDot)="onToggleDot($event)"></app-dot>
   </span>
 
   <!-- Navbar menu -->
-  <span class="header-right-part">
+  <span *ngIf="hasNavbarMenu" class="header-right-part">
     <app-navbar-menu></app-navbar-menu>
   </span>
 
