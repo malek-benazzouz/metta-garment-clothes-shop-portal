@@ -1,0 +1,9 @@
+@import "src/style/colors";
+
+:host::ng-deep #header {
+  background-color: $sunny-gold-light !important;
+}
+
+.subscription {
+  white-space: nowrap;
+}

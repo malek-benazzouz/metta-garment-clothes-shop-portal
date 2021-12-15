@@ -1,0 +1,29 @@
+import { Injectable } from '@angular/core';
+import { AngularFirestore, DocumentReference } from '@angular/fire/firestore';
+import { AngularFireAuth } from '@angular/fire/auth';
+import { Observable } from 'rxjs';
+
+export interface NewsletterSubscription {
+  // Form input
+  email: string;
+  // Metadata
+  subscriptionDate: { timestamp: number, formatted: string };
+}
+
+@Injectable({ providedIn: 'root' })
+export class NewsletterSubscriptionService {
+
+  constructor(private store: AngularFirestore, private auth: AngularFireAuth) {}
+
+  public addNewsletterSubscription(subscription: NewsletterSubscription): Promise<DocumentReference<NewsletterSubscription>> {
+    return this.store.collection<NewsletterSubscription>('newsletter-subscriptions').add(subscription);
+  }
+
+  public getAllNewsletterSubscriptions(): Observable<NewsletterSubscription[]> {
+    return this.store.collection<NewsletterSubscription>(
+      'newsletter-subscriptions',
+      ref => ref.orderBy('subscriptionDate.timestamp')
+    ).valueChanges();
+  }
+
+}

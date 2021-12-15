@@ -11,6 +11,7 @@
 - Create an admin page, accessible via authentication, to check the firebase DB content
 - Firestore DB: set more robust security rules
 - Update favicon logo and page title (tab title)
+- Find a way to publish the website on a staging env, for testing (firebase free hosting? siteground sub-domain open to admins only?)
 
 ## Legal
 
@@ -18,12 +19,13 @@
 
 ## Questions/remarks to Ludo 
 
-- Should we update title attributes or remove them? Metta logo + dot
+- Should we update title attributes or remove them? Metta logo + dot + cart link
 - Should we remove bold style from dot menu (mobile only) after the click?
 - Margins: I slightly decreased the right and left margins (on Metta logo, navbar menu and footer text), to gain space on smaller screens (most screens are less than 1920px)
 - Navbar menu items alignment: choose between aligned with title, or indented (navbar-menu.component.scss -> .menu-item -> padding: <8px;> OR <8px 16px;>) (I prefer 1st option)
 - Do we really want to use font-weight 500 on nav menu items on hover? 600 seems more adapted to me -> compare both options
 - Newsletter form: connect underline with submit button if possible -> I do not recommend, since it creates a color mismatch
+- Is this a problem? https://metta-online.co/
 
 ## Resources needed from Ludo
 
