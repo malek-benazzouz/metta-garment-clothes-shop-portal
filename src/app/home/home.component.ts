@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from '../../data/product.model';
 
 @Component({
   selector: 'app-home',
@@ -15,6 +16,10 @@ export class HomeComponent implements OnInit {
 
   onToggleDot(isExpanded: boolean): void {
     this.isDotExpanded = isExpanded;
+  }
+
+  onOpenProduct(productInfo: { product: Product, isSunProduct: boolean }): void {
+    console.warn('Product opened: ', productInfo);
   }
 
 }

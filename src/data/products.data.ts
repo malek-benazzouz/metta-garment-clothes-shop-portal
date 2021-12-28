@@ -7,7 +7,7 @@ export function findProductById(id: string): Product | undefined {
 export const PRODUCTS_DATA: Product[] = [
   {
     id: '001',
-    name: '001 KIRGHIZISTAN T',
+    name: '001 KIRGHIZISTAN T1 VERY VERY LONG TITLE',
     description: 'Single Craft',
     price: 65,
     imageUrl: 'assets/products/001-kirghizistan.svg'
@@ -21,7 +21,7 @@ export const PRODUCTS_DATA: Product[] = [
   },
   {
     id: '002',
-    name: '002 TADJIKISTAN T',
+    name: '002 TADJIKISTAN T1 VERY VERY VERY LONG TITLE',
     description: 'Single Craft',
     price: 65,
     imageUrl: 'assets/products/002-tadjikistan.svg'

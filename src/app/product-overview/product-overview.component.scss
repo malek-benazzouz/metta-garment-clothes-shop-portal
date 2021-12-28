@@ -1,27 +1,39 @@
+@import "src/style/variables";
 @import "src/style/colors";
 @import "src/style/typography";
+@import "~bootstrap/scss/mixins";
 
-.product-overview {
-  position: absolute;
+.product-image img {
+  background-color: $sunny-gold;
   border: 5px solid $sunny-gold;
 }
 
-.product-info {
-  position: absolute;
+.sun-product .product-info {
+  transform: rotate(-90deg);
+  position: relative;
+  width: 250px;
+  margin-top: 50%;
+  text-align: right;
+  top: -10px;
+}
 
-  &.sun-product {
-    transform: rotate(-90deg);
-    width: 150%;
-    left: -75%;
-    margin-left: 50%;
-    margin-top: 115px;
-    text-align: right;
+.moon-product {
+  width: 160px;
+}
+
+.moon-product .product-info {
+  position: relative;
+  width: 240px;
+  top: -140px;
+  left: 170px;
+
+  @include media-breakpoint-down('2xl') {
+    top: 8px;
+    left: 0;
   }
 
-  &.moon-product {
-    top: 42%;
-    left: 185px;
-    white-space: nowrap;
+  @include media-breakpoint-down('lg') {
+    width: 160px;
   }
 }
 

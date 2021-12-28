@@ -1,7 +1,7 @@
 <div id="tree-wrapper" class="d-flex justify-content-center">
 
-  <!-- Sun -->
-  <div id="sun">
+  <!-- Sun block -->
+  <div id="sun-block" class="d-none d-lg-flex flex-column align-items-center">
     <!-- Sun image -->
     <div id="sun-image">
       <img src="assets/sun-light.svg" alt="Image: the sun">
@@ -14,11 +14,11 @@
 
   <!-- Products tree -->
   <div id="tree">
-    <img src="assets/tree/tree-plus-chains-plus-texts-dark.svg" alt="Our tree of products">
+    <img src="assets/tree/tree-plus-chains-minus-14-leaves-dark.svg" alt="Our tree of products">
   </div>
 
-  <!-- Moon -->
-  <div id="moon">
+  <!-- Moon block -->
+  <div id="moon-block" class="d-none d-lg-flex flex-column align-items-center">
     <!-- Moon image -->
     <div id="moon-image">
       <img src="assets/moon-light.svg" alt="Image: the moon">
@@ -27,6 +27,41 @@
     <div id="moon-product" *ngIf="moonProduct">
       <app-product-overview [product]="moonProduct" [isSunProduct]="false"></app-product-overview>
     </div>
+  </div>
+
+  <!-- Text: spiritualiser le matériel, matérialiser le spirituel -->
+  <div id="text-slogan" class="position-absolute">
+    <img src="assets/texts/slogan-curved-dark.svg" alt="Spiritualiser le matériel, matérialiser le spirituel">
+  </div>
+
+  <!-- Text: the light -->
+  <div id="text-the-light" class="position-absolute">
+    <img src="assets/texts/the-light-light.svg" alt="The light">
+  </div>
+
+  <!-- Text: the center -->
+  <div id="text-the-center" class="position-absolute">
+    <img src="assets/texts/the-center-light.svg" alt="The center">
+  </div>
+
+  <!-- Text: look up -->
+  <div id="text-look-up" class="position-absolute">
+    <img src="assets/texts/look-up-small-light.svg" alt="Look up">
+  </div>
+
+  <!-- Text: Benevolance light (desktop) -->
+  <div id="text-benevolance-light" class="position-absolute d-none d-lg-block">
+    <img src="assets/texts/benevolance-light.svg" alt="Benevolance">
+  </div>
+
+  <!-- Text: Benevolance dark (mobile) -->
+  <div id="text-benevolance-dark" class="position-absolute d-lg-none">
+    <img src="assets/texts/benevolance-dark.svg" alt="Benevolance" width="90">
+  </div>
+
+  <!-- Text: Knowledge -->
+  <div id="text-knowledge" class="position-absolute d-none d-lg-block">
+    <img src="assets/texts/knowledge-light.svg" alt="Knowledge">
   </div>
 
   <!-- Leaves -->
