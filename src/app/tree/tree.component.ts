@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Product } from '../../data/product.model';
 import { findProductById } from '../../data/products.data';
 
@@ -9,6 +9,8 @@ import { findProductById } from '../../data/products.data';
 })
 export class TreeComponent implements OnInit {
 
+  @Output() openProduct = new EventEmitter<{ product: Product, isSunProduct: boolean }>();
+
   sunProduct: Product | undefined;
   moonProduct: Product | undefined;
 
@@ -17,13 +19,21 @@ export class TreeComponent implements OnInit {
   ngOnInit(): void {}
 
   showSunProduct(productId: string): void {
-    this.sunProduct = findProductById(productId);
+    const product = findProductById(productId);
+    this.sunProduct = product;
     this.moonProduct = undefined;
+    if (product) {
+      this.openProduct.emit({ product, isSunProduct: true });
+    }
   }
 
   showMoonProduct(productId: string): void {
+    const product = findProductById(productId);
     this.sunProduct = undefined;
-    this.moonProduct = findProductById(productId);
+    this.moonProduct = product;
+    if (product) {
+      this.openProduct.emit({ product, isSunProduct: false });
+    }
   }
 
 }

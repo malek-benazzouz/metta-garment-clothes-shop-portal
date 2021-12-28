@@ -1,4 +1,5 @@
-<div class="product-overview" *ngIf="product">
+<div class="product-overview" *ngIf="product"
+     [ngClass]="isSunProduct ? 'sun-product d-flex flex-column align-items-center' : 'moon-product'">
 
   <!-- Product image -->
   <a class="product-image" [href]="'#product/' + product.id">
@@ -6,7 +7,7 @@
   </a>
 
   <!-- Product name, price, description -->
-  <div class="product-info" [ngClass]="isSunProduct ? 'sun-product' : 'moon-product'">
+  <div class="product-info">
     <div class="product-title">
       <span class="product-name">{{ product.name }}</span>
     </div>

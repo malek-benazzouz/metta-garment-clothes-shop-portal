@@ -1,5 +1,7 @@
+@import "src/style/variables";
 @import "src/style/colors";
 @import "src/style/typography";
+@import "~bootstrap/scss/mixins";
 
 .fixed-banner {
   width: 100%;
@@ -10,15 +12,24 @@
 #app-wrapper {
   min-height: 100vh;
   border: 20px solid $noctural-green;
+
+  @include media-breakpoint-down('md') {
+    border: none;
+  }
 }
 
 .app-body {
   min-height: calc(100vh - 65px - 40px); // viewport height minus header height minus cart banners
+
+  @include media-breakpoint-down('md') {
+    min-height: calc(100vh - 65px); // viewport height minus header height
+  }
 }
 
 #main-content {
   background: url("../../assets/gradient-background-light.svg");
   background-size: cover;
+  overflow-x: hidden;
 }
 
 #cart-link {

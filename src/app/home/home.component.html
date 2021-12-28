@@ -1,9 +1,9 @@
 <!-- Fixed banners - Desktop only -->
-<div class="fixed-banner fixed-top"></div>
-<div class="fixed-banner fixed-bottom"></div>
+<div class="fixed-banner fixed-top d-none d-lg-block"></div>
+<div class="fixed-banner fixed-bottom d-none d-lg-block"></div>
 
 <!-- Fixed cart link - Desktop only -->
-<a id="cart-link" href="#" title="Open my cart">CART</a>
+<a id="cart-link" class="d-none d-lg-block" href="#" title="Open my cart">CART</a>
 
 <!-- App content -->
 <div id="app-wrapper">
@@ -18,7 +18,7 @@
 
   <!-- Main content -->
   <div *ngIf="!isDotExpanded" id="main-content" class="app-body d-flex justify-content-center align-items-center p-4">
-    <app-tree></app-tree>
+    <app-tree (openProduct)="onOpenProduct($event)"></app-tree>
   </div>
 
 </div>

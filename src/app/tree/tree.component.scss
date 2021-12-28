@@ -1,40 +1,199 @@
-// TODO handle screens for which width < 1300px (tree 1100 + sun 110 + moon 90)
+@import "src/style/variables";
+@import "~bootstrap/scss/mixins";
 
-#sun {
-  margin-left: 67px; // Center the tree (part 1)
+:host {
+  //width: 100%;
+}
+
+#tree-wrapper {
+  @include media-breakpoint-only('sm') {
+    transform: scale(0.91);
+  }
+
+  @include media-breakpoint-only('xs') {
+    transform: scale(0.75);
+  }
+
+  @include media-breakpoint-only('2xs') {
+    transform: scale(0.6);
+  }
+}
+
+#tree {
+  margin-left: 30px; // Center tree
+  padding: 0 230px;
+
+  @include media-breakpoint-only('3xl') {
+    padding: 0 160px;
+  }
+
+  @include media-breakpoint-only('2xl') {
+    padding: 0 170px;
+  }
+
+  @include media-breakpoint-only('xl') {
+    padding: 0 50px;
+  }
+
+  @include media-breakpoint-only('lg') {
+    padding: 0 10px;
+  }
+
+  @include media-breakpoint-down('md') {
+    padding: 0;
+  }
+}
+
+#sun-block {
+  width: 170px;
   margin-top: 72px;
-}
 
-#moon {
-  margin-right: 67px; // Center the tree (part 2)
-  margin-left: -67px; // Center the tree (part 3)
-  margin-top: 93px;
-}
-
-#sun-image {
-  position: relative;
-  left: -37px;
-}
-
-#moon-image {
-  position: relative;
-  right: 7px;
+  @include media-breakpoint-only('lg') {
+    position: absolute;
+    left: 30px;
+  }
 }
 
 #sun-product {
-  margin-left: -70px;
-  margin-top: 90px;
+  margin-top: 92px;
+}
+
+#moon-block {
+  width: 170px;
+  margin-top: 93px;
+
+  @include media-breakpoint-only('lg') {
+    position: absolute;
+    right: 30px;
+  }
 }
 
 #moon-product {
-  margin-left: -44px;
-  margin-top: 116px;
+  margin-top: 120px;
 }
 
 .leaf {
   position: absolute;
   cursor: pointer;
 }
+
+#text-slogan {
+  margin-top: 155px;
+
+  @include media-breakpoint-down('lg') {
+    margin-top: 180px;
+
+    img {
+      width: 520px;
+    }
+  }
+}
+
+#text-the-light {
+  margin-top: 105px;
+  margin-left: -640px;
+
+  @include media-breakpoint-only('xl') {
+    margin-left: -443px;
+  }
+
+  @include media-breakpoint-only('lg') {
+    margin-left: -365px;
+  }
+
+  @include media-breakpoint-down('md') {
+    margin-top: 125px;
+    margin-left: -306px;
+  }
+}
+
+#text-the-center {
+  margin-top: 105px;
+  margin-left: 670px;
+
+  @include media-breakpoint-only('xl') {
+    margin-left: 462px;
+  }
+
+  @include media-breakpoint-only('lg') {
+    margin-left: 385px;
+  }
+
+  @include media-breakpoint-down('md') {
+    margin-top: 125px;
+    margin-left: 314px;
+  }
+}
+
+#text-look-up {
+  margin-top: 362px;
+  margin-left: -954px;
+
+  @include media-breakpoint-only('3xl') {
+    margin-left: -814px;
+  }
+
+  @include media-breakpoint-only('2xl') {
+    margin-left: -832px;
+  }
+
+  @include media-breakpoint-only('xl') {
+    margin-left: -592px;
+  }
+
+  @include media-breakpoint-only('lg') {
+    margin-left: -514px;
+  }
+
+  @include media-breakpoint-down('md') {
+    margin-top: 300px;
+    margin-left: 0;
+    left: 10px;
+  }
+
+  @include media-breakpoint-down('sm') {
+    left: -25px;
+  }
+}
+
+#text-benevolance-light { // Desktop
+  margin-top: 494px;
+  margin-left: 985px;
+
+  @include media-breakpoint-only('3xl') {
+    margin-left: 845px;
+  }
+
+  @include media-breakpoint-only('2xl') {
+    margin-top: 747px;
+    margin-left: 864px;
+  }
+
+  @include media-breakpoint-only('xl') {
+    margin-top: 747px;
+    margin-left: 600px;
+  }
+
+  @include media-breakpoint-only('lg') {
+    margin-top: 735px;
+    margin-left: 522px;
+  }
+}
+
+#text-benevolance-dark { // Mobile
+  margin-top: 547px;
+  right: 10px;
+
+  @include media-breakpoint-down('sm') {
+    right: -30px;
+  }
+}
+
+#text-knowledge {
+  margin-top: 573px;
+  margin-left: 479px;
+}
+
 
 /*
  * Leaves images, sizes and positioning (for normal and hover states)
