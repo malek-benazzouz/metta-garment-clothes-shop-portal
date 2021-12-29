@@ -12,9 +12,14 @@
     <app-dot (toggleDot)="onToggleDot($event)"></app-dot>
   </span>
 
-  <!-- Navbar menu -->
-  <span *ngIf="hasNavbarMenu" class="header-right-part">
+  <!-- Navbar menu - Desktop only -->
+  <span *ngIf="hasNavbarMenu" class="header-right-part d-none d-lg-block">
     <app-navbar-menu></app-navbar-menu>
+  </span>
+
+  <!-- Link to cart - Mobile only -->
+  <span *ngIf="hasLinkToCart" class="header-right-part d-lg-none">
+    <a class="cart-link" href="#" title="Open my cart">CART</a>
   </span>
 
 </nav>

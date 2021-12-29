@@ -18,20 +18,20 @@ export class TreeComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  showSunProduct(productId: string): void {
+  showSunProduct(productId: string, isClickEvent?: boolean): void {
     const product = findProductById(productId);
     this.sunProduct = product;
     this.moonProduct = undefined;
-    if (product) {
+    if (product && isClickEvent) {
       this.openProduct.emit({ product, isSunProduct: true });
     }
   }
 
-  showMoonProduct(productId: string): void {
+  showMoonProduct(productId: string, isClickEvent?: boolean): void {
     const product = findProductById(productId);
     this.sunProduct = undefined;
     this.moonProduct = product;
-    if (product) {
+    if (product && isClickEvent) {
       this.openProduct.emit({ product, isSunProduct: false });
     }
   }

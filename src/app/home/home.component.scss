@@ -14,19 +14,33 @@
   border: 20px solid $noctural-green;
 
   @include media-breakpoint-down('md') {
+    min-height: calc(100vh - 65px); // viewport height minus header height
     border: none;
+  }
+}
+
+.app-header {
+  position: fixed;
+  width: calc(100% - 40px); // viewport width minus cart banners
+  background-color: white;
+  z-index: 1;
+
+  @include media-breakpoint-down('md') {
+    width: 100%;
+    top: 0;
   }
 }
 
 .app-body {
   min-height: calc(100vh - 65px - 40px); // viewport height minus header height minus cart banners
+  margin-top: 65px;
 
   @include media-breakpoint-down('md') {
     min-height: calc(100vh - 65px); // viewport height minus header height
   }
 }
 
-#main-content {
+.main-content {
   background: url("../../assets/gradient-background-light.svg");
   background-size: cover;
   overflow-x: hidden;

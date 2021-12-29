@@ -2,20 +2,33 @@
 @import "~bootstrap/scss/mixins";
 
 :host {
-  //width: 100%;
+  @include media-breakpoint-only('sm') {
+    height: 729px;
+  }
+
+  @include media-breakpoint-only('xs') {
+    height: 601px;
+  }
+
+  @include media-breakpoint-only('2xs') {
+    height: 481px;
+  }
 }
 
 #tree-wrapper {
   @include media-breakpoint-only('sm') {
     transform: scale(0.91);
+    margin-top: -36px; // = (801 (original tree height) - 729) / 2
   }
 
   @include media-breakpoint-only('xs') {
     transform: scale(0.75);
+    margin-top: -100px; // = 801 (original tree height) - 601) / 2
   }
 
   @include media-breakpoint-only('2xs') {
     transform: scale(0.6);
+    margin-top: -160px; // = 801 (original tree height) - 481) / 2
   }
 }
 
@@ -196,8 +209,8 @@
 
 
 /*
- * Leaves images, sizes and positioning (for normal and hover states)
- */
+* Leaves images, sizes and positioning (for normal and hover states)
+*/
 
 #leaf-001 {
   margin-top: 475px;

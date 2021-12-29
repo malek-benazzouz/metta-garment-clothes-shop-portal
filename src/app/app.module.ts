@@ -30,7 +30,7 @@ import { ProductOverviewComponent } from './product-overview/product-overview.co
 import { AdminComponent } from './admin/admin.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { ProductOverviewMobileComponent } from './product-overview-mobile/product-overview-mobile.component';
+import { ProductPageComponent } from './product-page/product-page.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +50,7 @@ import { ProductOverviewMobileComponent } from './product-overview-mobile/produc
     CopyrightComponent,
     LegalLinksComponent,
     ProductOverviewComponent,
-    ProductOverviewMobileComponent,
+    ProductPageComponent,
     AdminComponent
   ],
   imports: [
