@@ -1,4 +1,6 @@
 @import "src/style/colors";
+@import "src/style/variables";
+@import "~bootstrap/scss/mixins";
 
 #dot {
   height: 16px;
@@ -11,5 +13,10 @@
   &:hover, &:focus {
     background: rgb(220, 206, 135) !important;
     box-shadow: 0 0 4px 2px rgb(220, 206, 135);
+  }
+
+  @include media-breakpoint-down('md') {
+    height: 12px;
+    width: 12px;
   }
 }

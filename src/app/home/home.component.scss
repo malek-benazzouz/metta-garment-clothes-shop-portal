@@ -14,7 +14,7 @@
   border: 20px solid $noctural-green;
 
   @include media-breakpoint-down('md') {
-    min-height: calc(100vh - 65px); // viewport height minus header height
+    min-height: calc(100vh - 45px); // viewport height minus header height
     border: none;
   }
 }
@@ -36,7 +36,8 @@
   margin-top: 65px;
 
   @include media-breakpoint-down('md') {
-    min-height: calc(100vh - 65px); // viewport height minus header height
+    min-height: calc(100vh - 45px); // viewport height minus header height
+    margin-top: 45px;
   }
 }
 

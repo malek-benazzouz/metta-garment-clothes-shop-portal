@@ -10,7 +10,7 @@ import { debounceTime } from 'rxjs/operators';
 })
 export class HomeComponent implements OnInit {
 
-  isDotExpanded = false; // TODO add animation when expanding/collapsing dot content
+  isDotExpanded = false;
 
   openProduct: Product | undefined;
   isOpenProductSunProduct: boolean;
