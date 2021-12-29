@@ -1,25 +1,41 @@
 @import "src/style/colors";
+@import "src/style/typography";
 
 .product-image {
+  position: fixed;
+  width: 100%;
+  height: calc(100vh - 65px - 20px); // viewport height minus header height minus (links banner - border)
   border: 20px solid $sunny-gold;
-}
-
-.product-image img {
-  width: 100vw;
+  background-size: cover !important;
 }
 
 .sun-image {
   position: absolute;
-  top: 100px;
-  left: 100px;
+  top: 125px; // = header height + border + 40px
+  left: 40px; // = border + 20px
 }
 
 .moon-image {
   position: absolute;
-  top: 100px;
-  right: 100px;
+  top: 125px; // = header height + border + 40px
+  right: 40px; // = border + 20px
 }
 
 .product-links {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: $sunny-gold;
+  padding: 0 20px;
 
+  a {
+    @extend .typo-product-link;
+    color: $white;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      color: $text-primary-color !important;
+    }
+  }
 }

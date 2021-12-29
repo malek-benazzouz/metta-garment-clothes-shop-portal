@@ -18,8 +18,7 @@
 }
 
 .cart-link {
-  // TODO update the typo
-  @extend .typo-nav-menu-title;
+  @extend .typo-cart-link;;
   text-decoration: none;
   color: $text-primary-color !important;
 
