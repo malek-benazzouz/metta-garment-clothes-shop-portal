@@ -27,6 +27,8 @@ Priority 2
 
 - Should we update title attributes or remove them? Metta logo + dot + cart link
 - Should we remove bold style from dot menu (mobile only) after the click?
+- Should I add a box shadow under the header (only when scrolling)?
+- Should I add a white background and a box shadow or a border in the navbar menu? Today, when scrolling down, it overlaps the footer text.
 - Margins: I slightly decreased the right and left margins (on Metta logo, navbar menu and footer text), to gain space on smaller screens (most screens are less than 1920px)
 - Navbar menu items alignment: choose between aligned with title, or indented (navbar-menu.component.scss -> .menu-item -> padding: <8px;> OR <8px 16px;>) (I prefer 1st option)
 - Do we really want to use font-weight 500 on nav menu items on hover? 600 seems more adapted to me -> compare both options

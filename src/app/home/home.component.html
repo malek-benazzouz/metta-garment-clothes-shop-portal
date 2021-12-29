@@ -9,17 +9,44 @@
 <div id="app-wrapper">
 
   <!-- Header -->
-  <app-header (toggleDot)="onToggleDot($event)"></app-header>
-
-  <!-- Dot content -->
-  <div *ngIf="isDotExpanded" id="dot-content" class="app-body d-flex justify-content-center align-items-center p-5">
-    <app-dot-content></app-dot-content>
+  <div class="app-header">
+    <app-header (toggleDot)="onToggleDot($event)"></app-header>
   </div>
 
-  <!-- Main content -->
-  <div *ngIf="!isDotExpanded" id="main-content" class="app-body d-flex justify-content-center align-items-center p-4">
-    <app-tree (openProduct)="onOpenProduct($event)"></app-tree>
-  </div>
+  <!-- Dot expanded -->
+  <ng-container *ngIf="isDotExpanded">
+
+    <!-- Dot content - Desktop -->
+    <div class="app-body dot-content d-none d-lg-flex justify-content-center align-items-center p-5">
+      <app-dot-content></app-dot-content>
+    </div>
+
+    <!-- Dot content - Mobile -->
+    <div class="app-body dot-content d-flex d-lg-none justify-content-center align-items-center p-5">
+      <app-dot-content></app-dot-content>
+    </div>
+
+  </ng-container>
+
+  <!-- Dot collapsed -->
+  <ng-container *ngIf="!isDotExpanded">
+
+    <!-- Main content - Desktop -->
+    <div class="app-body main-content d-none d-lg-flex justify-content-center align-items-center p-4">
+      <app-tree></app-tree>
+    </div>
+
+    <!-- Main content - Mobile -->
+    <div *ngIf="!openProduct" class="app-body main-content d-flex d-lg-none justify-content-center align-items-center p-4">
+      <app-tree (openProduct)="onOpenProduct($event)"></app-tree>
+    </div>
+
+    <!-- Product page - Mobile only -->
+    <div *ngIf="openProduct" id="product-page" class="app-body d-flex d-lg-none">
+      <app-product-page [product]="openProduct" [isSunProduct]="isOpenProductSunProduct" (backButtonClicked)="onBackToHome()"></app-product-page>
+    </div>
+
+  </ng-container>
 
 </div>
 

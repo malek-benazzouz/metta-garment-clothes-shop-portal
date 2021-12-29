@@ -1,0 +1,25 @@
+@import "src/style/colors";
+
+.product-image {
+  border: 20px solid $sunny-gold;
+}
+
+.product-image img {
+  width: 100vw;
+}
+
+.sun-image {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.moon-image {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+}
+
+.product-links {
+
+}

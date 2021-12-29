@@ -1,3 +1,8 @@
+@import "src/style/colors";
+@import "src/style/typography";
+
+// TODO adapt the header sizes/fonts/positions to mobile view
+
 .navbar {
   height: 65px;
 }
@@ -10,4 +15,15 @@
 .header-right-part {
   position: absolute;
   right: 52px;
+}
+
+.cart-link {
+  // TODO update the typo
+  @extend .typo-nav-menu-title;
+  text-decoration: none;
+  color: $text-primary-color !important;
+
+  &:hover, &:focus {
+    color: $sunny-gold !important;
+  }
 }

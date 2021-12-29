@@ -1,0 +1,27 @@
+<div class="product-page" *ngIf="product" [ngClass]="isSunProduct ? 'sun-product' : 'moon-product'">
+
+  <!-- Product image -->
+  <div class="product-image">
+    <img [src]="product.imageUrl" [alt]="product.description">
+  </div>
+
+  <!-- Sun image -->
+  <div class="sun-image" *ngIf="isSunProduct">
+    <img src="assets/sun-light.svg" alt="Image: the sun">
+  </div>
+
+  <!-- Moon image -->
+  <div class="moon-image" *ngIf="!isSunProduct">
+    <img src="assets/moon-light.svg" alt="Image: the moon">
+  </div>
+
+  <!-- -->
+  <div class="product-links d-flex justify-content-between">
+    <!-- Back link -->
+    <a href="javascript:void(0);" (click)="onBackButtonClicked()">BACK TO THE EDENIC STATE</a>
+
+    <!-- See more link -->
+    <a [href]="'#product/' + product.id">SEE MORE</a>
+  </div>
+
+</div>
