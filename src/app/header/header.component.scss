@@ -1,20 +1,38 @@
 @import "src/style/colors";
 @import "src/style/typography";
-
-// TODO adapt the header sizes/fonts/positions to mobile view
+@import "src/style/variables";
+@import "~bootstrap/scss/mixins";
 
 .navbar {
-  height: 65px;
+  height: 65px; // If you update this height, adapt sizes in home.component.scss and product-page.component.scss
+
+  @include media-breakpoint-down('md') {
+    height: 45px; // If you update this height, adapt sizes in home.component.scss and product-page.component.scss
+  }
 }
 
 .header-left-part {
   position: absolute;
   left: 52px;
+
+  @include media-breakpoint-down('md') {
+    left: 20px;
+  }
 }
 
 .header-right-part {
   position: absolute;
   right: 52px;
+
+  @include media-breakpoint-down('md') {
+    right: 20px;
+  }
+}
+
+.navbar-brand img {
+  @include media-breakpoint-down('md') {
+    width: 55px;
+  }
 }
 
 .cart-link {

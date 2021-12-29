@@ -4,30 +4,30 @@
 .product-image {
   position: fixed;
   width: 100%;
-  height: calc(100vh - 65px - 20px); // viewport height minus header height minus (links banner - border)
-  border: 20px solid $sunny-gold;
+  height: calc(100vh - 45px - (30px - 15px)); // viewport height minus header height minus (links banner - border)
+  border: 15px solid $sunny-gold;
   background-size: cover !important;
 }
 
 .sun-image {
   position: absolute;
-  top: 125px; // = header height + border + 40px
-  left: 40px; // = border + 20px
+  top: calc(45px + 15px + 40px); // = header height + border + 40px
+  left: calc(15px + 20px); // = border + 20px
 }
 
 .moon-image {
   position: absolute;
-  top: 125px; // = header height + border + 40px
-  right: 40px; // = border + 20px
+  top: calc(45px + 15px + 40px); // = header height + border + 40px
+  right: calc(15px + 20px); // = border + 20px
 }
 
 .product-links {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 40px;
+  height: 30px;
   background: $sunny-gold;
-  padding: 0 20px;
+  padding: 0 15px;
 
   a {
     @extend .typo-product-link;
