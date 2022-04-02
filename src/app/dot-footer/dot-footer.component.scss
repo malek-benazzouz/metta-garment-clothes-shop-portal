@@ -1,18 +1,47 @@
 @import "src/style/typography";
+@import "src/style/variables";
+@import "~bootstrap/scss/mixins";
 
 .footer-left-part {
   position: absolute;
   left: 80px;
+
+  @include media-breakpoint-only('3xl') {
+    img {
+      width: 90%;
+    }
+  }
+}
+
+.footer-center-part {
+  @include media-breakpoint-only('3xl') {
+    img {
+      width: 90%;
+    }
+  }
+  @include media-breakpoint-down('2xl') {
+    justify-content: left !important;
+    img {
+      width: 80%;
+    }
+  }
 }
 
 .footer-right-part {
   position: absolute;
   right: 80px;
-}
-
-#footer-content {
   height: 748px; // Same height as Door logo
   width: 32%;
+
+  @include media-breakpoint-only('3xl') {
+    height: auto;
+  }
+
+  @include media-breakpoint-down('2xl') {
+    position: unset;
+    height: auto;
+    width: 66%;
+  }
 }
 
 #footer-look-up {

@@ -22,5 +22,6 @@
 - 21dec21: 0.1d
 - 28dec21: 0.8d
 - 29dec21: 0.8d
+- 18feb22: 0.3d
 
-> Total: 9.2d
+> Total: 9.5d

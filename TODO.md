@@ -13,9 +13,19 @@ Priority 1
   - Remove unused images? (or make sure they are not loaded if not used)
 - Add animation when expanding/collapsing dot content + other animations?
 - All other TO DOs in the project
+- dot page: for big mobiles, have a bigger font for dot menu
+- dot menu: + and - should be in respira font, and smaller
+- dot menu: on hover, change font color instead of making it bold
+- Check if we can get more info on the subscribers when they fill the form (location, user agent?)
+- For height 720px (and around), is it possible to make the tree fully visible?
+- In dot page, in desktop view, center the slogan horizontally (same distance from left border as from door logo)
+- Add a box shadow (very light) under the header - add it only for dot view (e.g. box-shadow: 1px 0px 6px #ddd;)
+- When hovering the navbar menu titles, in order to avoid text overlapping, we should ideally add a white or black semi-transparent layer on the whole page (see https://nakashimawoodworkers.com/)
+- newsletter form error "Invalid email address" overlaps the "look up" logo
 
 Priority 2
 
+- Create npm scripts that will facilitate git flows and deployment
 - Dot footer: align top right text with top of center image in desktop view
 - Fix css warnings on ng serve
 - Favicon: make it work on all browsers, and in dark mode
@@ -26,17 +36,11 @@ Priority 2
 
 ## Questions/remarks to Ludo 
 
-- Should we update title attributes or remove them? Metta logo + dot + cart link
-- Should we remove bold style from dot menu (mobile only) after the click?
-- Should I add a box shadow under the header (only when scrolling)?
-- Should I add a white background and a box shadow or a border in the navbar menu? Today, when scrolling down, it overlaps the footer text.
-- Margins: I slightly decreased the right and left margins (on Metta logo, navbar menu and footer text), to gain space on smaller screens (most screens are less than 1920px)
-- Navbar menu items alignment: choose between aligned with title, or indented (navbar-menu.component.scss -> .menu-item -> padding: <8px;> OR <8px 16px;>) (I prefer 1st option)
-- Do we really want to use font-weight 500 on nav menu items on hover? 600 seems more adapted to me -> compare both options
-- Newsletter form: connect underline with submit button if possible -> I do not recommend, since it creates a color mismatch
-- Is this a problem? https://metta-online.co/
+- 
 
 ## Resources needed from Ludo
 
 - Product images, names, price, description
 - Real links to all pages + link to cart
+- Title attributes texts (for Metta logo + dot + cart link)
+- 
