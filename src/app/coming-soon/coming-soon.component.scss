@@ -1,0 +1,64 @@
+@import "src/style/colors";
+@import "src/style/typography";
+
+.coming-soon-page {
+  background: url("../../assets/coming-soon/coming-soon-background-large.svg") no-repeat center;
+  background-size: cover;
+}
+
+.coming-soon-tree {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 55px;
+}
+
+.coming-soon-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 0.5;
+}
+
+.coming-soon-content {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  color: $almost-white;
+}
+
+.coming-soon-text {
+  width: 436px;
+}
+
+.coming-soon-quote {
+  @extend .typo-coming-soon-quote;
+}
+
+.coming-soon-presentation {
+  @extend .typo-coming-soon-presentation;
+
+  .circled-r {
+    margin: 2px 2px 0 1px;
+  }
+}
+
+.averroes-quote {
+  position: absolute;
+  left: 40px;
+  bottom: 80px;
+}
+
+.dropping-leaf-container {
+  height: 100vh;
+}
+
+.dropping-leaf {
+  filter: drop-shadow(0px 0px 10px $sunny-gold-light);
+  position: absolute;
+  bottom: 634px;
+  left: calc(50% + 29px);
+}

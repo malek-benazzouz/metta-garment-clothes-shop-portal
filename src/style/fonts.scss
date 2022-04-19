@@ -10,6 +10,10 @@
   font-family: 'Apoc Revelations', sans-serif;
 }
 
+.font-family-apoc-lc {
+  font-family: 'Apoc LC', sans-serif;
+}
+
 .font-family-be-vietnam {
   font-family: 'BeVietnam', sans-serif;
 }
@@ -34,6 +38,19 @@
   url("../../src/assets/fonts/ApocRevelations/Apoc-Revelations.woff") format("woff"),
   url("../../src/assets/fonts/ApocRevelations/Apoc-Revelations.otf") format("opentype"),
   url("../../src/assets/fonts/ApocRevelations/Apoc-Revelations.eot") format("embedded-opentype");
+}
+
+/*
+ * Font face: Apoc LC
+ */
+
+@font-face {
+  font-family: "Apoc LC";
+  src: url("../../src/assets/fonts/ApocLC/ApocLC-LightItalic.woff2") format("woff2"),
+  url("../../src/assets/fonts/ApocLC/ApocLC-LightItalic.woff") format("woff"),
+  url("../../src/assets/fonts/ApocLC/ApocLC-LightItalic.ttf") format("truetype"),
+  url("../../src/assets/fonts/ApocLC/ApocLC-LightItalic.otf") format("opentype"),
+  url("../../src/assets/fonts/ApocLC/ApocLC-LightItalic.eot") format("embedded-opentype");
 }
 
 /*
