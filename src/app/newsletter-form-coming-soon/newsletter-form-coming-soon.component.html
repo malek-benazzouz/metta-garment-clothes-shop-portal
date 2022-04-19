@@ -1,0 +1,29 @@
+<!-- Newsletter form -->
+<form id="newsletter-form" (submit)="submitForm()">
+
+  <!-- Email input -->
+  <mat-form-field appearance="standard" class="mr-3">
+    <mat-label>ENTER YOUR EMAIL ADDRESS</mat-label>
+    <input matInput placeholder="my@mail.com" [formControl]="emailControl">
+    <mat-error *ngIf="emailControl.invalid">Invalid email address</mat-error>
+  </mat-form-field>
+
+  <!-- Submit button -->
+  <button type="submit" class="submit-button">SUBMIT</button>
+
+</form>
+
+<!-- Feedback messages -->
+<div class="feedback d-flex justify-content-center" *ngIf="feedback">
+
+  <!-- Success toast -->
+  <ngb-toast class="success-toast text-light" [delay]="7000" *ngIf="feedback.isSuccess">
+    {{ feedback.message }}
+  </ngb-toast>
+
+  <!-- Error toast -->
+  <ngb-toast class="error-toast text-light" [delay]="10000" *ngIf="!feedback.isSuccess">
+    {{ feedback.message }}
+  </ngb-toast>
+
+</div>

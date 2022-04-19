@@ -31,6 +31,8 @@ import { AdminComponent } from './admin/admin.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ProductPageComponent } from './product-page/product-page.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { NewsletterFormComingSoonComponent } from './newsletter-form-coming-soon/newsletter-form-coming-soon.component';
 
 @NgModule({
   declarations: [
@@ -46,12 +48,14 @@ import { ProductPageComponent } from './product-page/product-page.component';
     DotFooterComponent,
     LegalInfoComponent,
     NewsletterFormComponent,
+    NewsletterFormComingSoonComponent,
     ContactLinksComponent,
     CopyrightComponent,
     LegalLinksComponent,
     ProductOverviewComponent,
     ProductPageComponent,
-    AdminComponent
+    AdminComponent,
+    ComingSoonComponent
   ],
   imports: [
     BrowserModule,

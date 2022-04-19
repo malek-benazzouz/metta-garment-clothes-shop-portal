@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: ComingSoonComponent },
+  // { path: 'home', component: HomeComponent }, // Uncomment to work on home page
   { path: 'admin', component: AdminComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

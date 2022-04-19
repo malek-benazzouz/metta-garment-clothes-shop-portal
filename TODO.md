@@ -5,6 +5,7 @@
 Priority 1
 
 - Handle responsiveness everywhere
+- Handle redirection between coming-soon page and home page
 - Firestore DB: set more robust security rules
 - Loading and images:
   - Design a loading theme (skeleton, icon, wheel?) and use it whenever loading is required (e.g. while posting newsletter form)
@@ -29,6 +30,7 @@ Priority 2
 - Dot footer: align top right text with top of center image in desktop view
 - Fix css warnings on ng serve
 - Favicon: make it work on all browsers, and in dark mode
+- Set cookies to avoid coming-soon page for users that already subscribed
 
 ## Legal
 

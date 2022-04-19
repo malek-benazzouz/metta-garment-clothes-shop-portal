@@ -1,0 +1,61 @@
+<div class="coming-soon-page">
+
+  <!-- Tree -->
+  <div class="coming-soon-tree">
+    <div class="d-flex justify-content-center align-items-end h-100">
+      <img src="assets/coming-soon/coming-soon-tree.svg" alt="Tree">
+    </div>
+  </div>
+
+  <!-- Overlay before form submit -->
+  <div class="coming-soon-overlay" *ngIf="shouldDisplayForm"></div>
+
+  <!-- Page content -->
+  <div class="coming-soon-content d-flex flex-column justify-content-center align-items-center" *ngIf="shouldDisplayForm">
+
+    <!-- Door image -->
+    <div class="door-symbol mb-5">
+      <img src="assets/coming-soon/coming-soon-door-large.svg" alt="Door symbol">
+    </div>
+
+    <!-- Coming soon text -->
+    <div class="coming-soon-text">
+      <p class="coming-soon-quote">
+        "We believe that garment as a work of art can be a vessel for symbolism."
+      </p>
+      <p class="coming-soon-presentation">
+        METTA<img class="circled-r" src="assets/coming-soon/circled-R.svg" alt="Registered trademark">
+        is an independent garment craft company owned and managed in France.
+      </p>
+      <p class="coming-soon-presentation">
+        Please submit your email address to have an early access to the upcoming releases and storytelling videos.
+      </p>
+      <p class="coming-soon-presentation">
+        Launch in September 2022.
+      </p>
+    </div>
+
+    <!-- Email subscription form -->
+    <div class="coming-soon-form">
+      <app-newsletter-form-coming-soon (submitSuccess)="onFormSubmitSuccess()"></app-newsletter-form-coming-soon>
+    </div>
+
+  </div>
+
+  <!-- Averroes quote -->
+  <div class="averroes-quote" *ngIf="!shouldDisplayForm">
+    <img src="assets/coming-soon/coming-soon-quote-large.svg" width="210"
+         alt="L'aveugle se détourne de la fosse où le clairvoyant se laisse tomber - Averroès">
+  </div>
+
+  <!-- Dropping leaf -->
+  <div class="dropping-leaf-container d-flex justify-content-center align-items-end" *ngIf="!shouldDisplayForm">
+    <div class="dropping-leaf" [@droppingLeaf]="isLeafDropping ? 'bottom' : 'top'">
+      <img src="assets/coming-soon/coming-soon-leaf-large.svg" alt="Dropping leaf">
+    </div>
+  </div>
+
+</div>
+
+<!-- Debug area -->
+<app-responsive-debug [debugMode]="false"></app-responsive-debug>
