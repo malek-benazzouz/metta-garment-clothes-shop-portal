@@ -22,7 +22,23 @@ export class ComingSoonComponent implements OnInit {
 
   onFormSubmitSuccess(): void {
     this.shouldDisplayForm = false;
-    setTimeout(() => this.isLeafDropping = true);
+    setTimeout(() => {
+      // Start animation
+      this.isLeafDropping = true;
+      this.playWindSound(1, 1200);
+      this.playWindSound(0.5, 3000);
+      this.playWindSound(0.3, 4800);
+    });
+  }
+
+  playWindSound(volume: number = 1, delayInMs: number = 0): void {
+    setTimeout(() => {
+      let audio = new Audio();
+      audio.src = "../../assets/coming-soon/wind-sound.wav";
+      audio.load();
+      audio.volume = volume;
+      void audio.play();
+    }, delayInMs);
   }
 
 }
