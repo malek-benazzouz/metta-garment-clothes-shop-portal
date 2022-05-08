@@ -1,9 +1,25 @@
 @import "src/style/colors";
 @import "src/style/typography";
+@import "~bootstrap/scss/mixins";
 
 .coming-soon-page {
   background: url("../../assets/coming-soon/coming-soon-background-large.svg") no-repeat center;
   background-size: cover;
+
+  @include media-breakpoint-down('xl') {
+    background: url("../../assets/coming-soon/coming-soon-background-medium.svg") no-repeat center;
+    background-size: cover;
+  }
+
+  @include media-breakpoint-down('md') {
+    background: url("../../assets/coming-soon/coming-soon-background-small.svg") no-repeat center;
+    background-size: cover;
+  }
+
+  @include media-breakpoint-down('xs') {
+    background: url("../../assets/coming-soon/coming-soon-background-extra-small.svg") no-repeat top;
+    background-size: cover;
+  }
 }
 
 .coming-soon-tree {
@@ -11,6 +27,18 @@
   width: 100vw;
   height: 100vh;
   padding-bottom: 55px;
+}
+
+.coming-soon-tree-img {
+  @include media-breakpoint-down('xs') {
+    width: 90%;
+    align-self: center;
+    padding-top: 220px;
+  }
+
+  @media all and (max-width: 380px) {
+    width: 323px;
+  }
 }
 
 .coming-soon-overlay {
@@ -32,6 +60,14 @@
 
 .coming-soon-text {
   width: 436px;
+
+  @include media-breakpoint-down('xl') {
+    width: 418px;
+  }
+
+  @include media-breakpoint-down('sm') {
+    width: 346px;
+  }
 }
 
 .coming-soon-quote {
@@ -43,13 +79,41 @@
 
   .circled-r {
     margin: 2px 2px 0 1px;
+
+    @include media-breakpoint-down('xl') {
+      width: 11px;
+    }
+
+    @include media-breakpoint-down('sm') {
+      width: 10px;
+    }
   }
 }
 
 .averroes-quote {
   position: absolute;
   left: 40px;
+  right: auto;
   bottom: 80px;
+
+  @include media-breakpoint-down('xl') {
+    left: auto;
+    right: 100px;
+    bottom: 160px;
+  }
+
+  @include media-breakpoint-down('lg') {
+    left: auto;
+    right: 50px;
+    bottom: 90px;
+  }
+
+  @include media-breakpoint-down('md') {
+    left: 10px;
+    right: auto;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
 }
 
 .dropping-leaf-container {
@@ -61,4 +125,14 @@
   position: absolute;
   bottom: 625px;
   left: calc(50% + 38px);
+}
+
+.dropping-leaf-img {
+  @include media-breakpoint-down('xs') {
+    width: 85%;
+  }
+
+  @media all and (max-width: 380px) {
+    width: 37px;
+  }
 }
