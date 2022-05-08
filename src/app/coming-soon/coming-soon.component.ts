@@ -1,6 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { droppingLeafAnimation } from '../animations/dropping-leaf.animation';
 
+/**
+ * TODO coming soon mode:
+ * - add more animations? (e.g. form fade after submit, leaf blinks after drop, form input highlight before submit)
+ * -
+ */
+
 @Component({
   selector: 'app-coming-soon',
   templateUrl: './coming-soon.component.html',
@@ -10,8 +16,6 @@ import { droppingLeafAnimation } from '../animations/dropping-leaf.animation';
   ]
 })
 export class ComingSoonComponent implements OnInit {
-
-  // TODO add animations (make form fade once submitted?)
 
   shouldDisplayForm = true;
   isLeafDropping = false;

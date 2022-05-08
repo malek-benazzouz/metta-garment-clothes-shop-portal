@@ -5,6 +5,10 @@
 :host::ng-deep mat-form-field {
   width: 314px;
 
+  @include media-breakpoint-down('sm') {
+    width: 250px;
+  }
+
   .mat-form-field-wrapper {
     @extend .typo-coming-soon-newsletter-form;
     cursor: text;

@@ -26,7 +26,6 @@ export class NewsletterFormComingSoonComponent implements OnInit {
         email: this.emailControl.value,
         subscriptionDate: { timestamp: Date.now(), formatted: new Date().toUTCString() }
       }).then(
-      // Promise.resolve().then( // TODO temp while testing leaf animation
         () => { // Success
           this.emailControl.reset();
           this.submitSuccess.emit();

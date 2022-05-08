@@ -3,7 +3,7 @@
   <!-- Tree -->
   <div class="coming-soon-tree">
     <div class="d-flex justify-content-center align-items-end h-100">
-      <img src="assets/coming-soon/coming-soon-tree.svg" alt="Tree">
+      <img class="coming-soon-tree-img" src="assets/coming-soon/coming-soon-tree.svg" alt="Tree">
     </div>
   </div>
 
@@ -42,9 +42,21 @@
 
   </div>
 
-  <!-- Averroes quote -->
-  <div class="averroes-quote" *ngIf="!shouldDisplayForm">
+  <!-- Averroes quote - Large -->
+  <div class="averroes-quote d-none d-2xl-block" *ngIf="!shouldDisplayForm">
     <img src="assets/coming-soon/coming-soon-quote-large.svg" width="210"
+         alt="L'aveugle se détourne de la fosse où le clairvoyant se laisse tomber - Averroès">
+  </div>
+
+  <!-- Averroes quote - Medium -->
+  <div class="averroes-quote d-none d-lg-block d-2xl-none" *ngIf="!shouldDisplayForm">
+    <img src="assets/coming-soon/coming-soon-quote-medium.svg" width="230"
+         alt="L'aveugle se détourne de la fosse où le clairvoyant se laisse tomber - Averroès">
+  </div>
+
+  <!-- Averroes quote - Small -->
+  <div class="averroes-quote d-block d-lg-none" *ngIf="!shouldDisplayForm">
+    <img src="assets/coming-soon/coming-soon-quote-small.svg" width="18"
          alt="L'aveugle se détourne de la fosse où le clairvoyant se laisse tomber - Averroès">
   </div>
 
