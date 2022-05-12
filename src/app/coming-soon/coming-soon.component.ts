@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { droppingLeafAnimation } from '../animations/dropping-leaf.animation';
+import { fadeInQuoteAnimation } from '../animations/fade-in-quote.animation';
 
 /**
  * TODO coming soon mode:
@@ -10,7 +11,6 @@ import { droppingLeafAnimation } from '../animations/dropping-leaf.animation';
  * - on mobile, white line on top
  * - on mobile, the leaf starts dropping above the tree
  * - on mobile, landscape view is messed up
- * - averroes quote should progressively fade in during the whole animation (10s animation)
  * - animation: more slowly, but less pauses
  *
  * Priority 2:
@@ -22,7 +22,8 @@ import { droppingLeafAnimation } from '../animations/dropping-leaf.animation';
   templateUrl: './coming-soon.component.html',
   styleUrls: ['./coming-soon.component.scss'],
   animations: [
-    droppingLeafAnimation
+    droppingLeafAnimation,
+    fadeInQuoteAnimation
   ]
 })
 export class ComingSoonComponent implements OnInit {

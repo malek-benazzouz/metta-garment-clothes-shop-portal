@@ -45,19 +45,22 @@
   <!-- Averroes quote - Large -->
   <div class="averroes-quote d-none d-2xl-block" *ngIf="!shouldDisplayForm">
     <img src="assets/coming-soon/coming-soon-quote-large.svg" width="210"
-         alt="L'aveugle se détourne de la fosse où le clairvoyant se laisse tomber - Averroès">
+         alt="L'aveugle se détourne de la fosse où le clairvoyant se laisse tomber - Averroès"
+         [@fadeInQuote]="isLeafDropping ? 'shown' : 'hidden'">
   </div>
 
   <!-- Averroes quote - Medium -->
   <div class="averroes-quote d-none d-lg-block d-2xl-none" *ngIf="!shouldDisplayForm">
     <img src="assets/coming-soon/coming-soon-quote-medium.svg" width="230"
-         alt="L'aveugle se détourne de la fosse où le clairvoyant se laisse tomber - Averroès">
+         alt="L'aveugle se détourne de la fosse où le clairvoyant se laisse tomber - Averroès"
+         [@fadeInQuote]="isLeafDropping ? 'shown' : 'hidden'">
   </div>
 
   <!-- Averroes quote - Small -->
   <div class="averroes-quote d-flex d-lg-none align-items-center" *ngIf="!shouldDisplayForm">
     <img src="assets/coming-soon/coming-soon-quote-small.svg"
-         alt="L'aveugle se détourne de la fosse où le clairvoyant se laisse tomber - Averroès">
+         alt="L'aveugle se détourne de la fosse où le clairvoyant se laisse tomber - Averroès"
+         [@fadeInQuote]="isLeafDropping ? 'shown' : 'hidden'">
   </div>
 
   <!-- Dropping leaf -->
