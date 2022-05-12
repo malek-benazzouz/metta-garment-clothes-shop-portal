@@ -3,10 +3,14 @@
 
 // Customize the form input field
 :host::ng-deep mat-form-field {
-  width: 314px;
+  width: 386px;
+
+  @include media-breakpoint-down('xl') {
+    width: 308px;
+  }
 
   @include media-breakpoint-down('sm') {
-    width: 250px;
+    width: 248px;
   }
 
   .mat-form-field-wrapper {
@@ -16,6 +20,11 @@
     input {
       letter-spacing: 2.75px;
     }
+  }
+
+  // When a text is entered, reduce font-weight to regular
+  &:not(.mat-form-field-hide-placeholder) .mat-form-field-wrapper {
+    font-weight: 400;
   }
 
   // Hide form field underline, except when hovering or if form is invalid
@@ -29,6 +38,10 @@
 
   &.mat-form-field-invalid .mat-form-field-underline {
     display: inherit;
+  }
+
+  .mat-form-field-ripple {
+    height: 1px;
   }
 
   .mat-form-field-label, &.mat-focused:not(.mat-form-field-invalid) .mat-form-field-label {
@@ -50,7 +63,7 @@
   background: $almost-white;
   color: black;
   border: none;
-  padding: 2px 12px;
+  padding: 2px 15px;
 
   &:hover {
     background: $red-light;

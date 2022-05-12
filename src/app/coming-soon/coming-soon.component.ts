@@ -3,8 +3,18 @@ import { droppingLeafAnimation } from '../animations/dropping-leaf.animation';
 
 /**
  * TODO coming soon mode:
+ *
+ * Priority 1:
+ * - on mobile, sun and moon overlap the door
+ * - on mobile, on form input focus, background bug
+ * - on mobile, white line on top
+ * - on mobile, the leaf starts dropping above the tree
+ * - on mobile, landscape view is messed up
+ * - averroes quote should progressively fade in during the whole animation (10s animation)
+ * - animation: more slowly, but less pauses
+ *
+ * Priority 2:
  * - add more animations? (e.g. form fade after submit, leaf blinks after drop, form input highlight before submit)
- * -
  */
 
 @Component({
@@ -29,9 +39,6 @@ export class ComingSoonComponent implements OnInit {
     setTimeout(() => {
       // Start animation
       this.isLeafDropping = true;
-      this.playWindSound(1, 1200);
-      this.playWindSound(0.5, 3000);
-      this.playWindSound(0.3, 4800);
     });
   }
 
