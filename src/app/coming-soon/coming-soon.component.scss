@@ -59,14 +59,15 @@
 }
 
 .coming-soon-text {
-  width: 436px;
+  text-align: justify;
+  width: 500px;
 
   @include media-breakpoint-down('xl') {
-    width: 418px;
+    width: 419px;
   }
 
   @include media-breakpoint-down('sm') {
-    width: 346px;
+    width: 350px;
   }
 }
 
@@ -109,10 +110,16 @@
   }
 
   @include media-breakpoint-down('md') {
-    left: 10px;
+    left: 6px;
     right: auto;
+    height: 100%;
     bottom: 50%;
     transform: translateY(50%);
+
+    img {
+      height: 500px;
+      max-height: 55%;
+    }
   }
 }
 
@@ -121,7 +128,7 @@
 }
 
 .dropping-leaf {
-  filter: drop-shadow(0px 0px 10px $sunny-gold-light);
+  filter: drop-shadow(0px 0px 18px #fff);
   position: absolute;
   bottom: 625px;
   left: calc(50% + 38px);
