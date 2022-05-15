@@ -3,6 +3,9 @@
 @import "~bootstrap/scss/mixins";
 
 .coming-soon-page {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   background: url("../../assets/coming-soon/coming-soon-background-large.svg") no-repeat center;
   background-size: cover;
 
@@ -11,83 +14,136 @@
     background-size: cover;
   }
 
-  @include media-breakpoint-down('md') {
+  @include media-breakpoint-down('sm') {
     background: url("../../assets/coming-soon/coming-soon-background-small.svg") no-repeat center;
     background-size: cover;
   }
 
+  @media all and (max-width: 380px) {
+    width: 380px;
+  }
+
+  @media all and (max-height: 380px) {
+    height: 380px;
+  }
+}
+
+.coming-soon-dot {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media all and (max-height: 1050px) {
+    top: 7%;
+
+    img {
+      transform: scale(0.8);
+    }
+  }
+
+  @media all and (max-height: 900px) {
+    top: 5%;
+  }
+}
+
+.coming-soon-sun {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+
+  img {
+    max-height: 100%;
+  }
+
   @include media-breakpoint-down('xs') {
-    background: url("../../assets/coming-soon/coming-soon-background-extra-small.svg") no-repeat top;
-    background-size: cover;
+    left: 15%;
+  }
+
+  @media all and (max-height: 1050px) {
+    top: 10%;
+    transform: scale(0.8);
+  }
+
+  @media all and (max-height: 900px) {
+    top: 8%;
+    transform: scale(0.7);
+  }
+
+  @media all and (max-height: 700px) {
+    top: 5%;
+    transform: scale(0.5);
+  }
+}
+
+.coming-soon-moon {
+  position: absolute;
+  top: 15%;
+  right: 25%;
+  padding-top: 22px; // Aligning moon with sun
+
+  img {
+    max-height: 100%;
+  }
+
+  @include media-breakpoint-down('xs') {
+    right: 15%;
+  }
+
+  @media all and (max-height: 1050px) {
+    top: 10%;
+    transform: scale(0.8);
+    padding-top: 26px;
+  }
+
+  @media all and (max-height: 900px) {
+    top: 8%;
+    transform: scale(0.7);
+    padding-top: 28px;
+  }
+
+  @media all and (max-height: 700px) {
+    top: 5%;
+    transform: scale(0.5);
+    padding-top: 34px;
   }
 }
 
 .coming-soon-tree {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  padding: 175px 20px 60px 20px;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+  }
+
+  @media all and (max-height: 700px) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  @media all and (max-height: 500px) {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+
+.dropping-leaf {
+  filter: drop-shadow(0px 0px 18px #fff);
   position: absolute;
-  width: 100vw;
-  height: 100vh;
-  padding-bottom: 55px;
-}
-
-.coming-soon-tree-img {
-  @include media-breakpoint-down('xs') {
-    width: 90%;
-    align-self: center;
-    padding-top: 220px;
-  }
-
-  @media all and (max-width: 380px) {
-    width: 323px;
-  }
-}
-
-.coming-soon-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: black;
-  opacity: 0.5;
-}
-
-.coming-soon-content {
-  height: 100vh;
-  position: relative;
   z-index: 1;
-  color: $almost-white;
-}
 
-.coming-soon-text {
-  text-align: justify;
-  width: 500px;
-
-  @include media-breakpoint-down('xl') {
-    width: 419px;
+  @media all and (max-width: 500px) {
+    transform: scale(0.85);
   }
 
-  @include media-breakpoint-down('sm') {
-    width: 350px;
-  }
-}
-
-.coming-soon-quote {
-  @extend .typo-coming-soon-quote;
-}
-
-.coming-soon-presentation {
-  @extend .typo-coming-soon-presentation;
-
-  .circled-r {
-    margin: 2px 2px 0 1px;
-
-    @include media-breakpoint-down('xl') {
-      width: 11px;
-    }
-
-    @include media-breakpoint-down('sm') {
-      width: 10px;
-    }
+  @media all and (max-height: 800px) {
+    transform: scale(0.85);
   }
 }
 
@@ -121,25 +177,98 @@
       max-height: 55%;
     }
   }
+
+  @media all and (max-height: 500px) {
+    img {
+      transform: scale(0.7);
+    }
+  }
 }
 
-.dropping-leaf-container {
+.coming-soon-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
+  background: black;
+  opacity: 0.5;
+  z-index: 1;
 }
 
-.dropping-leaf {
-  filter: drop-shadow(0px 0px 18px #fff);
-  position: absolute;
-  bottom: 625px;
-  left: calc(50% + 38px);
-}
+.coming-soon-content {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  color: $almost-white;
+  padding: 120px 20px 80px 20px;
 
-.dropping-leaf-img {
-  @include media-breakpoint-down('xs') {
-    width: 85%;
+  @media all and (max-height: 700px) {
+    padding-top: 100px;
+    padding-bottom: 70px;
   }
 
-  @media all and (max-width: 380px) {
-    width: 37px;
+  @media all and (max-height: 500px) {
+    padding-top: 90px;
+    padding-bottom: 60px;
+
+    p {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.door-symbol {
+  img {
+    height: 100%;
+  }
+
+  @media all and (max-height: 800px) {
+    margin-bottom: 25px !important;
+    height: 150px;
+  }
+
+  @media all and (max-height: 700px) {
+    margin-bottom: 20px !important;
+    height: 100px;
+  }
+
+  @media all and (max-height: 500px) {
+    height: 70px;
+  }
+}
+
+.coming-soon-text {
+  text-align: justify;
+  width: 500px;
+
+  @include media-breakpoint-down('xl') {
+    width: 419px;
+  }
+
+  @include media-breakpoint-down('sm') {
+    width: 350px;
+  }
+}
+
+.coming-soon-quote {
+  @extend .typo-coming-soon-quote;
+}
+
+.coming-soon-presentation {
+  @extend .typo-coming-soon-presentation;
+
+  .circled-r {
+    margin: 2px 2px 0 1px;
+
+    @include media-breakpoint-down('xl') {
+      width: 11px;
+    }
+
+    @include media-breakpoint-down('sm') {
+      width: 10px;
+    }
   }
 }

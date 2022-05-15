@@ -1,10 +1,53 @@
 <div class="coming-soon-page">
 
+  <!-- Dot -->
+  <div class="coming-soon-dot">
+    <img src="assets/coming-soon/coming-soon-dot.svg" alt="The dot">
+  </div>
+
+  <!-- Sun -->
+  <div class="coming-soon-sun">
+    <img src="assets/coming-soon/coming-soon-sun.svg" alt="The sun">
+  </div>
+
+  <!-- Moon -->
+  <div class="coming-soon-moon">
+    <img src="assets/coming-soon/coming-soon-moon.svg" alt="The moon">
+  </div>
+
   <!-- Tree -->
   <div class="coming-soon-tree">
-    <div class="d-flex justify-content-center align-items-end h-100">
-      <img class="coming-soon-tree-img" src="assets/coming-soon/coming-soon-tree.svg" alt="Tree">
-    </div>
+    <img src="assets/coming-soon/coming-soon-tree.svg" alt="The tree" (resized)="onTreeResize($event)">
+  </div>
+
+  <!-- Dropping leaf -->
+  <div class="dropping-leaf"
+       [style.bottom]="leafYFromBottom + 'px'"
+       [style.left]="'calc(50% + ' + leafXFromCenter + 'px)'"
+       [@droppingLeaf]="isLeafDropping ? 'bottom' : 'top'"
+  >
+    <img class="dropping-leaf-img" src="assets/coming-soon/coming-soon-leaf-large.svg" alt="A leaf drops from the tree">
+  </div>
+
+  <!-- Averroes quote - Large -->
+  <div class="averroes-quote d-none d-2xl-block" *ngIf="!shouldDisplayForm">
+    <img src="assets/coming-soon/coming-soon-quote-large.svg" width="210"
+         alt="L'aveugle se détourne de la fosse où le clairvoyant se laisse tomber - Averroès"
+         [@fadeInQuote]="isLeafDropping ? 'shown' : 'hidden'">
+  </div>
+
+  <!-- Averroes quote - Medium -->
+  <div class="averroes-quote d-none d-lg-block d-2xl-none" *ngIf="!shouldDisplayForm">
+    <img src="assets/coming-soon/coming-soon-quote-medium.svg" width="230"
+         alt="L'aveugle se détourne de la fosse où le clairvoyant se laisse tomber - Averroès"
+         [@fadeInQuote]="isLeafDropping ? 'shown' : 'hidden'">
+  </div>
+
+  <!-- Averroes quote - Small -->
+  <div class="averroes-quote d-flex d-lg-none align-items-center" *ngIf="!shouldDisplayForm">
+    <img src="assets/coming-soon/coming-soon-quote-small.svg"
+         alt="L'aveugle se détourne de la fosse où le clairvoyant se laisse tomber - Averroès"
+         [@fadeInQuote]="isLeafDropping ? 'shown' : 'hidden'">
   </div>
 
   <!-- Overlay before form submit -->
@@ -40,34 +83,6 @@
       <app-newsletter-form-coming-soon (submitSuccess)="onFormSubmitSuccess()"></app-newsletter-form-coming-soon>
     </div>
 
-  </div>
-
-  <!-- Averroes quote - Large -->
-  <div class="averroes-quote d-none d-2xl-block" *ngIf="!shouldDisplayForm">
-    <img src="assets/coming-soon/coming-soon-quote-large.svg" width="210"
-         alt="L'aveugle se détourne de la fosse où le clairvoyant se laisse tomber - Averroès"
-         [@fadeInQuote]="isLeafDropping ? 'shown' : 'hidden'">
-  </div>
-
-  <!-- Averroes quote - Medium -->
-  <div class="averroes-quote d-none d-lg-block d-2xl-none" *ngIf="!shouldDisplayForm">
-    <img src="assets/coming-soon/coming-soon-quote-medium.svg" width="230"
-         alt="L'aveugle se détourne de la fosse où le clairvoyant se laisse tomber - Averroès"
-         [@fadeInQuote]="isLeafDropping ? 'shown' : 'hidden'">
-  </div>
-
-  <!-- Averroes quote - Small -->
-  <div class="averroes-quote d-flex d-lg-none align-items-center" *ngIf="!shouldDisplayForm">
-    <img src="assets/coming-soon/coming-soon-quote-small.svg"
-         alt="L'aveugle se détourne de la fosse où le clairvoyant se laisse tomber - Averroès"
-         [@fadeInQuote]="isLeafDropping ? 'shown' : 'hidden'">
-  </div>
-
-  <!-- Dropping leaf -->
-  <div class="dropping-leaf-container d-flex justify-content-center align-items-end" *ngIf="!shouldDisplayForm">
-    <div class="dropping-leaf" [@droppingLeaf]="isLeafDropping ? 'bottom' : 'top'">
-      <img class="dropping-leaf-img" src="assets/coming-soon/coming-soon-leaf-large.svg" alt="Dropping leaf">
-    </div>
   </div>
 
 </div>

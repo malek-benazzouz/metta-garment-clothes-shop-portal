@@ -33,6 +33,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { NewsletterFormComingSoonComponent } from './newsletter-form-coming-soon/newsletter-form-coming-soon.component';
+import { AngularResizeEventModule } from 'angular-resize-event';
 
 @NgModule({
   declarations: [
@@ -66,12 +67,13 @@ import { NewsletterFormComingSoonComponent } from './newsletter-form-coming-soon
     AngularFireAuthModule,
     FormsModule,
     ReactiveFormsModule,
+    AngularResizeEventModule,
     NgbModule,
     MatMenuModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
