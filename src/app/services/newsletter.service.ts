@@ -11,11 +11,16 @@ export interface NewsletterSubscription {
 }
 
 @Injectable({ providedIn: 'root' })
-export class NewsletterSubscriptionService {
+export class NewsletterService {
 
-  constructor(private store: AngularFirestore, private auth: AngularFireAuth) {}
+  private readonly isProduction = false;
+
+  constructor(private store: AngularFirestore) {}
 
   public addNewsletterSubscription(subscription: NewsletterSubscription): Promise<DocumentReference<NewsletterSubscription>> {
+    if (!this.isProduction) {
+      return Promise.resolve() as Promise<any>;
+    }
     return this.store.collection<NewsletterSubscription>('newsletter-subscriptions').add(subscription);
   }
 

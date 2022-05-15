@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-import { NewsletterSubscriptionService } from '../services/newsletter.service';
+import { NewsletterService } from '../services/newsletter.service';
 
 @Component({
   selector: 'app-newsletter-form',
@@ -13,14 +13,14 @@ export class NewsletterFormComponent implements OnInit {
 
   feedbackMessages: { message: string, isSuccess: boolean }[] = [];
 
-  constructor(private newsletterSubscriptionService: NewsletterSubscriptionService) {}
+  constructor(private newsletterService: NewsletterService) {}
 
   ngOnInit(): void {}
 
   submitForm(): void {
     // If email address is not empty and valid
     if (this.emailControl.value && this.emailControl.valid) {
-      this.newsletterSubscriptionService.addNewsletterSubscription({
+      this.newsletterService.addNewsletterSubscription({
         email: this.emailControl.value,
         subscriptionDate: { timestamp: Date.now(), formatted: new Date().toUTCString() }
       }).then(
