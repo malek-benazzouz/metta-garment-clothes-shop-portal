@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { droppingLeafAnimation } from '../animations/dropping-leaf.animation';
 import { fadeInQuoteAnimation } from '../animations/fade-in-quote.animation';
+import { ResizedEvent } from 'angular-resize-event';
 
 /**
  * TODO coming soon mode:
  *
  * Priority 1:
- * - on mobile, sun and moon overlap the door
  * - on mobile, on form input focus, background bug
  * - on mobile, white line on top
- * - on mobile, the leaf starts dropping above the tree
- * - on mobile, landscape view is messed up
- * - animation: more slowly, but less pauses
+ * - animation: more slowly, but less pauses -> replace translateX by rotate if possible
  *
  * Priority 2:
  * - add more animations? (e.g. form fade after submit, leaf blinks after drop, form input highlight before submit)
@@ -31,6 +29,9 @@ export class ComingSoonComponent implements OnInit {
   shouldDisplayForm = true;
   isLeafDropping = false;
 
+  leafYFromBottom = 630;
+  leafXFromCenter = 40;
+
   constructor() {}
 
   ngOnInit(): void {}
@@ -41,6 +42,15 @@ export class ComingSoonComponent implements OnInit {
       // Start animation
       this.isLeafDropping = true;
     });
+  }
+
+  onTreeResize(event: ResizedEvent): void {
+    if (event.newRect.width < 542) { // If smaller than original width
+      this.leafXFromCenter = Math.floor(0.05 * event.newRect.width);
+    }
+    if (event.newRect.height < 702) { // If smaller than original height
+      this.leafYFromBottom = Math.floor(0.92 * event.newRect.height);
+    }
   }
 
   playWindSound(volume: number = 1, delayInMs: number = 0): void {
