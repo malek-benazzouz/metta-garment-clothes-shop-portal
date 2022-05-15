@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -7,7 +6,7 @@ import { map } from 'rxjs/operators';
 @Injectable({ providedIn: 'root' })
 export class AuthService {
 
-  constructor(private store: AngularFirestore, private auth: AngularFireAuth) {}
+  constructor(private auth: AngularFireAuth) {}
 
   public signIn(email: string, password: string): Promise<any> {
     return this.auth.signInWithEmailAndPassword(email, password);

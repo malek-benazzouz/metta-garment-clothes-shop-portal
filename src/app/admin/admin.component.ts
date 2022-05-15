@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { NewsletterSubscription, NewsletterSubscriptionService } from '../services/newsletter.service';
+import { NewsletterSubscription, NewsletterService } from '../services/newsletter.service';
 import { AuthService } from '../services/auth.service';
 import { CsvRow, ExportService } from '../services/export.service';
 
@@ -27,7 +27,7 @@ export class AdminComponent implements OnInit {
 
   constructor(
     private authService: AuthService,
-    private newsletterSubscriptionService: NewsletterSubscriptionService,
+    private newsletterService: NewsletterService,
     private exportService: ExportService
   ) {}
 
@@ -38,7 +38,7 @@ export class AdminComponent implements OnInit {
     // Get responses only if authenticated
     this.isAuthenticated$.subscribe((isAuthenticated: boolean) => {
       if (isAuthenticated) {
-        this.newsletterSubscriptions$ = this.newsletterSubscriptionService.getAllNewsletterSubscriptions();
+        this.newsletterSubscriptions$ = this.newsletterService.getAllNewsletterSubscriptions();
 
         // Build response summary
         this.newsletterSubscriptions$.subscribe((subscriptions: NewsletterSubscription[]) => {
