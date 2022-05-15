@@ -9,7 +9,6 @@ import { ResizedEvent } from 'angular-resize-event';
  * Priority 1:
  * - on mobile, on form input focus, background bug
  * - on mobile, white line on top
- * - animation: more slowly, but less pauses -> replace translateX by rotate if possible
  *
  * Priority 2:
  * - add more animations? (e.g. form fade after submit, leaf blinks after drop, form input highlight before submit)
@@ -46,10 +45,10 @@ export class ComingSoonComponent implements OnInit {
 
   onTreeResize(event: ResizedEvent): void {
     if (event.newRect.width < 542) { // If smaller than original width
-      this.leafXFromCenter = Math.floor(0.05 * event.newRect.width);
+      this.leafXFromCenter = Math.floor(0.07 * event.newRect.width);
     }
     if (event.newRect.height < 702) { // If smaller than original height
-      this.leafYFromBottom = Math.floor(0.92 * event.newRect.height);
+      this.leafYFromBottom = Math.floor(0.90 * event.newRect.height);
     }
   }
 

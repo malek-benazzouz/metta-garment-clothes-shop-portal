@@ -5,7 +5,7 @@ export const fadeInQuoteAnimation = trigger('fadeInQuote', [
   state('shown', style({ opacity: 1 })),
   transition('hidden => shown', [
     animate(
-      '15s 0s',
+      '17s 0s',
       keyframes([
         style({ offset: 0.00, opacity: 0 }),
         style({ offset: 0.75, opacity: 0.5 }),
