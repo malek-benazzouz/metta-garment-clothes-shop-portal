@@ -1,3 +1,5 @@
+<div class="coming-soon-background"></div>
+
 <div class="coming-soon-page">
 
   <!-- Dot -->
@@ -15,8 +17,13 @@
     <img src="assets/coming-soon/coming-soon-moon.svg" alt="The moon">
   </div>
 
-  <!-- Tree -->
-  <div class="coming-soon-tree">
+  <!-- Tree when form is displayed -->
+  <div class="coming-soon-tree" *ngIf="shouldDisplayForm">
+    <img src="assets/coming-soon/coming-soon-tree-without-metta-logo.svg" alt="The tree" (resized)="onTreeResize($event)">
+  </div>
+
+  <!-- Tree after form submission -->
+  <div class="coming-soon-tree" [hidden]="shouldDisplayForm">
     <img src="assets/coming-soon/coming-soon-tree.svg" alt="The tree" (resized)="onTreeResize($event)">
   </div>
 
