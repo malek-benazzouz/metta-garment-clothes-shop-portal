@@ -7,8 +7,7 @@ import { ResizedEvent } from 'angular-resize-event';
  * TODO coming soon mode:
  *
  * Priority 1:
- * - on mobile, on form input focus, background bug
- * - on mobile, white line on top
+ * -
  *
  * Priority 2:
  * - add more animations? (e.g. form fade after submit, leaf blinks after drop, form input highlight before submit)
