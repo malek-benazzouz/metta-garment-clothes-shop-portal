@@ -10,7 +10,8 @@ import { ResizedEvent } from 'angular-resize-event';
  * -
  *
  * Priority 2:
- * - add more animations? (e.g. form fade after submit, leaf blinks after drop, form input highlight before submit)
+ * - If possible, make leaf drop at the bottom of the tree on mobile
+ * - Add more animations? (e.g. form fade after submit, leaf blinks after drop, form input highlight before submit)
  *
  * Before production:
  * - Switch to Production mode in NewsletterService
