@@ -7,7 +7,7 @@ import { ResizedEvent } from 'angular-resize-event';
  * TODO coming soon mode:
  *
  * Priority 1:
- * -
+ * - 
  *
  * Priority 2:
  * - If possible, make leaf drop at the bottom of the tree on mobile
@@ -47,10 +47,10 @@ export class ComingSoonComponent implements OnInit {
   }
 
   onTreeResize(event: ResizedEvent): void {
-    if (event.newRect.width < 542) { // If smaller than original width
+    if (event.newRect?.width && event.newRect.width < 542) { // If smaller than original width
       this.leafXFromCenter = Math.floor(0.07 * event.newRect.width);
     }
-    if (event.newRect.height < 702) { // If smaller than original height
+    if (event.newRect?.height && event.newRect.height < 702) { // If smaller than original height
       this.leafYFromBottom = Math.floor(0.90 * event.newRect.height);
     }
   }
