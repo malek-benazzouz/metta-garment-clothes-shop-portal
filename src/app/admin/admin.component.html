@@ -13,10 +13,13 @@
     <div class="card-body">
 
       <!-- Title -->
-      <h1 class="typo-admin-title py-4">Newsletter subscriptions</h1>
+      <h1 class="typo-admin-title py-4 text-center">
+        <span *ngIf="!(isAuthenticated$ | async)">Restricted content</span>
+        <span *ngIf="isAuthenticated$ | async">Newsletter subscriptions</span>
+      </h1>
 
       <!-- Subtitle: summary of the subscriptions -->
-      <h2 *ngIf="newsletterSubscriptionsSummary" class="typo-admin-subtitle d-flex justify-content-between py-2">
+      <h2 *ngIf="(isAuthenticated$ | async) && newsletterSubscriptionsSummary" class="typo-admin-subtitle d-flex justify-content-between py-2">
         <span>{{ newsletterSubscriptionsSummary }}</span>
         <button class="btn btn-outline-secondary" (click)="exportAsCsv()">Export as CSV</button>
       </h2>
