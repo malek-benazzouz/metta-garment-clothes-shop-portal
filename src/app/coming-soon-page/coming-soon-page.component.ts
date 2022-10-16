@@ -7,7 +7,7 @@ import { ResizedEvent } from 'angular-resize-event';
  * TODO coming soon mode:
  *
  * Priority 1:
- * - 
+ * -
  *
  * Priority 2:
  * - If possible, make leaf drop at the bottom of the tree on mobile
@@ -18,15 +18,15 @@ import { ResizedEvent } from 'angular-resize-event';
  */
 
 @Component({
-  selector: 'app-coming-soon',
-  templateUrl: './coming-soon.component.html',
-  styleUrls: ['./coming-soon.component.scss'],
+  selector: 'app-coming-soon-page',
+  templateUrl: './coming-soon-page.component.html',
+  styleUrls: ['./coming-soon-page.component.scss'],
   animations: [
     droppingLeafAnimation,
     fadeInQuoteAnimation
   ]
 })
-export class ComingSoonComponent implements OnInit {
+export class ComingSoonPageComponent implements OnInit {
 
   shouldDisplayForm = true;
   isLeafDropping = false;

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdminComponent } from './admin/admin.component';
-import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { AdminPageComponent } from './admin-page/admin-page.component';
+import { ComingSoonPageComponent } from './coming-soon-page/coming-soon-page.component';
 
 const routes: Routes = [
-  { path: '', component: ComingSoonComponent },
-  // { path: 'home', component: HomeComponent }, // Uncomment to work on home page
-  { path: 'admin', component: AdminComponent },
+  { path: '', component: ComingSoonPageComponent },
+  // { path: 'home', component: HomePageComponent }, // Uncomment to work on home-page page
+  { path: 'admin', component: AdminPageComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
