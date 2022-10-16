@@ -2,6 +2,10 @@
 
 ## General
 
+Ongoing work
+
+- dot-page component mobile and tablet view -> First, split in 3 components for simplicity
+
 Priority 1
 
 - Handle responsiveness everywhere
@@ -15,8 +19,6 @@ Priority 1
 - Add animation when expanding/collapsing dot content + other animations?
 - All other TO DOs in the project
 - dot page: for big mobiles, have a bigger font for dot menu
-- dot menu: + and - should be in respira font, and smaller
-- dot menu: on hover, change font color instead of making it bold
 - Check if we can get more info on the subscribers when they fill the form (location, user agent?)
 - For height 720px (and around), is it possible to make the tree fully visible?
 - In dot page, in desktop view, center the slogan horizontally (same distance from left border as from door logo)

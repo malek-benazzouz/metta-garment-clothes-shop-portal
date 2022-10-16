@@ -5,11 +5,11 @@ import { AuthService } from '../services/auth.service';
 import { CsvRow, ExportService } from '../services/export.service';
 
 @Component({
-  selector: 'app-admin',
-  templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.scss']
+  selector: 'app-admin-page',
+  templateUrl: './admin-page.component.html',
+  styleUrls: ['./admin-page.component.scss']
 })
-export class AdminComponent implements OnInit {
+export class AdminPageComponent implements OnInit {
 
   newsletterSubscriptions$: Observable<NewsletterSubscription[]>;
   isAuthenticated$: Observable<boolean>;

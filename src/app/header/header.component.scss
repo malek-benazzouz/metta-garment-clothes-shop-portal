@@ -4,10 +4,10 @@
 @import "~bootstrap/scss/mixins";
 
 .navbar {
-  height: 65px; // If you update this height, adapt sizes in home.component.scss and product-page.component.scss
+  height: 65px; // If you update this height, adapt sizes in home-page.component.scss and product-page.component.scss
 
   @include media-breakpoint-down('md') {
-    height: 45px; // If you update this height, adapt sizes in home.component.scss and product-page.component.scss
+    height: 45px; // If you update this height, adapt sizes in home-page.component.scss and product-page.component.scss
   }
 }
 

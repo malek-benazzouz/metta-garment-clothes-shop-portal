@@ -8,16 +8,15 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HomeComponent } from './home/home.component';
+import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './header/header.component';
-import { DotContentComponent } from './dot-content/dot-content.component';
+import { DotPageComponent } from './dot-page/dot-page.component';
 import { ResponsiveDebugComponent } from './debug/responsive-debug/responsive-debug.component';
-import { TreeComponent } from './tree/tree.component';
-import { DotComponent } from './dot/dot.component';
+import { TreePageComponent } from './tree-page/tree-page.component';
+import { DotToggleComponent } from './dot-toggle/dot-toggle.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { NavbarMenuComponent } from './navbar-menu/navbar-menu.component';
 import { DotMenuComponent } from './dot-menu/dot-menu.component';
-import { DotFooterComponent } from './dot-footer/dot-footer.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
@@ -27,26 +26,25 @@ import { ContactLinksComponent } from './contact-links/contact-links.component';
 import { CopyrightComponent } from './copyright/copyright.component';
 import { LegalLinksComponent } from './legal-links/legal-links.component';
 import { ProductOverviewComponent } from './product-overview/product-overview.component';
-import { AdminComponent } from './admin/admin.component';
+import { AdminPageComponent } from './admin-page/admin-page.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ProductPageComponent } from './product-page/product-page.component';
-import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { ComingSoonPageComponent } from './coming-soon-page/coming-soon-page.component';
 import { NewsletterFormComingSoonComponent } from './newsletter-form-coming-soon/newsletter-form-coming-soon.component';
 import { AngularResizeEventModule } from 'angular-resize-event';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    HomePageComponent,
     HeaderComponent,
-    DotContentComponent,
+    DotPageComponent,
     ResponsiveDebugComponent,
-    TreeComponent,
-    DotComponent,
+    TreePageComponent,
+    DotToggleComponent,
     DotMenuComponent,
     NavbarMenuComponent,
-    DotFooterComponent,
     LegalInfoComponent,
     NewsletterFormComponent,
     NewsletterFormComingSoonComponent,
@@ -55,8 +53,8 @@ import { AngularResizeEventModule } from 'angular-resize-event';
     LegalLinksComponent,
     ProductOverviewComponent,
     ProductPageComponent,
-    AdminComponent,
-    ComingSoonComponent
+    AdminPageComponent,
+    ComingSoonPageComponent
   ],
   imports: [
     BrowserModule,

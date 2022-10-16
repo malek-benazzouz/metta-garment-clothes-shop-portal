@@ -3,11 +3,11 @@ import { Product } from '../../data/product.model';
 import { findProductById } from '../../data/products.data';
 
 @Component({
-  selector: 'app-tree',
-  templateUrl: './tree.component.html',
-  styleUrls: ['./tree.component.scss']
+  selector: 'app-tree-page',
+  templateUrl: './tree-page.component.html',
+  styleUrls: ['./tree-page.component.scss']
 })
-export class TreeComponent implements OnInit {
+export class TreePageComponent implements OnInit {
 
   @Output() openProduct = new EventEmitter<{ product: Product, isSunProduct: boolean }>();
 

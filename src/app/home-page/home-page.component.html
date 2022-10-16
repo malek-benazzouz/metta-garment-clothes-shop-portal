@@ -18,12 +18,12 @@
 
     <!-- Dot content - Desktop -->
     <div class="app-body dot-content d-none d-lg-flex justify-content-center align-items-center p-5">
-      <app-dot-content></app-dot-content>
+      <app-dot-page></app-dot-page>
     </div>
 
     <!-- Dot content - Mobile -->
     <div class="app-body dot-content d-flex d-lg-none justify-content-center align-items-center p-5">
-      <app-dot-content></app-dot-content>
+      <app-dot-page></app-dot-page>
     </div>
 
   </ng-container>
@@ -33,12 +33,12 @@
 
     <!-- Main content - Desktop -->
     <div class="app-body main-content d-none d-lg-flex justify-content-center align-items-center p-4">
-      <app-tree></app-tree>
+      <app-tree-page></app-tree-page>
     </div>
 
     <!-- Main content - Mobile -->
     <div *ngIf="!openProduct" class="app-body main-content d-flex d-lg-none justify-content-center align-items-center p-4">
-      <app-tree (openProduct)="onOpenProduct($event)"></app-tree>
+      <app-tree-page (openProduct)="onOpenProduct($event)"></app-tree-page>
     </div>
 
     <!-- Product page - Mobile only -->

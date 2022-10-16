@@ -3,11 +3,11 @@ import { fromEvent, Subscription } from 'rxjs';
 import { throttleTime } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-dot',
-  templateUrl: './dot.component.html',
-  styleUrls: ['./dot.component.scss']
+  selector: 'app-dot-toggle',
+  templateUrl: './dot-toggle.component.html',
+  styleUrls: ['./dot-toggle.component.scss']
 })
-export class DotComponent implements OnInit, OnDestroy {
+export class DotToggleComponent implements OnInit, OnDestroy {
 
   @Output() toggleDot = new EventEmitter<boolean>(); // True if expanded, false if collapsed
 

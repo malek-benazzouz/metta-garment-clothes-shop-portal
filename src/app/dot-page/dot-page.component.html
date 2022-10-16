@@ -1,0 +1,71 @@
+<!-- TODO for this page it is probably simpler to do 3 components: one for mobile, one for desktop and one for tablet -->
+<!--   Because the structure on mobile is quite different! -->
+<div id="dot-content" aria-labelledby="dot">
+
+  <!-- Dot menu - Mobile only -->
+  <div class="d-block d-lg-none">
+    <app-dot-menu></app-dot-menu>
+  </div>
+
+  <!-- Slogan - Tablet only -->
+  <div id="slogan-for-tablet" class="d-none d-lg-flex d-3xl-none justify-content-center align-items-center mb-5">
+    <img src="assets/texts/slogan-dark.svg" alt="Slogan: spiritualiser le matériel, matérialiser le spirituel" width="300">
+  </div>
+
+  <!-- Door logo - Mobile and Tablet -->
+  <div id="door-symbol-for-tablet" class="d-flex d-xl-none justify-content-center mb-5">
+    <img src="assets/door-symbol-light.png" alt="Metta symbol" width="150">
+  </div>
+
+  <!-- Dot footer -->
+  <div class="dot-footer d-flex justify-content-center align-items-end">
+
+    <!-- Slogan -->
+    <div id="slogan" class="footer-left-part d-none d-3xl-flex justify-content-center align-self-center">
+      <img src="assets/texts/slogan-dark.svg" alt="Slogan: spiritualiser le matériel, matérialiser le spirituel">
+    </div>
+
+    <!-- Door logo -->
+    <div id="door-symbol" class="footer-center-part d-none d-xl-flex justify-content-center">
+      <img src="assets/door-symbol-light.png" alt="Metta symbol">
+    </div>
+
+    <!-- Footer content -->
+    <div id="footer-content" class="footer-right-part d-flex flex-column justify-content-end text-right">
+
+      <!-- Legal info -->
+      <app-legal-info></app-legal-info>
+
+      <!-- Subscribe to newsletter -->
+      <app-newsletter-form></app-newsletter-form>
+
+      <!-- Images: Look up and Metta signature -->
+      <div class="d-flex justify-content-end">
+
+        <!-- Look up - Tablet and Desktop only -->
+        <div id="footer-look-up" class="d-none d-lg-flex">
+          <img src="assets/texts/look-up-large-light.svg" alt="Look up">
+        </div>
+
+        <!-- Metta signature -->
+        <div id="metta-signature" class="mb-5">
+          <img src="assets/texts/metta-signature-dark.svg" alt="Metta signature">
+        </div>
+
+      </div>
+
+      <!-- Contact info -->
+      <app-contact-links></app-contact-links>
+
+      <!-- Copyright -->
+      <app-copyright></app-copyright>
+
+      <!-- Legal links -->
+      <app-legal-links></app-legal-links>
+
+    </div>
+
+  </div>
+
+
+</div>
