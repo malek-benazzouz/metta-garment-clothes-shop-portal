@@ -1,0 +1,22 @@
+@import "src/style/variables";
+@import "~bootstrap/scss/mixins";
+
+.left-part {
+  width: 33%;
+}
+
+.right-part {
+  width: 33%;
+}
+
+.center-part {
+  @include media-breakpoint-only('lg') {
+    img {
+      width: 90%;
+    }
+  }
+}
+
+app-newsletter-form {
+  margin-left: -50%;
+}

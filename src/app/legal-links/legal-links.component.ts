@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-legal-links',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./legal-links.component.scss']
 })
 export class LegalLinksComponent implements OnInit {
+
+  @Input() mobileVariant = false;
 
   constructor() {}
 

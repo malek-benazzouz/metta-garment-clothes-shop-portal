@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-legal-info',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./legal-info.component.scss']
 })
 export class LegalInfoComponent implements OnInit {
+
+  @Input() showPropertyText = true;
+  @Input() showNewsletterText = true;
 
   constructor() {}
 

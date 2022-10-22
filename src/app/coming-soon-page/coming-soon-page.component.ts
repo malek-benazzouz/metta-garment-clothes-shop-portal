@@ -3,20 +3,6 @@ import { droppingLeafAnimation } from '../animations/dropping-leaf.animation';
 import { fadeInQuoteAnimation } from '../animations/fade-in-quote.animation';
 import { ResizedEvent } from 'angular-resize-event';
 
-/**
- * TODO coming soon mode:
- *
- * Priority 1:
- * -
- *
- * Priority 2:
- * - If possible, make leaf drop at the bottom of the tree on mobile
- * - Add more animations? (e.g. form fade after submit, leaf blinks after drop, form input highlight before submit)
- *
- * Before production:
- * - Switch to Production mode in NewsletterService
- */
-
 @Component({
   selector: 'app-coming-soon-page',
   templateUrl: './coming-soon-page.component.html',

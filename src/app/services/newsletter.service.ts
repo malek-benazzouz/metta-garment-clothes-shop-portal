@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore, DocumentReference } from '@angular/fire/firestore';
-import { AngularFireAuth } from '@angular/fire/auth';
 import { Observable } from 'rxjs';
 
 export interface NewsletterSubscription {
