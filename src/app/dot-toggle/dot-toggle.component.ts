@@ -29,7 +29,7 @@ export class DotToggleComponent implements OnInit, OnDestroy {
           const xDot = this.el.nativeElement.offsetLeft + 7; // Add 7px to target the dot central pixel.
           const yDot = this.el.nativeElement.offsetTop + 7; // Add 7px to target the dot central pixel.
           const mouseDotDistance = Math.hypot(xMouse - xDot, yMouse - yDot);
-          const red = Math.min(220, Math.floor(220 * (40 / mouseDotDistance) + 80)); // TODO find the right formula (percentage?)
+          const red = Math.min(220, Math.floor(220 * (40 / mouseDotDistance) + 80));
           const green = Math.min(206, Math.floor(206 * (40 / mouseDotDistance) + 70));
           const blue = Math.min(135, Math.floor(135 * (40 / mouseDotDistance) + 50));
           this.dotColor = `rgb(${red}, ${green}, ${blue})`;

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-contact-links',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-links.component.scss']
 })
 export class ContactLinksComponent implements OnInit {
+
+  @Input() showSocialNetworkLinks = true;
 
   constructor() {}
 

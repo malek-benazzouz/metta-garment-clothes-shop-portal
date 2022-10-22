@@ -1,0 +1,84 @@
+@import "src/style/typography";
+@import "src/style/variables";
+@import "~bootstrap/scss/mixins";
+
+.left-part {
+  position: absolute;
+  left: 80px;
+
+  @include media-breakpoint-only('3xl') {
+    img {
+      width: 90%;
+    }
+  }
+  @include media-breakpoint-only('2xl') {
+    img {
+      width: 70%;
+    }
+    left: 30px;
+  }
+}
+
+.center-part {
+  img {
+    width: 95%;
+  }
+
+  @include media-breakpoint-only('3xl') {
+    img {
+      width: 90%;
+    }
+  }
+  @include media-breakpoint-only('2xl') {
+    img {
+      width: 75%;
+      margin-top: -40px;
+    }
+  }
+}
+
+.right-part {
+  position: absolute;
+  right: 80px;
+  height: 711px; // Same height as Door logo
+  width: 32%;
+
+  @include media-breakpoint-only('3xl') {
+    height: 673px; // Same height as Door logo
+  }
+
+  @include media-breakpoint-only('2xl') {
+    height: auto;
+  }
+}
+
+#footer-look-up {
+  margin-top: -35px;
+  margin-bottom: -25px;
+  margin-right: 66px;
+
+  @include media-breakpoint-down('3xl') {
+    margin-top: -15px;
+    margin-bottom: -90px;
+    margin-right: 200px;
+  }
+
+  @include media-breakpoint-only('2xl') {
+    margin-top: -15px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    img {
+      width: 80%;
+    }
+  }
+}
+
+#metta-signature {
+  margin-top: 35px;
+}
+
+app-legal-links {
+  @include media-breakpoint-only('2xl') {
+    margin-left: -50%;
+  }
+}

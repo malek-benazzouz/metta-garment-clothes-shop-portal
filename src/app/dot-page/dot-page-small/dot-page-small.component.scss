@@ -1,0 +1,17 @@
+@import "src/style/colors";
+
+:host::ng-deep #fixed-newsletter-form {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: $cream;
+
+  mat-form-field {
+    width: 230px;
+  }
+
+  .mat-form-field-flex {
+    padding-top: 5px;
+  }
+}

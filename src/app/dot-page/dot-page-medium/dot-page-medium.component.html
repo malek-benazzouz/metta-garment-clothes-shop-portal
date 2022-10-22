@@ -1,0 +1,40 @@
+<div class="d-flex justify-content-center align-items-start my-5">
+
+  <!-- Left part -->
+  <div class="left-part mr-2">
+    <!-- Legal info: property text -->
+    <app-legal-info [showNewsletterText]="false"></app-legal-info>
+    <!-- Metta signature -->
+    <div id="metta-signature" class="my-5">
+      <img src="assets/texts/metta-signature-dark.svg" alt="Metta signature">
+    </div>
+  </div>
+
+  <!-- Center part -->
+  <div id="door-symbol" class="center-part d-flex justify-content-center align-self-center">
+    <img src="assets/door-symbol-light.png" alt="Metta symbol" width="400">
+  </div>
+
+  <!-- Right part -->
+  <div class="right-part ml-2 d-flex flex-column justify-content-between text-right">
+    <!-- Legal info: newsletter text -->
+    <app-legal-info [showPropertyText]="false"></app-legal-info>
+    <!-- Subscribe to newsletter -->
+    <app-newsletter-form></app-newsletter-form>
+    <!-- Look up -->
+    <div id="footer-look-up" class="d-flex justify-content-start my-5 ml-4 ml-xl-5">
+      <img src="assets/texts/look-up-large-light.svg" alt="Look up" width="100">
+    </div>
+    <!-- Contact info -->
+    <app-contact-links></app-contact-links>
+    <!-- Copyright -->
+    <app-copyright></app-copyright>
+  </div>
+
+</div>
+
+<!-- Legal links -->
+<app-legal-links></app-legal-links>
+
+
+
