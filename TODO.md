@@ -3,7 +3,6 @@
 ## Ongoing work
 
 - dot-page mobile view:
-  - rework dot menu (increase font-size/letter-spacing depending on viewport, to take the whole width)
   - newsletter-form: on form error, or submit feedback, make sure it is displayed correctly despite the fixed position
 
 ## Priority 1

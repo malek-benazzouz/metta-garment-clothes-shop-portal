@@ -3,14 +3,13 @@
   <!-- Submenu: Philosophy -->
   <div class="submenu">
     <!-- Submenu toggle -->
-    <div class="submenu-toggle menu-title d-flex justify-content-between" tabindex="0" (click)="togglePhilosophyMenu()">
-      <span>&nbsp;</span>
+    <div class="submenu-toggle menu-title d-flex justify-content-between align-items-center" tabindex="0" (click)="togglePhilosophyMenu()">
       <span id="philosophy-label">PHILOSOPHY</span>
       <span class="submenu-toggle-icon" *ngIf="philosophyMenuExpanded">-</span>
       <span class="submenu-toggle-icon" *ngIf="!philosophyMenuExpanded">+</span>
     </div>
     <!-- Submenu content -->
-    <div class="mb-4 text-left" *ngIf="philosophyMenuExpanded">
+    <div class="mt-2 mb-4 ml-2 text-left" *ngIf="philosophyMenuExpanded">
       <a class="menu-item" href="#">
         <div>Les 7 Cieux</div>
       </a>
@@ -26,14 +25,13 @@
   <!-- Submenu: Garment -->
   <div class="submenu">
     <!-- Submenu toggle -->
-    <div class="submenu-toggle menu-title d-flex justify-content-between" tabindex="0" (click)="toggleGarmentMenu()">
-      <span>&nbsp;</span>
+    <div class="submenu-toggle menu-title d-flex justify-content-between align-items-center" tabindex="0" (click)="toggleGarmentMenu()">
       <span id="garment-label">GARMENT</span>
       <span class="submenu-toggle-icon" *ngIf="garmentMenuExpanded">-</span>
       <span class="submenu-toggle-icon" *ngIf="!garmentMenuExpanded">+</span>
     </div>
     <!-- Submenu content -->
-    <div class="mb-4 text-right" *ngIf="garmentMenuExpanded">
+    <div class="mt-2 mb-4 mr-2 text-right" *ngIf="garmentMenuExpanded">
       <a class="menu-item" href="#">
         <div>Sweaters and Wooden Boxes</div>
       </a>
@@ -44,17 +42,17 @@
   </div>
 
   <!-- Link: Instagram -->
-  <a class="menu-title text-center" href="#">
+  <a class="menu-title text-right" href="#">
     <div id="instagram-label">INSTAGRAM</div>
   </a>
 
   <!-- Link: Pinterest -->
-  <a class="menu-title text-center" href="#">
+  <a class="menu-title text-left" href="#">
     <div id="pinterest-label">PINTEREST</div>
   </a>
 
   <!-- Link: Youtube -->
-  <a class="menu-title text-center" href="#">
+  <a class="menu-title text-right" href="#">
     <div id="youtube-label">YOUTUBE</div>
   </a>
 
