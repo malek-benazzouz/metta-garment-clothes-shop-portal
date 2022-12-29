@@ -15,7 +15,7 @@
 
 <!-- Feedback messages -->
 <div class="feedbacks">
-  <div class="feedback text-center" *ngFor="let feedback of feedbackMessages">
+  <div class="feedback text-center mb-1" *ngFor="let feedback of feedbackMessages">
 
     <!-- Success toast -->
     <ngb-toast class="success-toast text-light" [delay]="7000" *ngIf="feedback.isSuccess">

@@ -39,6 +39,16 @@
 .feedbacks {
   position: absolute;
   right: 0;
+
+  @include media-breakpoint-down('xl') {
+    right: 70px;
+  }
+
+  @include media-breakpoint-down('md') {
+    right: auto;
+    top: -70px;
+    width: 325px;
+  }
 }
 
 .success-toast {
@@ -47,4 +57,9 @@
 
 .error-toast {
   background: $error-color;
+}
+
+:host::ng-deep .toast-body {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

@@ -2,8 +2,7 @@
 
 ## Ongoing work
 
-- dot-page mobile view:
-  - newsletter-form: on form error, or submit feedback, make sure it is displayed correctly despite the fixed position
+- 
 
 ## Priority 1
 
