@@ -12,7 +12,7 @@ export interface NewsletterSubscription {
 @Injectable({ providedIn: 'root' })
 export class NewsletterService {
 
-  private readonly isProduction = true;
+  private readonly isProduction = false; // TODO prodReadiness set to true
 
   constructor(private store: AngularFirestore) {}
 

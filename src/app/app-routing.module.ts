@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminPageComponent } from './admin-page/admin-page.component';
-import { ComingSoonPageComponent } from './coming-soon-page/coming-soon-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 const routes: Routes = [
-  { path: '', component: ComingSoonPageComponent },
-  // { path: 'home', component: HomePageComponent }, // Uncomment to work on home-page page
+  // { path: '', component: ComingSoonPageComponent }, // Temporary page while waiting for launch
+  { path: '', component: HomePageComponent },
   { path: 'admin', component: AdminPageComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

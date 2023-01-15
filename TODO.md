@@ -1,8 +1,38 @@
 # TODO
 
-## Ongoing work
+## Must-have before PRD launch
 
-- 
+- Update all the menus:
+  - Philosophy -> Metaphorical Garment
+    - The Spirit of Mettä -> https://door.metta-garment.com/the-spirit-of-metta/
+  - Garment -> Tangible Garments
+    - The Essence Garment -> https://door.metta-garment.com/the-essence-garment/
+    - The Life Garment -> https://door.metta-garment.com/the-life-garment/
+  -> + Update the mobile version of the menu to make Metaphorical Garment and Tangible Garments look like the mockup
+
+- Add link to cart: https://door.metta-garment.com/cart/
+
+- Update products:
+  - Product images, titles, prices and descriptions
+  - Add links to product pages (including in mobile product page)
+  - Transform the leaves that have no product into non-clickable images
+  - Potentially resize/crop images fit the mobile view properly + play on `background-size` to find the best layout
+
+- Legal links:
+  - Remove CREDITS
+  - Add links (potentially update Privacy policy title)
+
+- Make door image clickable -> leads to Link tree 
+
+- Handle routing:
+  - Land on home page instead of coming-soon page
+  - Add a URL param (or a dedicated route) that expands the dot on page load if sent, and communicate it to Claire
+    - Examples: https://metta-garment.com/?state=metta-information OR https://metta-garment.com/metta-information
+  - Redirection between coming-soon page and home page?
+
+- All occurrences of `TODO prodReadiness`
+
+- Priority 1 items
 
 ## Priority 1
 
@@ -11,7 +41,7 @@
   - Add a box shadow (very light) under the header - add it only for dot view (e.g. box-shadow: 1px 0px 6px #ddd;)
   - When hovering the navbar menu titles, in order to avoid text overlapping, we should ideally add a white or black semi-transparent layer on the whole page (see https://nakashimawoodworkers.com/)
   - newsletter form error "Invalid email address" overlaps the "look up" logo
-- Handle redirection between coming-soon page and home page
+  - newsletter form: change hint and underline color from blue to noctural green
 - Firestore DB: set more robust security rules
 - Loading and images:
   - Design a loading theme (skeleton, icon, wheel?) and use it whenever loading is required (e.g. while posting newsletter form)
