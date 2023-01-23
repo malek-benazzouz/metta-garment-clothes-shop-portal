@@ -3,17 +3,7 @@
   <!-- Product image -->
   <div class="product-image" [style.background]="'url(' + product.imageUrl + ') no-repeat top'"></div>
 
-  <!-- Sun image -->
-  <div class="sun-image" *ngIf="isSunProduct">
-    <img src="assets/sun-light.svg" alt="Image: the sun">
-  </div>
-
-  <!-- Moon image -->
-  <div class="moon-image" *ngIf="!isSunProduct">
-    <img src="assets/moon-light.svg" alt="Image: the moon">
-  </div>
-
-  <!-- -->
+  <!-- Links -->
   <div class="product-links d-flex justify-content-between align-items-center">
     <!-- Back link -->
     <a href="javascript:void(0);" (click)="onBackButtonClicked()">BACK TO THE EDENIC STATE</a>

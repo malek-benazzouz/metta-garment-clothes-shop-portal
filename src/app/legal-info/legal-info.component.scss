@@ -1,0 +1,9 @@
+@import "~bootstrap/scss/mixins";
+@import "src/style/typography";
+
+.circled-r {
+  font-size: 38px;
+  height: 10px;
+  display: inline-block;
+  vertical-align: -18px;
+}
