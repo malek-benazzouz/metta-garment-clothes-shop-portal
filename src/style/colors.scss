@@ -1,9 +1,9 @@
 @import "variables";
 
 // Colors definition
-$black: #0a0a00;
+$black: #000000;
+$blackish: #0a0a00;
 $noctural-green: #112f25;
-$noctural-green-light: #2a755c;
 $green: #0f6d55;
 $red: #5f0100;
 $red-light: #fae2dc;
@@ -12,13 +12,14 @@ $sunny-gold: #d4c36c;
 $sunny-gold-light: #dcce87;
 $cream: #fcf7ef;
 $almost-white: #fbf7f0;
+$whitish: #fcfcfa;
 $white: #fffffd;
 
 // Theme colors
-$dot-color: $black;
-$text-primary-color: $noctural-green;
-$text-secondary-color: $noctural-green-light;
-$background-plain-color: $white;
+$dot-color: $blackish;
+$text-primary-color: $black;
+$text-secondary-color: $noctural-green;
+$background-plain-color: $whitish;
 $background-gradient: linear-gradient(90deg, $cream 0%, $sunny-gold-light 100%);
 $success-color: $green;
 $error-color: $red;

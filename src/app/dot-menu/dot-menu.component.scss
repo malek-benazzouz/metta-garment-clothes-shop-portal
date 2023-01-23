@@ -2,14 +2,15 @@
 
 .menu-title {
   @extend .typo-dot-menu-title;
+  color: $text-secondary-color;
 }
 
 .menu-item {
   @extend .typo-dot-menu-item;
+  color: $text-primary-color;
 }
 
 .menu-title, .menu-item {
-  color: $text-primary-color;
   text-decoration: none;
 
   &:hover {

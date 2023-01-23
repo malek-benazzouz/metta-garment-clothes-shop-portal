@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
   @Input() hasDot: boolean = true;
   @Input() hasNavbarMenu: boolean = true;
   @Input() hasLinkToCart: boolean = true;
+  @Input() isDotExpanded: boolean = false;
 
   @Output() toggleDot = new EventEmitter<boolean>(); // True if expanded, false if collapsed
 

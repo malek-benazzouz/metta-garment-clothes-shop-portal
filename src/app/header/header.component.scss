@@ -4,10 +4,15 @@
 @import "~bootstrap/scss/mixins";
 
 .navbar {
+  background-color: $background-plain-color;
   height: 65px; // If you update this height, adapt sizes in home-page.component.scss and product-page.component.scss
 
   @include media-breakpoint-down('md') {
     height: 45px; // If you update this height, adapt sizes in home-page.component.scss and product-page.component.scss
+  }
+
+  &.dot-expanded {
+    box-shadow: 1px 0 5px #ddd;
   }
 }
 
@@ -38,7 +43,7 @@
 .cart-link {
   @extend .typo-cart-link;;
   text-decoration: none;
-  color: $text-primary-color !important;
+  color: $text-secondary-color !important;
 
   &:hover, &:focus {
     color: $sunny-gold !important;

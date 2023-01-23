@@ -6,12 +6,8 @@
     height: 729px;
   }
 
-  @include media-breakpoint-only('xs') {
+  @include media-breakpoint-down('xs') {
     height: 601px;
-  }
-
-  @include media-breakpoint-only('2xs') {
-    height: 481px;
   }
 }
 
@@ -21,14 +17,9 @@
     margin-top: -36px; // = (801 (original tree height) - 729) / 2
   }
 
-  @include media-breakpoint-only('xs') {
+  @include media-breakpoint-down('xs') {
     transform: scale(0.75);
     margin-top: -100px; // = 801 (original tree height) - 601) / 2
-  }
-
-  @include media-breakpoint-only('2xs') {
-    transform: scale(0.6);
-    margin-top: -160px; // = 801 (original tree height) - 481) / 2
   }
 }
 

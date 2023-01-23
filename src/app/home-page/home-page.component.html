@@ -3,14 +3,14 @@
 <div class="fixed-banner fixed-bottom d-none d-lg-block"></div>
 
 <!-- Fixed cart link - Desktop only -->
-<a id="cart-link" class="d-none d-lg-block" href="#" title="Open my cart">CART</a>
+<a id="cart-link" class="d-none d-lg-block" href="https://door.metta-garment.com/cart/">CART</a>
 
 <!-- App content -->
 <div id="app-wrapper">
 
   <!-- Header -->
   <div class="app-header">
-    <app-header (toggleDot)="onToggleDot($event)"></app-header>
+    <app-header (toggleDot)="onToggleDot($event)" [isDotExpanded]="isDotExpanded"></app-header>
   </div>
 
   <!-- Dot expanded -->
