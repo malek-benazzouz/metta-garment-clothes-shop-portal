@@ -76,11 +76,6 @@
   margin-top: 120px;
 }
 
-.leaf {
-  position: absolute;
-  cursor: pointer;
-}
-
 #text-slogan {
   margin-top: 155px;
 
@@ -198,12 +193,19 @@
   margin-left: 479px;
 }
 
+.leaf {
+  position: absolute;
+
+  &.is-available {
+    cursor: pointer;
+  }
+}
 
 /*
 * Leaves images, sizes and positioning (for normal and hover states)
 */
 
-#leaf-001 {
+#leaf-001.is-available {
   margin-top: 475px;
   margin-left: -56px;
   background: url("../../assets/tree/leaves/leaf-001-dark.svg") no-repeat;
@@ -219,7 +221,7 @@
   }
 }
 
-#leaf-001prime {
+#leaf-001prime.is-available {
   margin-top: 477px;
   margin-left: 42px;
   background: url("../../assets/tree/leaves/leaf-001prime-light.svg") no-repeat;
@@ -235,7 +237,7 @@
   }
 }
 
-#leaf-002 {
+#leaf-002.is-available {
   margin-top: 287px;
   margin-left: 167px;
   background: url("../../assets/tree/leaves/leaf-002-dark.svg") no-repeat;
@@ -251,7 +253,7 @@
   }
 }
 
-#leaf-002prime {
+#leaf-002prime.is-available {
   margin-top: 325px;
   margin-left: 88px;
   background: url("../../assets/tree/leaves/leaf-002prime-light.svg") no-repeat;
@@ -267,7 +269,7 @@
   }
 }
 
-#leaf-003 {
+#leaf-003.is-available {
   margin-top: 352px;
   margin-left: -334px;
   background: url("../../assets/tree/leaves/leaf-003-dark.svg") no-repeat;
@@ -283,7 +285,7 @@
   }
 }
 
-#leaf-003prime {
+#leaf-003prime.is-available {
   margin-top: 388px;
   margin-left: -271px;
   background: url("../../assets/tree/leaves/leaf-003prime-light.svg") no-repeat;
@@ -299,7 +301,7 @@
   }
 }
 
-#leaf-004 {
+#leaf-004.is-available {
   margin-top: 469px;
   margin-left: 479px;
   background: url("../../assets/tree/leaves/leaf-004-dark.svg") no-repeat;
@@ -315,7 +317,7 @@
   }
 }
 
-#leaf-004prime {
+#leaf-004prime.is-available {
   margin-top: 447px;
   margin-left: 247px;
   background: url("../../assets/tree/leaves/leaf-004prime-light.svg") no-repeat;
@@ -331,7 +333,7 @@
   }
 }
 
-#leaf-005 {
+#leaf-005.is-available {
   margin-top: 560px;
   margin-left: -413px;
   background: url("../../assets/tree/leaves/leaf-005-dark.svg") no-repeat;
@@ -347,7 +349,7 @@
   }
 }
 
-#leaf-005prime {
+#leaf-005prime.is-available {
   margin-top: 595px;
   margin-left: -207px;
   background: url("../../assets/tree/leaves/leaf-005prime-light.svg") no-repeat;
@@ -363,7 +365,7 @@
   }
 }
 
-#leaf-006 {
+#leaf-006.is-available {
   margin-top: 595px;
   margin-left: 422px;
   background: url("../../assets/tree/leaves/leaf-006-dark.svg") no-repeat;
@@ -379,7 +381,7 @@
   }
 }
 
-#leaf-006prime {
+#leaf-006prime.is-available {
   margin-top: 609px;
   margin-left: 360px;
   background: url("../../assets/tree/leaves/leaf-006prime-light.svg") no-repeat;
@@ -395,7 +397,7 @@
   }
 }
 
-#leaf-007 {
+#leaf-007.is-available {
   margin-top: 723px;
   margin-left: 54px;
   background: url("../../assets/tree/leaves/leaf-007-dark.svg") no-repeat;
@@ -411,7 +413,7 @@
   }
 }
 
-#leaf-007prime {
+#leaf-007prime.is-available {
   margin-top: 659px;
   margin-left: 59px;
   background: url("../../assets/tree/leaves/leaf-007prime-light.svg") no-repeat;

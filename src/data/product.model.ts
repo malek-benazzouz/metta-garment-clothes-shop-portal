@@ -4,4 +4,5 @@ export interface Product {
   description: string; // e.g. 'Single Craft'
   price: number; // in EUR
   imageUrl: string; // e.g. 'assets/products/001-kirghizistan.svg'
+  isAvailable: boolean; // if the product is not available, its leaf will be a normal non-clickable leaf with no number
 }

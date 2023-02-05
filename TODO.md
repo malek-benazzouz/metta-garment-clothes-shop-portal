@@ -12,7 +12,6 @@
 - Update products:
   - Product images, titles, prices and descriptions
   - Add links to product pages (including in mobile product page)
-  - Transform the leaves that have no product into non-clickable images -> make it generic if possible
   - Potentially resize/crop images fit the mobile view properly + play on `background-size` to find the best layout
 
 - Add a popup in Mobile/desktop views (as soon as sun/moon are not shown) to tell the user to click on the leaves

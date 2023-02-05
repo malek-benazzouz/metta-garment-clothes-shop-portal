@@ -16,7 +16,7 @@
 
   <!-- Products tree -->
   <div id="tree">
-    <img src="assets/tree/tree-plus-chains-minus-14-leaves-dark.svg" alt="Our tree of products">
+    <img src="assets/tree/tree-plus-chains-dark.svg" alt="Our tree of products">
   </div>
 
   <!-- Moon block -->
@@ -69,19 +69,33 @@
   </div>
 
   <!-- Leaves -->
-  <div id="leaf-001" class="leaf" tabindex="0" (click)="showSunProduct('001', true)" (mouseenter)="showSunProduct('001')"></div>
-  <div id="leaf-001prime" class="leaf" tabindex="0" (click)="showSunProduct('001prime', true)" (mouseenter)="showSunProduct('001prime')"></div>
-  <div id="leaf-002" class="leaf" tabindex="0" (click)="showMoonProduct('002', true)" (mouseenter)="showMoonProduct('002')"></div>
-  <div id="leaf-002prime" class="leaf" tabindex="0" (click)="showMoonProduct('002prime', true)" (mouseenter)="showMoonProduct('002prime')"></div>
-  <div id="leaf-003" class="leaf" tabindex="0" (click)="showSunProduct('003', true)" (mouseenter)="showSunProduct('003')"></div>
-  <div id="leaf-003prime" class="leaf" tabindex="0" (click)="showSunProduct('003prime', true)" (mouseenter)="showSunProduct('003prime')"></div>
-  <div id="leaf-004" class="leaf" tabindex="0" (click)="showMoonProduct('004', true)" (mouseenter)="showMoonProduct('004')"></div>
-  <div id="leaf-004prime" class="leaf" tabindex="0" (click)="showMoonProduct('004prime', true)" (mouseenter)="showMoonProduct('004prime')"></div>
-  <div id="leaf-005" class="leaf" tabindex="0" (click)="showSunProduct('005', true)" (mouseenter)="showSunProduct('005')"></div>
-  <div id="leaf-005prime" class="leaf" tabindex="0" (click)="showSunProduct('005prime', true)" (mouseenter)="showSunProduct('005prime')"></div>
-  <div id="leaf-006" class="leaf" tabindex="0" (click)="showMoonProduct('006', true)" (mouseenter)="showMoonProduct('006')"></div>
-  <div id="leaf-006prime" class="leaf" tabindex="0" (click)="showMoonProduct('006prime', true)" (mouseenter)="showMoonProduct('006prime')"></div>
-  <div id="leaf-007" class="leaf" tabindex="0" (click)="showSunProduct('007', true)" (mouseenter)="showSunProduct('007')"></div>
-  <div id="leaf-007prime" class="leaf" tabindex="0" (click)="showSunProduct('007prime', true)" (mouseenter)="showSunProduct('007prime')"></div>
+  <div id="leaf-001" class="leaf" tabindex="0" [ngClass]="{'is-available': productAvailMap['001']}"
+       (click)="showSunProduct('001', true)" (mouseenter)="showSunProduct('001')"></div>
+  <div id="leaf-001prime" class="leaf" tabindex="0" [ngClass]="{'is-available': productAvailMap['001prime']}"
+       (click)="showSunProduct('001prime', true)" (mouseenter)="showSunProduct('001prime')"></div>
+  <div id="leaf-002" class="leaf" tabindex="0" [ngClass]="{'is-available': productAvailMap['002']}"
+       (click)="showMoonProduct('002', true)" (mouseenter)="showMoonProduct('002')"></div>
+  <div id="leaf-002prime" class="leaf" tabindex="0" [ngClass]="{'is-available': productAvailMap['002prime']}"
+       (click)="showMoonProduct('002prime', true)" (mouseenter)="showMoonProduct('002prime')"></div>
+  <div id="leaf-003" class="leaf" tabindex="0" [ngClass]="{'is-available': productAvailMap['003']}"
+       (click)="showSunProduct('003', true)" (mouseenter)="showSunProduct('003')"></div>
+  <div id="leaf-003prime" class="leaf" tabindex="0" [ngClass]="{'is-available': productAvailMap['003prime']}"
+       (click)="showSunProduct('003prime', true)" (mouseenter)="showSunProduct('003prime')"></div>
+  <div id="leaf-004" class="leaf" tabindex="0" [ngClass]="{'is-available': productAvailMap['004']}"
+       (click)="showMoonProduct('004', true)" (mouseenter)="showMoonProduct('004')"></div>
+  <div id="leaf-004prime" class="leaf" tabindex="0" [ngClass]="{'is-available': productAvailMap['004prime']}"
+       (click)="showMoonProduct('004prime', true)" (mouseenter)="showMoonProduct('004prime')"></div>
+  <div id="leaf-005" class="leaf" tabindex="0" [ngClass]="{'is-available': productAvailMap['005']}"
+       (click)="showSunProduct('005', true)" (mouseenter)="showSunProduct('005')"></div>
+  <div id="leaf-005prime" class="leaf" tabindex="0" [ngClass]="{'is-available': productAvailMap['005prime']}"
+       (click)="showSunProduct('005prime', true)" (mouseenter)="showSunProduct('005prime')"></div>
+  <div id="leaf-006" class="leaf" tabindex="0" [ngClass]="{'is-available': productAvailMap['006']}"
+       (click)="showMoonProduct('006', true)" (mouseenter)="showMoonProduct('006')"></div>
+  <div id="leaf-006prime" class="leaf" tabindex="0" [ngClass]="{'is-available': productAvailMap['006prime']}"
+       (click)="showMoonProduct('006prime', true)" (mouseenter)="showMoonProduct('006prime')"></div>
+  <div id="leaf-007" class="leaf" tabindex="0" [ngClass]="{'is-available': productAvailMap['007']}"
+       (click)="showSunProduct('007', true)" (mouseenter)="showSunProduct('007')"></div>
+  <div id="leaf-007prime" class="leaf" tabindex="0" [ngClass]="{'is-available': productAvailMap['007prime']}"
+       (click)="showSunProduct('007prime', true)" (mouseenter)="showSunProduct('007prime')"></div>
 
 </div>

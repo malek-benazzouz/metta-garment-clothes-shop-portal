@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Product } from '../../data/product.model';
-import { findProductById } from '../../data/products.data';
+import { findProductById, getProductAvailMap } from '../../data/products.data';
 
 @Component({
   selector: 'app-tree-page',
@@ -13,6 +13,8 @@ export class TreePageComponent implements OnInit {
 
   sunProduct: Product | undefined;
   moonProduct: Product | undefined;
+
+  productAvailMap: { [productId: string]: boolean } = getProductAvailMap();
 
   constructor() {}
 
