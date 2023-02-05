@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../../data/product.model';
 import { fromEvent } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
@@ -10,12 +11,14 @@ import { debounceTime } from 'rxjs/operators';
 })
 export class HomePageComponent implements OnInit {
 
-  isDotExpanded = false;
+  isDotExpanded: boolean;
 
   openProduct: Product | undefined;
   isOpenProductSunProduct: boolean;
 
-  constructor() {}
+  constructor(private route: ActivatedRoute) {
+    this.isDotExpanded = route.snapshot.data?.expandDot || false;
+  }
 
   ngOnInit(): void {
     // If we resize the window (e.g. mobile landscape to portrait), we may switch from desktop to mobile, so we want to reset the open product
@@ -24,8 +27,8 @@ export class HomePageComponent implements OnInit {
     });
   }
 
-  onToggleDot(isExpanded: boolean): void {
-    this.isDotExpanded = isExpanded;
+  onToggleDot(): void {
+    this.isDotExpanded = !this.isDotExpanded;
   }
 
   onOpenProduct(productInfo: { product: Product, isSunProduct: boolean }): void {

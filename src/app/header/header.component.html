@@ -6,14 +6,14 @@
 
   <!-- Metta logo -->
   <span class="header-left-part">
-    <a class="navbar-brand pt-0" href="#">
+    <a class="navbar-brand pt-0" href="/">
       <img src="assets/metta-logo-dark.svg" alt="Metta logo">
     </a>
   </span>
 
   <!-- Dot menu -->
   <span *ngIf="hasDot" class="header-center-part">
-    <app-dot-toggle (toggleDot)="onToggleDot($event)"></app-dot-toggle>
+    <app-dot-toggle (toggleDot)="onToggleDot()"></app-dot-toggle>
   </span>
 
   <!-- Navbar menu - Desktop only -->
