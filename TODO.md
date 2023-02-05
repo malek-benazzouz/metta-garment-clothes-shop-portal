@@ -15,14 +15,11 @@
   - Transform the leaves that have no product into non-clickable images -> make it generic if possible
   - Potentially resize/crop images fit the mobile view properly + play on `background-size` to find the best layout
 
-- Handle routing:
-  - Add a URL param (or a dedicated route) that expands the dot on page load if sent, and communicate it to Claire
-    - Examples: https://metta-garment.com/?page=dot OR metta-garment.com/dot/
-
 - Add a popup in Mobile/desktop views (as soon as sun/moon are not shown) to tell the user to click on the leaves
 
 - Navbar menu: when scrolling the page down then hovering the navbar menu titles, submenu is overlapping with page text
-  -> can be fixed by adding a white or black semi-transparent layer on the whole page -> see https://nakashimawoodworkers.com/
+  - can be fixed by adding a white or black semi-transparent layer on the whole page -> see https://nakashimawoodworkers.com/
+    -> try `opacity: 0.2` on div.app-body when one navbar menu dropdown is open (by reacting on an ngbDropdown event?)  
 
 - Dot toggle improvements:
   - Check if I can remove the hover effect in mobile view (otherwise when we click somewhere in the screen after having toggled the dot, it remains brown)

@@ -12,14 +12,14 @@ export class HeaderComponent implements OnInit {
   @Input() hasLinkToCart: boolean = true;
   @Input() isDotExpanded: boolean = false;
 
-  @Output() toggleDot = new EventEmitter<boolean>(); // True if expanded, false if collapsed
+  @Output() toggleDot = new EventEmitter<void>();
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  onToggleDot(isExpanded: boolean): void {
-    this.toggleDot.emit(isExpanded);
+  onToggleDot(): void {
+    this.toggleDot.emit();
   }
 
 }
