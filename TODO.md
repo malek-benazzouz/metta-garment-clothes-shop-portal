@@ -16,10 +16,6 @@
 
 - Add a popup in Mobile/tablet views (as soon as sun/moon are not shown) to tell the user to click on the leaves
 
-- Navbar menu: when scrolling the page down then hovering the navbar menu titles, submenu is overlapping with page text
-  - can be fixed by adding a white or black semi-transparent layer on the whole page -> see https://nakashimawoodworkers.com/
-    -> try `opacity: 0.2` on div.app-body when one navbar menu dropdown is open (by reacting on an ngbDropdown event?)  
-
 - All occurrences of `TODO prodReadiness`
 
 ## Priority 2
