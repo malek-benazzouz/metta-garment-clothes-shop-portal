@@ -14,16 +14,11 @@
   - Add links to product pages (including in mobile product page)
   - Potentially resize/crop images fit the mobile view properly + play on `background-size` to find the best layout
 
-- Add a popup in Mobile/desktop views (as soon as sun/moon are not shown) to tell the user to click on the leaves
+- Add a popup in Mobile/tablet views (as soon as sun/moon are not shown) to tell the user to click on the leaves
 
 - Navbar menu: when scrolling the page down then hovering the navbar menu titles, submenu is overlapping with page text
   - can be fixed by adding a white or black semi-transparent layer on the whole page -> see https://nakashimawoodworkers.com/
     -> try `opacity: 0.2` on div.app-body when one navbar menu dropdown is open (by reacting on an ngbDropdown event?)  
-
-- Dot toggle improvements:
-  - Check if I can remove the hover effect in mobile view (otherwise when we click somewhere in the screen after having toggled the dot, it remains brown)
-  - Improve the formula that changes the dot color when getting closer (start changing the color just under "spiritualiser..." slogan)
-  - When closing the dot menu by clicking on the dot, it remains with hover style
 
 - All occurrences of `TODO prodReadiness`
 
