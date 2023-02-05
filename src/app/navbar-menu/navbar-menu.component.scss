@@ -21,3 +21,13 @@
   padding: 8px 8px 8px 16px;
   background: none;
 }
+
+.page-overlay {
+  position: fixed;
+  top: 85px;
+  left: 20px;
+  right: 20px;
+  background-color: white;
+  height: calc(100vh - 85px);
+  opacity: 0.8;
+}
