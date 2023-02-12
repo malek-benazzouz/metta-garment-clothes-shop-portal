@@ -223,3 +223,11 @@
     font-size: 11px;
   }
 }
+
+.typo-hint-modal {
+  @extend .font-family-be-vietnam;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: 1.5px;
+}

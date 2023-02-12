@@ -36,6 +36,7 @@ import { AngularResizeEventModule } from 'angular-resize-event';
 import { DotPageLargeComponent } from './dot-page/dot-page-large/dot-page-large.component';
 import { DotPageMediumComponent } from './dot-page/dot-page-medium/dot-page-medium.component';
 import { DotPageSmallComponent } from './dot-page/dot-page-small/dot-page-small.component';
+import { HintModalComponent } from './hint-modal/hint-modal.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { DotPageSmallComponent } from './dot-page/dot-page-small/dot-page-small.
     ProductPageComponent,
     AdminPageComponent,
     ComingSoonPageComponent,
+    HintModalComponent,
   ],
   imports: [
     BrowserModule,
