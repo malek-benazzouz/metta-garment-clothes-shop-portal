@@ -5,16 +5,10 @@
 - Fix bugs on Safari iphone 7+
 
 [PENDING_RESOURCES]
-- Add links:
-  - Door link (replace "door-link-url" by link to link tree)
-
-[PENDING_RESOURCES]
 - Update products:
   - Product images, titles, prices and descriptions
-  - Add links to product pages (including in mobile product page)
+  - Add links to product pages (in both desktop product overview and mobile product page)
   - Potentially resize/crop images fit the mobile view properly + play on `background-size` to find the best layout
-
-- Add a popup in Mobile/tablet views (as soon as sun/moon are not shown) to tell the user to click on the leaves
 
 - All occurrences of `TODO prodReadiness`
 
@@ -24,6 +18,7 @@
   - Spiritualiser: https://door.metta-garment.com/the-essence-garment/
   - Matérialiser: https://door.metta-garment.com/the-life-garment/
 - In dot page, in desktop view, center the slogan horizontally (same distance from left border as from door logo)
+- Add animation when expanding/collapsing dot content + other animations?
 - Loading and images:
   - Pre-load all images
   - Resize images (especially products) to a smaller size if possible (for better performance)
@@ -31,7 +26,6 @@
 - Firestore DB: set more robust security rules
 - Check if we can get more info on the subscribers when they fill the form (location, user agent?)
 - For height 720px (and around), is it possible to make the tree fully visible?
-- Add animation when expanding/collapsing dot content + other animations?
 - Favicon: make it work on all browsers, and in dark mode
 - Set cookies to avoid coming-soon page for users that already subscribed
 

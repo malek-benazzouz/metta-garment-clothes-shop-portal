@@ -1,0 +1,30 @@
+@import "src/style/colors";
+@import "src/style/typography";
+
+::ng-deep .hint-modal-overlay {
+  background-color: white;
+  opacity: 0.8 !important;
+}
+
+::ng-deep .hint-modal {
+  @extend .typo-hint-modal;
+  width: 240px;
+  margin: auto;
+  text-align: center;
+
+  .modal-content {
+    border: none;
+    border-radius: 1px;
+    box-shadow: 0 0 10px #ccc;
+  }
+
+  .close-icon {
+    cursor: pointer;
+    font-size: 13px;
+    color: #9f9f9f;
+  }
+
+  .metta-logo img {
+    width: 55px;
+  }
+}

@@ -14,7 +14,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: '001 KIRGHIZISTAN T1 VERY VERY LONG TITLE',
     description: 'Single Craft',
     price: 65,
-    imageUrl: 'assets/products/001-kirghizistan.svg',
+    imageUrlMobile: 'assets/products/001-kirghizistan.svg',
+    imageUrlDesktop: 'assets/products/001prime-the-source.svg',
     isAvailable: true
   },
   {
@@ -22,7 +23,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: '001\' THE SOURCE',
     description: 'Crafts Set',
     price: 600,
-    imageUrl: 'assets/products/001prime-the-source.svg',
+    imageUrlMobile: 'assets/products/001prime-the-source.svg',
+    imageUrlDesktop: 'assets/products/001prime-the-source.svg',
     isAvailable: true
   },
   {
@@ -30,7 +32,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: '002 TADJIKISTAN T1 VERY VERY VERY LONG TITLE',
     description: 'Single Craft',
     price: 65,
-    imageUrl: 'assets/products/002-tadjikistan.svg',
+    imageUrlMobile: 'assets/products/002-tadjikistan.svg',
+    imageUrlDesktop: 'assets/products/002-tadjikistan.svg',
     isAvailable: true
   },
   {
@@ -38,7 +41,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: '002\' THE OPPOSITION',
     description: 'Crafts Set',
     price: 600,
-    imageUrl: 'assets/products/002prime-the-opposition.svg',
+    imageUrlMobile: 'assets/products/002prime-the-opposition.svg',
+    imageUrlDesktop: 'assets/products/002prime-the-opposition.svg',
     isAvailable: true
   },
   {
@@ -46,7 +50,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: '003 KIRGHIZISTAN T',
     description: 'Single Craft',
     price: 65,
-    imageUrl: 'assets/products/001-kirghizistan.svg',
+    imageUrlMobile: 'assets/products/001-kirghizistan.svg',
+    imageUrlDesktop: 'assets/products/001-kirghizistan.svg',
     isAvailable: true
   },
   {
@@ -54,7 +59,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: '003\' THE SOURCE',
     description: 'Crafts Set',
     price: 600,
-    imageUrl: 'assets/products/001prime-the-source.svg',
+    imageUrlMobile: 'assets/products/001prime-the-source.svg',
+    imageUrlDesktop: 'assets/products/001prime-the-source.svg',
     isAvailable: true
   },
   {
@@ -62,7 +68,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: '004 TADJIKISTAN T',
     description: 'Single Craft',
     price: 65,
-    imageUrl: 'assets/products/002-tadjikistan.svg',
+    imageUrlMobile: 'assets/products/002-tadjikistan.svg',
+    imageUrlDesktop: 'assets/products/002-tadjikistan.svg',
     isAvailable: true
   },
   {
@@ -70,7 +77,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: '004\' THE OPPOSITION',
     description: 'Crafts Set',
     price: 600,
-    imageUrl: 'assets/products/002prime-the-opposition.svg',
+    imageUrlMobile: 'assets/products/002prime-the-opposition.svg',
+    imageUrlDesktop: 'assets/products/002prime-the-opposition.svg',
     isAvailable: true
   },
   {
@@ -78,7 +86,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: '005 KIRGHIZISTAN T',
     description: 'Single Craft',
     price: 65,
-    imageUrl: 'assets/products/001-kirghizistan.svg',
+    imageUrlMobile: 'assets/products/001-kirghizistan.svg',
+    imageUrlDesktop: 'assets/products/001-kirghizistan.svg',
     isAvailable: true
   },
   {
@@ -86,7 +95,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: '005\' THE SOURCE',
     description: 'Crafts Set',
     price: 600,
-    imageUrl: 'assets/products/001prime-the-source.svg',
+    imageUrlMobile: 'assets/products/001prime-the-source.svg',
+    imageUrlDesktop: 'assets/products/001prime-the-source.svg',
     isAvailable: true
   },
   {
@@ -94,7 +104,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: '006 TADJIKISTAN T',
     description: 'Single Craft',
     price: 65,
-    imageUrl: 'assets/products/002-tadjikistan.svg',
+    imageUrlMobile: 'assets/products/002-tadjikistan.svg',
+    imageUrlDesktop: 'assets/products/002-tadjikistan.svg',
     isAvailable: false
   },
   {
@@ -102,7 +113,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: '006\' THE OPPOSITION',
     description: 'Crafts Set',
     price: 600,
-    imageUrl: 'assets/products/002prime-the-opposition.svg',
+    imageUrlMobile: 'assets/products/002prime-the-opposition.svg',
+    imageUrlDesktop: 'assets/products/002prime-the-opposition.svg',
     isAvailable: true
   },
   {
@@ -110,7 +122,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: '007 KIRGHIZISTAN T',
     description: 'Single Craft',
     price: 65,
-    imageUrl: 'assets/products/001-kirghizistan.svg',
+    imageUrlMobile: 'assets/products/001-kirghizistan.svg',
+    imageUrlDesktop: 'assets/products/001-kirghizistan.svg',
     isAvailable: true
   },
   {
@@ -118,7 +131,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: '007\' THE SOURCE',
     description: 'Crafts Set',
     price: 600,
-    imageUrl: 'assets/products/001prime-the-source.svg',
+    imageUrlMobile: 'assets/products/001prime-the-source.svg',
+    imageUrlDesktop: 'assets/products/001prime-the-source.svg',
     isAvailable: false
   }
 ];

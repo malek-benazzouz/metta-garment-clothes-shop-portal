@@ -36,7 +36,7 @@
       <app-tree-page (openProduct)="onOpenProduct($event)"></app-tree-page>
     </div>
 
-    <!-- Product page - Mobile only -->
+    <!-- Product page - Mobile -->
     <div *ngIf="openProduct" id="product-page" class="app-body d-flex d-lg-none">
       <app-product-page [product]="openProduct" [isSunProduct]="isOpenProductSunProduct" (backButtonClicked)="onBackToHome()"></app-product-page>
     </div>
