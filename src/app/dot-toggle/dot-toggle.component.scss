@@ -3,6 +3,7 @@
 @import "~bootstrap/scss/mixins";
 
 #dot {
+  cursor: pointer;
   height: 12px;
   width: 12px;
   background: $dot-color;

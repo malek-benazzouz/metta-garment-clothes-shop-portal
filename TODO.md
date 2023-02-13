@@ -2,10 +2,11 @@
 
 ## Priority 1
 
-- Fix bugs on Safari iphone 7+
+- Fix doubled margins bug on Safari iphone 7 plus (reproduced in SauceLabs with simulator "iPhone 7 Plus - iOS 14.4")
 
 [PENDING_RESOURCES]
-- Update products:
+- Update products/links:
+  - Add links to Instagram, Pinterest and YouTube
   - Product images, titles, prices and descriptions
   - Add links to product pages (in both desktop product overview and mobile product page)
   - Potentially resize/crop images fit the mobile view properly + play on `background-size` to find the best layout
