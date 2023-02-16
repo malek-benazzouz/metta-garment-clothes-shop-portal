@@ -2,8 +2,6 @@
 
 ## Priority 1
 
-- Fix doubled margins bug on Safari iphone 7 plus (reproduced in SauceLabs with simulator "iPhone 7 Plus - iOS 14.4")
-
 [PENDING_RESOURCES]
 - Update products/links:
   - Add links to Instagram, Pinterest and YouTube

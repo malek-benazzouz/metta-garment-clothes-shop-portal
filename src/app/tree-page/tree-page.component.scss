@@ -90,37 +90,37 @@
 
 #text-the-light {
   margin-top: 105px;
-  margin-left: -640px;
+  transform: translateX(-320px);
 
   @include media-breakpoint-only('xl') {
-    margin-left: -443px;
+    transform: translateX(-221.5px);
   }
 
   @include media-breakpoint-only('lg') {
-    margin-left: -365px;
+    transform: translateX(-182.5px);
   }
 
   @include media-breakpoint-down('md') {
     margin-top: 125px;
-    margin-left: -306px;
+    transform: translateX(-153px);
   }
 }
 
 #text-the-center {
   margin-top: 105px;
-  margin-left: 670px;
+  transform: translateX(335px);
 
   @include media-breakpoint-only('xl') {
-    margin-left: 462px;
+    transform: translateX(231px);
   }
 
   @include media-breakpoint-only('lg') {
-    margin-left: 385px;
+    transform: translateX(192.5px);
   }
 
   @include media-breakpoint-down('md') {
     margin-top: 125px;
-    margin-left: 314px;
+    transform: translateX(157px);
   }
 }
 
@@ -188,7 +188,7 @@
   }
 }
 
-#text-knowledge {
+#text-knowledge { // Desktop
   margin-top: 573px;
   margin-left: 479px;
 }
@@ -207,14 +207,14 @@
 
 #leaf-001.is-available {
   margin-top: 475px;
-  margin-left: -56px;
+  transform: translateX(-28px);
   background: url("../../assets/tree/leaves/leaf-001-dark.svg") no-repeat;
   width: 52px;
   height: 26px;
 
   &:hover {
     margin-top: 473px;
-    margin-left: -58px;
+    transform: translateX(-29px);
     background: url("../../assets/tree/leaves/leaf-001-light.svg") no-repeat;
     width: 57px;
     height: 30px;
@@ -223,14 +223,14 @@
 
 #leaf-001prime.is-available {
   margin-top: 477px;
-  margin-left: 42px;
+  transform: translateX(21px);
   background: url("../../assets/tree/leaves/leaf-001prime-light.svg") no-repeat;
   width: 36px;
   height: 57px;
 
   &:hover {
     margin-top: 481px;
-    margin-left: 44px;
+    transform: translateX(22px);
     background: url("../../assets/tree/leaves/leaf-001prime-dark.svg") no-repeat;
     width: 34px;
     height: 53px;
@@ -239,14 +239,14 @@
 
 #leaf-002.is-available {
   margin-top: 287px;
-  margin-left: 167px;
+  transform: translateX(83.5px);
   background: url("../../assets/tree/leaves/leaf-002-dark.svg") no-repeat;
   width: 26px;
   height: 59px;
 
   &:hover {
     margin-top: 285px;
-    margin-left: 167px;
+    transform: translateX(83.5px);
     background: url("../../assets/tree/leaves/leaf-002-light.svg") no-repeat;
     width: 30px;
     height: 63px;
@@ -255,14 +255,14 @@
 
 #leaf-002prime.is-available {
   margin-top: 325px;
-  margin-left: 88px;
+  transform: translateX(44px);
   background: url("../../assets/tree/leaves/leaf-002prime-light.svg") no-repeat;
   width: 30px;
   height: 59px;
 
   &:hover {
     margin-top: 327px;
-    margin-left: 88px;
+    transform: translateX(44px);
     background: url("../../assets/tree/leaves/leaf-002prime-dark.svg") no-repeat;
     width: 26px;
     height: 53px;
@@ -271,14 +271,14 @@
 
 #leaf-003.is-available {
   margin-top: 352px;
-  margin-left: -334px;
+  transform: translateX(-167px);
   background: url("../../assets/tree/leaves/leaf-003-dark.svg") no-repeat;
   width: 27px;
   height: 50px;
 
   &:hover {
     margin-top: 350px;
-    margin-left: -334px;
+    transform: translateX(-167px);
     background: url("../../assets/tree/leaves/leaf-003-light.svg") no-repeat;
     width: 31px;
     height: 57px;
@@ -287,14 +287,14 @@
 
 #leaf-003prime.is-available {
   margin-top: 388px;
-  margin-left: -271px;
+  transform: translateX(-135.5px);
   background: url("../../assets/tree/leaves/leaf-003prime-light.svg") no-repeat;
   width: 52px;
   height: 56px;
 
   &:hover {
     margin-top: 388px;
-    margin-left: -270px;
+    transform: translateX(-135px);
     background: url("../../assets/tree/leaves/leaf-003prime-dark.svg") no-repeat;
     width: 47px;
     height: 54px;
@@ -303,14 +303,14 @@
 
 #leaf-004.is-available {
   margin-top: 469px;
-  margin-left: 479px;
+  transform: translateX(239.5px);
   background: url("../../assets/tree/leaves/leaf-004-dark.svg") no-repeat;
   width: 42px;
   height: 34px;
 
   &:hover {
     margin-top: 467px;
-    margin-left: 479px;
+    transform: translateX(239.5px);
     background: url("../../assets/tree/leaves/leaf-004-light.svg") no-repeat;
     width: 47px;
     height: 37px;
@@ -319,14 +319,14 @@
 
 #leaf-004prime.is-available {
   margin-top: 447px;
-  margin-left: 247px;
+  transform: translateX(123.5px);
   background: url("../../assets/tree/leaves/leaf-004prime-light.svg") no-repeat;
   width: 37px;
   height: 53px;
 
   &:hover {
     margin-top: 449px;
-    margin-left: 247px;
+    transform: translateX(123.5px);
     background: url("../../assets/tree/leaves/leaf-004prime-dark.svg") no-repeat;
     width: 33px;
     height: 49px;
@@ -335,14 +335,14 @@
 
 #leaf-005.is-available {
   margin-top: 560px;
-  margin-left: -413px;
+  transform: translateX(-206.5px);
   background: url("../../assets/tree/leaves/leaf-005-dark.svg") no-repeat;
   width: 48px;
   height: 30px;
 
   &:hover {
     margin-top: 558px;
-    margin-left: -410px;
+    transform: translateX(-205px);
     background: url("../../assets/tree/leaves/leaf-005-light.svg") no-repeat;
     width: 51px;
     height: 34px;
@@ -351,14 +351,14 @@
 
 #leaf-005prime.is-available {
   margin-top: 595px;
-  margin-left: -207px;
+  transform: translateX(-103.5px);
   background: url("../../assets/tree/leaves/leaf-005prime-light.svg") no-repeat;
   width: 48px;
   height: 33px;
 
   &:hover {
     margin-top: 597px;
-    margin-left: -207px;
+    transform: translateX(-103.5px);
     background: url("../../assets/tree/leaves/leaf-005prime-dark.svg") no-repeat;
     width: 44px;
     height: 29px;
@@ -367,14 +367,14 @@
 
 #leaf-006.is-available {
   margin-top: 595px;
-  margin-left: 422px;
+  transform: translateX(211px);
   background: url("../../assets/tree/leaves/leaf-006-dark.svg") no-repeat;
   width: 30px;
   height: 51px;
 
   &:hover {
     margin-top: 593px;
-    margin-left: 422px;
+    transform: translateX(211px);
     background: url("../../assets/tree/leaves/leaf-006-light.svg") no-repeat;
     width: 34px;
     height: 58px;
@@ -383,14 +383,14 @@
 
 #leaf-006prime.is-available {
   margin-top: 609px;
-  margin-left: 360px;
+  transform: translateX(180px);
   background: url("../../assets/tree/leaves/leaf-006prime-light.svg") no-repeat;
   width: 29px;
   height: 52px;
 
   &:hover {
     margin-top: 611px;
-    margin-left: 360px;
+    transform: translateX(180px);
     background: url("../../assets/tree/leaves/leaf-006prime-dark.svg") no-repeat;
     width: 26px;
     height: 48px;
@@ -399,14 +399,14 @@
 
 #leaf-007.is-available {
   margin-top: 723px;
-  margin-left: 54px;
+  transform: translateX(27px);
   background: url("../../assets/tree/leaves/leaf-007-dark.svg") no-repeat;
   width: 31px;
   height: 49px;
 
   &:hover {
     margin-top: 721px;
-    margin-left: 54px;
+    transform: translateX(27px);
     background: url("../../assets/tree/leaves/leaf-007-light.svg") no-repeat;
     width: 34px;
     height: 53px;
@@ -415,14 +415,14 @@
 
 #leaf-007prime.is-available {
   margin-top: 659px;
-  margin-left: 59px;
+  transform: translateX(29.5px);
   background: url("../../assets/tree/leaves/leaf-007prime-light.svg") no-repeat;
   width: 34px;
   height: 48px;
 
   &:hover {
     margin-top: 660px;
-    margin-left: 59px;
+    transform: translateX(29.5px);
     background: url("../../assets/tree/leaves/leaf-007prime-dark.svg") no-repeat;
     width: 30px;
     height: 43px;
