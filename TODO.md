@@ -4,7 +4,6 @@
 
 [PENDING_RESOURCES]
 - Update products/links:
-  - Add links to Instagram, Pinterest and YouTube
   - Product images, titles, prices and descriptions
   - Add links to product pages (in both desktop product overview and mobile product page)
   - Potentially resize/crop images fit the mobile view properly + play on `background-size` to find the best layout
