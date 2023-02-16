@@ -2,7 +2,7 @@
      [ngClass]="isSunProduct ? 'sun-product d-flex flex-column align-items-center' : 'moon-product'">
 
   <!-- Product image -->
-  <a class="product-image" [href]="'#product/' + product.id">
+  <a class="product-image" [href]="product.productPageLink">
     <img [src]="product.imageUrlDesktop" [alt]="product.description" width="160">
   </a>
 
@@ -12,8 +12,8 @@
       <span class="product-name">{{ product.name }}</span>
     </div>
     <div class="product-subtitle">
-      <span class="product-price mr-1">{{ product.price }} EUR</span>
-      <span class="dot-separator mr-1">•</span>
+      <span class="product-price mr-1" *ngIf="product.price">{{ product.price }} EUR</span>
+      <span class="dot-separator mr-1" *ngIf="product.price">•</span>
       <span class="product-description">{{ product.description }}</span>
     </div>
   </div>
