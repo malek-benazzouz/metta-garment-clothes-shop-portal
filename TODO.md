@@ -2,8 +2,6 @@
 
 ## Priority 1
 
-- Update product prices
-
 - All occurrences of `TODO prodReadiness`
 
 ## Priority 2
