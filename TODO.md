@@ -2,11 +2,7 @@
 
 ## Priority 1
 
-[PENDING_RESOURCES]
-- Update products/links:
-  - Product images, titles, prices and descriptions
-  - Add links to product pages (in both desktop product overview and mobile product page)
-  - Potentially resize/crop images fit the mobile view properly + play on `background-size` to find the best layout
+- Update product prices
 
 - All occurrences of `TODO prodReadiness`
 
