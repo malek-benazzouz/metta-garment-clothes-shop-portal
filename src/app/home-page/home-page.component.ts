@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../data/product.model';
 import { fromEvent } from 'rxjs';
-import { debounceTime } from 'rxjs/operators';
+import { debounceTime, filter } from 'rxjs/operators';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -20,10 +20,24 @@ export class HomePageComponent implements OnInit {
     this.isDotExpanded = route.snapshot.data?.expandDot || false;
   }
 
+  // Flag used to detect changes from mobil to desktop view
+  isMobile: boolean;
+
+  private isMobileViewport(): boolean {
+    return window.innerWidth < 992;
+  }
+
   ngOnInit(): void {
-    // If we resize the window (e.g. mobile landscape to portrait), we may switch from desktop to mobile, so we want to reset the open product
+    this.isMobile = this.isMobileViewport();
+
+    // If we resize the window (e.g. mobile landscape to portrait), we may switch from desktop to mobile, and don't want to display a previously opened product in this case
     fromEvent(window, 'resize').pipe(debounceTime(200)).subscribe(() => {
-      this.openProduct = undefined;
+      // Reset the open product if we switch from mobile to desktop
+      if (this.isMobile && !this.isMobileViewport()) {
+        this.openProduct = undefined;
+      }
+      // Update isMobile flag
+      this.isMobile = this.isMobileViewport();
     });
   }
 
