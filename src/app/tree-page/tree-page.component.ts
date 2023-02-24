@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Product } from '../../data/product.model';
 import { findProductById, getProductAvailMap } from '../../data/products.data';
 
@@ -8,6 +8,8 @@ import { findProductById, getProductAvailMap } from '../../data/products.data';
   styleUrls: ['./tree-page.component.scss']
 })
 export class TreePageComponent implements OnInit {
+
+  @Input() isMobile: boolean;
 
   @Output() openProduct = new EventEmitter<{ product: Product, isSunProduct: boolean }>();
 
@@ -25,7 +27,14 @@ export class TreePageComponent implements OnInit {
     this.sunProduct = product;
     this.moonProduct = undefined;
     if (product && isClickEvent) {
-      this.openProduct.emit({ product, isSunProduct: true });
+      // On Mobile, open the Mobile product page
+      if (this.isMobile) {
+        this.openProduct.emit({ product, isSunProduct: true });
+      }
+      // On Desktop, open the door.metta-garment.com product page in a new tab
+      else {
+        window.open(product.productPageLink, '_blank');
+      }
     }
   }
 
@@ -34,7 +43,14 @@ export class TreePageComponent implements OnInit {
     this.sunProduct = undefined;
     this.moonProduct = product;
     if (product && isClickEvent) {
-      this.openProduct.emit({ product, isSunProduct: false });
+      // On Mobile, open the Mobile product page
+      if (this.isMobile) {
+        this.openProduct.emit({ product, isSunProduct: false });
+      }
+      // On Desktop, open the door.metta-garment.com product page in a new tab
+      else {
+        window.open(product.productPageLink, '_blank');
+      }
     }
   }
 

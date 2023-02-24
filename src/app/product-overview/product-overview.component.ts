@@ -15,4 +15,8 @@ export class ProductOverviewComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  goToProductPage(): void {
+    window.open(this.product.productPageLink, '_self');
+  }
+
 }
