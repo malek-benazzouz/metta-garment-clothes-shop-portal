@@ -28,12 +28,12 @@
 
     <!-- Main content - Desktop -->
     <div class="app-body main-content d-none d-lg-flex justify-content-center align-items-center p-4">
-      <app-tree-page></app-tree-page>
+      <app-tree-page [isMobile]="false"></app-tree-page>
     </div>
 
     <!-- Main content - Mobile -->
     <div *ngIf="!openProduct" class="app-body main-content d-flex d-lg-none justify-content-center align-items-center p-4">
-      <app-tree-page (openProduct)="onOpenProduct($event)"></app-tree-page>
+      <app-tree-page [isMobile]="true" (openProduct)="onOpenProduct($event)"></app-tree-page>
     </div>
 
     <!-- Product page - Mobile -->

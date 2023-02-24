@@ -2,6 +2,10 @@
 
 ## Priority 1
 
+- Mobile product page:
+  - Allow to scroll if feet are not visible
+  - On Ludo's phone, feet are not visible but border is overlapping picture
+
 - All occurrences of `TODO prodReadiness`
 
 ## Priority 2

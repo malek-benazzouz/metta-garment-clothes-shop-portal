@@ -9,12 +9,12 @@
   <!-- Product name, price, description -->
   <div class="product-info">
     <div class="product-title">
-      <span class="product-name">{{ product.name }}</span>
+      <span class="product-name" (click)="goToProductPage()">{{ product.name }}</span>
     </div>
     <div class="product-subtitle">
-      <span class="product-price mr-1" *ngIf="product.price">{{ product.price }} EUR</span>
+      <span class="product-price mr-1" *ngIf="product.price" (click)="goToProductPage()">{{ product.price }} EUR</span>
       <span class="dot-separator mr-1" *ngIf="product.price">•</span>
-      <span class="product-description">{{ product.description }}</span>
+      <span class="product-description" (click)="goToProductPage()">{{ product.description }}</span>
     </div>
   </div>
 
