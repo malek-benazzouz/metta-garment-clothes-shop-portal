@@ -2,23 +2,18 @@
 @import "src/style/typography";
 
 .product-image {
-  position: fixed;
+  border: 15px solid #d4c36c;
   width: 100%;
-  height: calc(100vh - 45px - (30px - 15px)); // viewport height minus header height minus (links banner - border)
-  border: 15px solid $sunny-gold;
-  background-size: cover !important;
+  min-height: calc(100vh - 45px); // viewport height minus header height
+  object-fit: cover;
 }
 
-.sun-image {
-  position: absolute;
-  top: calc(45px + 15px + 40px); // = header height + border + 40px
-  left: calc(15px + 20px); // = border + 20px
-}
-
-.moon-image {
-  position: absolute;
-  top: calc(45px + 15px + 40px); // = header height + border + 40px
-  right: calc(15px + 20px); // = border + 20px
+.top-border {
+  position: fixed;
+  top: 45px; // header height
+  width: 100%;
+  height: 15px;
+  background: $sunny-gold;
 }
 
 .product-links {
