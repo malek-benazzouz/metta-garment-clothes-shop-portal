@@ -31,9 +31,9 @@ export class TreePageComponent implements OnInit {
       if (this.isMobile) {
         this.openProduct.emit({ product, isSunProduct: true });
       }
-      // On Desktop, open the door.metta-garment.com product page in a new tab
+      // On Desktop, redirect to the door.metta-garment.com product page
       else {
-        window.open(product.productPageLink, '_blank');
+        window.open(product.productPageLink, '_self');
       }
     }
   }
@@ -47,9 +47,9 @@ export class TreePageComponent implements OnInit {
       if (this.isMobile) {
         this.openProduct.emit({ product, isSunProduct: false });
       }
-      // On Desktop, open the door.metta-garment.com product page in a new tab
+      // On Desktop, redirect to the door.metta-garment.com product page
       else {
-        window.open(product.productPageLink, '_blank');
+        window.open(product.productPageLink, '_self');
       }
     }
   }
