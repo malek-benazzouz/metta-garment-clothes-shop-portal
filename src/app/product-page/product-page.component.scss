@@ -4,7 +4,8 @@
 .product-image {
   border: 15px solid #d4c36c;
   width: 100%;
-  min-height: calc(100vh - 45px); // viewport height minus header height
+  min-height: calc(100vh - 45px - 15px); // viewport height minus header height minus bottom fixed bar
+  margin-bottom: 15px;
   object-fit: cover;
 }
 
