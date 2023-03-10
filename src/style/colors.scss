@@ -4,7 +4,6 @@
 $black: #000000;
 $blackish: #0a0a00;
 $noctural-green: #112f25;
-$green: #0f6d55;
 $red: #5f0100;
 $red-light: #fae2dc;
 $sunny-gold-dark: #bdad60;
@@ -21,5 +20,5 @@ $text-primary-color: $black;
 $text-secondary-color: $noctural-green;
 $background-plain-color: $whitish;
 $background-gradient: linear-gradient(90deg, $cream 0%, $sunny-gold-light 100%);
-$success-color: $green;
+$success-color: $noctural-green;
 $error-color: $red;

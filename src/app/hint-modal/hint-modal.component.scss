@@ -12,6 +12,10 @@
   margin: auto;
   text-align: center;
 
+  .strong {
+    font-weight: 500;
+  }
+
   .modal-content {
     border: none;
     border-radius: 1px;
@@ -26,5 +30,9 @@
 
   .metta-logo img {
     width: 55px;
+  }
+
+  .leaves img {
+    width: 18px;
   }
 }
