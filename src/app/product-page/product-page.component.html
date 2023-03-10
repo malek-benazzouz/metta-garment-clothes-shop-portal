@@ -1,19 +1,40 @@
-<div class="product-page" *ngIf="product" [ngClass]="isSunProduct ? 'sun-product' : 'moon-product'">
+<div class="product-page pb-3" [hidden]="!showProduct" [ngClass]="isSunProduct ? 'sun-product' : 'moon-product'">
 
-  <div class="top-border"></div>
+  <!-- White overlay -->
+  <div class="white-overlay" (click)="onOverlayClicked()"></div>
 
-  <!-- Product image -->
-  <div class="product-image-wrapper">
-    <img class="product-image" [src]="product.imageUrlMobile" alt="Product image">
+  <!-- Sun image -->
+  <div class="sun-image foreground" *ngIf="isSunProduct">
+    <a [href]="sunMoonURL">
+      <img src="assets/sun-light.svg" alt="Image: the sun">
+    </a>
   </div>
 
-  <!-- Links -->
-  <div class="product-links d-flex justify-content-between align-items-center">
-    <!-- Back link -->
-    <a href="javascript:void(0);" (click)="onBackButtonClicked()">BACK TO THE TREE</a>
+  <!-- Moon image -->
+  <div class="moon-image foreground" *ngIf="!isSunProduct">
+    <a [href]="sunMoonURL">
+      <img src="assets/moon-light.svg" alt="Image: the moon">
+    </a>
+  </div>
 
-    <!-- See more link -->
-    <a [href]="product.productPageLink">SEE MORE</a>
+  <!-- Product image and info -->
+  <div class="product-image-wrapper foreground">
+
+    <!-- Product image -->
+    <img class="product-image" [src]="product.imageUrlMobile" alt="Product image" (click)="goToProductPage()">
+
+    <!-- Product name, price, description -->
+    <div class="product-info foreground text-center">
+      <div class="product-title">
+        <span class="product-name" (click)="goToProductPage()">{{ product.name }}</span>
+      </div>
+      <div class="product-subtitle">
+        <span class="product-price mr-1" *ngIf="product.price" (click)="goToProductPage()">{{ product.price }} EUR</span>
+        <span class="dot-separator mr-1" *ngIf="product.price">•</span>
+        <span class="product-description" (click)="goToProductPage()">{{ product.description }}</span>
+      </div>
+    </div>
+
   </div>
 
 </div>

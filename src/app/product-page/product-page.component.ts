@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Product } from '../../data/product.model';
+import { Product, ProductCategory } from '../../data/product.model';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-product-page',
@@ -11,14 +12,34 @@ export class ProductPageComponent implements OnInit {
   @Input() product: Product;
   @Input() isSunProduct: boolean;
 
-  @Output() backButtonClicked = new EventEmitter<void>();
+  @Output() goBackToTree = new EventEmitter<void>();
+
+  showProduct = false;
+
+  sunMoonURL: string;
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // Small delay before showing the product, to avoid display issues while rendering
+    setTimeout(() => {
+      this.showProduct = true;
+    }, 100);
 
-  onBackButtonClicked(): void {
-    this.backButtonClicked.emit();
+    // Initialize sun/moon link
+    if (this.product.category === ProductCategory.LifeGarment) {
+      this.sunMoonURL = 'https://door.metta-garment.com/the-life-garment/';
+    } else {
+      this.sunMoonURL = 'https://door.metta-garment.com/the-essence-garment/';
+    }
+  }
+
+  onOverlayClicked(): void {
+    this.goBackToTree.emit();
+  }
+
+  goToProductPage(): void {
+    window.open(this.product.productPageLink, '_self');
   }
 
 }
