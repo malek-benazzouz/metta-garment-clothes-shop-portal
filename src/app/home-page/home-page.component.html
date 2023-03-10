@@ -32,13 +32,13 @@
     </div>
 
     <!-- Main content - Mobile -->
-    <div *ngIf="!openProduct" class="app-body main-content d-flex d-lg-none justify-content-center align-items-center p-4">
+    <div class="app-body main-content d-flex d-lg-none justify-content-center align-items-center p-4">
       <app-tree-page [isMobile]="true" (openProduct)="onOpenProduct($event)"></app-tree-page>
     </div>
 
     <!-- Product page - Mobile -->
-    <div *ngIf="openProduct" id="product-page" class="app-body d-flex d-lg-none">
-      <app-product-page [product]="openProduct" [isSunProduct]="isOpenProductSunProduct" (backButtonClicked)="onBackToHome()"></app-product-page>
+    <div *ngIf="openProduct" id="product-page" class="d-flex d-lg-none">
+      <app-product-page [product]="openProduct" [isSunProduct]="isOpenProductSunProduct" (goBackToTree)="onBackToTree()"></app-product-page>
     </div>
 
   </ng-container>

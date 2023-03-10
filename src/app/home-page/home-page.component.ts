@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../data/product.model';
 import { fromEvent } from 'rxjs';
-import { debounceTime, filter } from 'rxjs/operators';
+import { debounceTime } from 'rxjs/operators';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -50,7 +50,7 @@ export class HomePageComponent implements OnInit {
     this.isOpenProductSunProduct = productInfo.isSunProduct;
   }
 
-  onBackToHome(): void {
+  onBackToTree(): void {
     this.openProduct = undefined;
   }
 
