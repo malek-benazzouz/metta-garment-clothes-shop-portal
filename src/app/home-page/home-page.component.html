@@ -14,17 +14,17 @@
   </div>
 
   <!-- Dot expanded -->
-  <ng-container *ngIf="isDotExpanded">
+  <div [hidden]="!isDotExpanded">
 
     <!-- Dot content  -->
     <div class="app-body dot-content d-lg-flex justify-content-center align-items-center p-lg-5">
       <app-dot-page></app-dot-page>
     </div>
 
-  </ng-container>
+  </div>
 
   <!-- Dot collapsed -->
-  <ng-container *ngIf="!isDotExpanded">
+  <div [hidden]="isDotExpanded">
 
     <!-- Main content - Desktop -->
     <div class="app-body main-content d-none d-lg-flex justify-content-center align-items-center p-4">
@@ -33,6 +33,7 @@
 
     <!-- Main content - Mobile -->
     <div class="app-body main-content d-flex d-lg-none justify-content-center align-items-center p-4">
+      <app-hint-modal></app-hint-modal>
       <app-tree-page [isMobile]="true" (openProduct)="onOpenProduct($event)"></app-tree-page>
     </div>
 
@@ -41,7 +42,7 @@
       <app-product-page [product]="openProduct" [isSunProduct]="isOpenProductSunProduct" (goBackToTree)="onBackToTree()"></app-product-page>
     </div>
 
-  </ng-container>
+  </div>
 
 </div>
 
