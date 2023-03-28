@@ -21,17 +21,16 @@ export class ProductPageComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    // Small delay before showing the product, to avoid display issues while rendering
-    setTimeout(() => {
-      this.showProduct = true;
-    }, 100);
-
     // Initialize sun/moon link
     if (this.product.category === ProductCategory.LifeGarment) {
       this.sunMoonURL = 'https://door.metta-garment.com/the-life-garment/';
     } else {
       this.sunMoonURL = 'https://door.metta-garment.com/the-essence-garment/';
     }
+  }
+
+  onImageLoaded(): void {
+    this.showProduct = true;
   }
 
   onOverlayClicked(): void {

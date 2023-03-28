@@ -1,17 +1,23 @@
-<div class="product-page pb-3" [hidden]="!showProduct" [ngClass]="isSunProduct ? 'sun-product' : 'moon-product'">
+<!-- White overlay while loading -->
+<div class="white-overlay" [hidden]="showProduct"></div>
 
-  <!-- White overlay -->
+<div class="product-page pb-4" [hidden]="!showProduct" [ngClass]="isSunProduct ? 'sun-product' : 'moon-product'">
+
+  <!-- White overlay that closes the product page when clicked -->
   <div class="white-overlay" (click)="onOverlayClicked()"></div>
 
+  <!-- Flex separator - no other effect -->
+  <div class="flex-separator"></div>
+
   <!-- Sun image -->
-  <div class="sun-image foreground" *ngIf="isSunProduct">
+  <div class="sun-image foreground m-4" *ngIf="isSunProduct">
     <a [href]="sunMoonURL">
       <img src="assets/sun-light.svg" alt="Image: the sun">
     </a>
   </div>
 
   <!-- Moon image -->
-  <div class="moon-image foreground" *ngIf="!isSunProduct">
+  <div class="moon-image foreground m-4" *ngIf="!isSunProduct">
     <a [href]="sunMoonURL">
       <img src="assets/moon-light.svg" alt="Image: the moon">
     </a>
@@ -21,10 +27,10 @@
   <div class="product-image-wrapper foreground">
 
     <!-- Product image -->
-    <img class="product-image" [src]="product.imageUrlMobile" alt="Product image" (click)="goToProductPage()">
+    <img class="product-image" [src]="product.imageUrlMobile" alt="Product image" (click)="goToProductPage()" (load)="onImageLoaded()">
 
-    <!-- Product name, price, description -->
-    <div class="product-info foreground text-center">
+    <!-- Product name, price and description -->
+    <div class="product-info foreground text-center pt-3 pb-5">
       <div class="product-title">
         <span class="product-name" (click)="goToProductPage()">{{ product.name }}</span>
       </div>
@@ -34,7 +40,9 @@
         <span class="product-description" (click)="goToProductPage()">{{ product.description }}</span>
       </div>
     </div>
-
   </div>
+
+  <!-- Flex separator - no other effect -->
+  <div class="flex-separator"></div>
 
 </div>
