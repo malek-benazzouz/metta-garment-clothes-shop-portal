@@ -56,7 +56,7 @@ export const PRODUCTS_DATA: Product[] = [
     name: 'ASCENSION LIFE SHIRT',
     category: ProductCategory.LifeGarment,
     description: 'The Life Garment',
-    price: 400,
+    price: 690,
     productPageLink: 'https://door.metta-garment.com/product/ascension-life-shirt/',
     imageUrlDesktop: 'assets/products/003-life-garment-ascension-life-shirt-desktop.webp',
     imageUrlMobile: 'assets/products/003-life-garment-ascension-life-shirt-desktop.webp',
