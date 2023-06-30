@@ -16,8 +16,8 @@ export const PRODUCTS_DATA: Product[] = [
     description: 'The Life Garment',
     price: 340,
     productPageLink: 'https://door.metta-garment.com/product/metta-life-shirt/',
-    imageUrlDesktop: 'assets/products/001-life-garment-metta-life-shirt-desktop.webp',
-    imageUrlMobile: 'assets/products/001-life-garment-metta-life-shirt-desktop.webp',
+    imageUrlDesktop: 'assets/products/001-life-garment-metta-life-shirt.webp',
+    imageUrlMobile: 'assets/products/001-life-garment-metta-life-shirt.webp',
     isAvailable: true
   },
   {
@@ -26,8 +26,8 @@ export const PRODUCTS_DATA: Product[] = [
     category: ProductCategory.EssenceGarment,
     description: 'The Essence Garment',
     productPageLink: 'https://door.metta-garment.com/essence-garment-energie-eternelle/',
-    imageUrlDesktop: 'assets/products/001prime-essence-garment-energie-eternelle-desktop.webp',
-    imageUrlMobile: 'assets/products/001prime-essence-garment-energie-eternelle-desktop.webp',
+    imageUrlDesktop: 'assets/products/001prime-essence-garment-energie-eternelle.webp',
+    imageUrlMobile: 'assets/products/001prime-essence-garment-energie-eternelle.webp',
     isAvailable: true
   },
   {
@@ -37,8 +37,8 @@ export const PRODUCTS_DATA: Product[] = [
     description: 'The Life Garment',
     price: 430,
     productPageLink: 'https://door.metta-garment.com/product/embroidered-white-gammadia-shirt/',
-    imageUrlDesktop: 'assets/products/002-life-garment-embroidered-white-gammadia-shirt-desktop.webp',
-    imageUrlMobile: 'assets/products/002-life-garment-embroidered-white-gammadia-shirt-desktop.webp',
+    imageUrlDesktop: 'assets/products/002-life-garment-embroidered-white-gammadia-shirt.webp',
+    imageUrlMobile: 'assets/products/002-life-garment-embroidered-white-gammadia-shirt.webp',
     isAvailable: true
   },
   {
@@ -47,8 +47,8 @@ export const PRODUCTS_DATA: Product[] = [
     category: ProductCategory.EssenceGarment,
     description: 'The Essence Garment',
     productPageLink: 'https://door.metta-garment.com/essence-garment-miroir-de-liberte/',
-    imageUrlDesktop: 'assets/products/002prime-essence-garment-miroir-de-liberte-desktop.webp',
-    imageUrlMobile: 'assets/products/002prime-essence-garment-miroir-de-liberte-desktop.webp',
+    imageUrlDesktop: 'assets/products/002prime-essence-garment-miroir-de-liberte.webp',
+    imageUrlMobile: 'assets/products/002prime-essence-garment-miroir-de-liberte.webp',
     isAvailable: true
   },
   {
@@ -58,8 +58,8 @@ export const PRODUCTS_DATA: Product[] = [
     description: 'The Life Garment',
     price: 690,
     productPageLink: 'https://door.metta-garment.com/product/ascension-life-shirt/',
-    imageUrlDesktop: 'assets/products/003-life-garment-ascension-life-shirt-desktop.webp',
-    imageUrlMobile: 'assets/products/003-life-garment-ascension-life-shirt-desktop.webp',
+    imageUrlDesktop: 'assets/products/003-life-garment-ascension-life-shirt.webp',
+    imageUrlMobile: 'assets/products/003-life-garment-ascension-life-shirt.webp',
     isAvailable: true
   },
   {
@@ -68,8 +68,8 @@ export const PRODUCTS_DATA: Product[] = [
     category: ProductCategory.EssenceGarment,
     description: 'The Essence Garment',
     productPageLink: 'https://door.metta-garment.com/essence-garment-chemin-connaissance/',
-    imageUrlDesktop: 'assets/products/003prime-essence-garment-chemin-de-la-connaissance-desktop.webp',
-    imageUrlMobile: 'assets/products/003prime-essence-garment-chemin-de-la-connaissance-desktop.webp',
+    imageUrlDesktop: 'assets/products/003prime-essence-garment-chemin-de-la-connaissance.webp',
+    imageUrlMobile: 'assets/products/003prime-essence-garment-chemin-de-la-connaissance.webp',
     isAvailable: true
   },
   {
@@ -79,18 +79,18 @@ export const PRODUCTS_DATA: Product[] = [
     description: 'The Life Garment',
     price: 430,
     productPageLink: 'https://door.metta-garment.com/product/embroidered-green-gammadia-shirt/',
-    imageUrlDesktop: 'assets/products/004-life-garment-embroidered-green-gammadia-shirt-desktop.webp',
-    imageUrlMobile: 'assets/products/004-life-garment-embroidered-green-gammadia-shirt-desktop.webp',
+    imageUrlDesktop: 'assets/products/004-life-garment-embroidered-green-gammadia-shirt.webp',
+    imageUrlMobile: 'assets/products/004-life-garment-embroidered-green-gammadia-shirt.webp',
     isAvailable: true
   },
   {
     id: '004prime',
-    name: 'TERRE INTÉRIEURE',
+    name: 'L\'ARBRE DES BÉATITUDES',
     category: ProductCategory.EssenceGarment,
     description: 'The Essence Garment',
-    productPageLink: 'https://door.metta-garment.com/essence-garment-terre-interieure/',
-    imageUrlDesktop: 'assets/products/004prime-essence-garment-terre-interieure-desktop.webp',
-    imageUrlMobile: 'assets/products/004prime-essence-garment-terre-interieure-desktop.webp',
+    productPageLink: 'https://door.metta-garment.com/the-essence-garment-larbre-des-beatitudes/',
+    imageUrlDesktop: 'assets/products/004prime-essence-garment-arbre-beatitudes.webp',
+    imageUrlMobile: 'assets/products/004prime-essence-garment-arbre-beatitudes.webp',
     isAvailable: true
   },
   {
@@ -100,18 +100,18 @@ export const PRODUCTS_DATA: Product[] = [
     description: 'The Life Garment',
     price: 250,
     productPageLink: 'https://door.metta-garment.com/product/embroidered-ladder-shirt/',
-    imageUrlDesktop: 'assets/products/005-life-garment-embroidered-ladder-shirt-desktop.webp',
-    imageUrlMobile: 'assets/products/005-life-garment-embroidered-ladder-shirt-desktop.webp',
+    imageUrlDesktop: 'assets/products/005-life-garment-embroidered-ladder-shirt.webp',
+    imageUrlMobile: 'assets/products/005-life-garment-embroidered-ladder-shirt.webp',
     isAvailable: false
   },
   {
     id: '005prime',
-    name: 'SAMVEGA',
+    name: 'LE NUAGE MESSAGER',
     category: ProductCategory.EssenceGarment,
     description: 'The Essence Garment',
-    productPageLink: 'https://door.metta-garment.com/essence-garment-samvega/',
-    imageUrlDesktop: 'assets/products/005prime-essence-garment-samvega-desktop.webp',
-    imageUrlMobile: 'assets/products/005prime-essence-garment-samvega-desktop.webp',
+    productPageLink: 'https://door.metta-garment.com/the-essence-garment-le-nuage-messager/',
+    imageUrlDesktop: 'assets/products/005prime-essence-garment-nuage-messager.webp',
+    imageUrlMobile: 'assets/products/005prime-essence-garment-nuage-messager.webp',
     isAvailable: true
   },
   {
@@ -121,8 +121,8 @@ export const PRODUCTS_DATA: Product[] = [
     description: 'The Life Garment',
     price: 250,
     productPageLink: 'https://door.metta-garment.com/product/embroidered-calligraphy-shirt/',
-    imageUrlDesktop: 'assets/products/006-life-garment-embroidered-calligraphy-shirt-desktop.webp',
-    imageUrlMobile: 'assets/products/006-life-garment-embroidered-calligraphy-shirt-desktop.webp',
+    imageUrlDesktop: 'assets/products/006-life-garment-embroidered-calligraphy-shirt.webp',
+    imageUrlMobile: 'assets/products/006-life-garment-embroidered-calligraphy-shirt.webp',
     isAvailable: false
   },
   {
@@ -131,8 +131,8 @@ export const PRODUCTS_DATA: Product[] = [
     category: ProductCategory.EssenceGarment,
     description: 'The Essence Garment',
     productPageLink: 'https://door.metta-garment.com/essence-garment-nuit-de-feu/',
-    imageUrlDesktop: 'assets/products/006prime-essence-garment-nuit-de-feu-desktop.webp',
-    imageUrlMobile: 'assets/products/006prime-essence-garment-nuit-de-feu-desktop.webp',
+    imageUrlDesktop: 'assets/products/006prime-essence-garment-nuit-de-feu.webp',
+    imageUrlMobile: 'assets/products/006prime-essence-garment-nuit-de-feu.webp',
     isAvailable: true
   },
   {
@@ -142,7 +142,7 @@ export const PRODUCTS_DATA: Product[] = [
     description: 'The Secret Garment',
     price: 0,
     productPageLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    imageUrlDesktop: 'assets/products/007-life-garment-james-bond-desktop.png',
+    imageUrlDesktop: 'assets/products/007-life-garment-james-bond.png',
     imageUrlMobile: 'assets/products/007-life-garment-james-bond-mobile.png',
     isAvailable: false
   },
@@ -152,8 +152,8 @@ export const PRODUCTS_DATA: Product[] = [
     category: ProductCategory.EssenceGarment,
     description: 'The Essence Garment',
     productPageLink: 'https://door.metta-garment.com/essence-garment-hierarchie-des-etats/',
-    imageUrlDesktop: 'assets/products/007prime-essence-garment-hierarchie-des-etats-desktop.webp',
-    imageUrlMobile: 'assets/products/007prime-essence-garment-hierarchie-des-etats-desktop.webp',
+    imageUrlDesktop: 'assets/products/007prime-essence-garment-hierarchie-des-etats.webp',
+    imageUrlMobile: 'assets/products/007prime-essence-garment-hierarchie-des-etats.webp',
     isAvailable: true
   }
 ];
