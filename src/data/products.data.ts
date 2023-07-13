@@ -98,11 +98,11 @@ export const PRODUCTS_DATA: Product[] = [
     name: 'EMBROIDERED LADDER SHIRT',
     category: ProductCategory.LifeGarment,
     description: 'The Life Garment',
-    price: 250,
+    price: 430,
     productPageLink: 'https://door.metta-garment.com/product/embroidered-ladder-shirt/',
     imageUrlDesktop: 'assets/products/005-life-garment-embroidered-ladder-shirt.webp',
     imageUrlMobile: 'assets/products/005-life-garment-embroidered-ladder-shirt.webp',
-    isAvailable: false
+    isAvailable: true
   },
   {
     id: '005prime',
@@ -119,11 +119,11 @@ export const PRODUCTS_DATA: Product[] = [
     name: 'EMBROIDERED CALLIGRAPHY SHIRT',
     category: ProductCategory.LifeGarment,
     description: 'The Life Garment',
-    price: 250,
+    price: 490,
     productPageLink: 'https://door.metta-garment.com/product/embroidered-calligraphy-shirt/',
     imageUrlDesktop: 'assets/products/006-life-garment-embroidered-calligraphy-shirt.webp',
     imageUrlMobile: 'assets/products/006-life-garment-embroidered-calligraphy-shirt.webp',
-    isAvailable: false
+    isAvailable: true
   },
   {
     id: '006prime',
