@@ -25,7 +25,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: 'ÉNERGIE ÉTERNELLE',
     category: ProductCategory.EssenceGarment,
     description: 'The Essence Garment',
-    productPageLink: 'https://door.metta-garment.com/essence-garment-energie-eternelle/',
+    price: 410,
+    productPageLink: 'https://door.metta-garment.com/product/energie-eternelle/',
     imageUrlDesktop: 'assets/products/001prime-essence-garment-energie-eternelle.webp',
     imageUrlMobile: 'assets/products/001prime-essence-garment-energie-eternelle.webp',
     isAvailable: true
@@ -46,7 +47,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: 'MIROIR DE LIBERTÉ',
     category: ProductCategory.EssenceGarment,
     description: 'The Essence Garment',
-    productPageLink: 'https://door.metta-garment.com/essence-garment-miroir-de-liberte/',
+    price: 1450,
+    productPageLink: 'https://door.metta-garment.com/product/miroir-de-liberte/',
     imageUrlDesktop: 'assets/products/002prime-essence-garment-miroir-de-liberte.webp',
     imageUrlMobile: 'assets/products/002prime-essence-garment-miroir-de-liberte.webp',
     isAvailable: true
@@ -67,7 +69,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: 'CHEMIN DE LA CONNAISSANCE',
     category: ProductCategory.EssenceGarment,
     description: 'The Essence Garment',
-    productPageLink: 'https://door.metta-garment.com/essence-garment-chemin-connaissance/',
+    price: 650,
+    productPageLink: 'https://door.metta-garment.com/product/chemin-de-la-connaissance/',
     imageUrlDesktop: 'assets/products/003prime-essence-garment-chemin-de-la-connaissance.webp',
     imageUrlMobile: 'assets/products/003prime-essence-garment-chemin-de-la-connaissance.webp',
     isAvailable: true
@@ -88,7 +91,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: 'L\'ARBRE DES BÉATITUDES',
     category: ProductCategory.EssenceGarment,
     description: 'The Essence Garment',
-    productPageLink: 'https://door.metta-garment.com/the-essence-garment-larbre-des-beatitudes/',
+    price: 1645,
+    productPageLink: 'https://door.metta-garment.com/product/arbre-des-beatitudes/',
     imageUrlDesktop: 'assets/products/004prime-essence-garment-arbre-beatitudes.webp',
     imageUrlMobile: 'assets/products/004prime-essence-garment-arbre-beatitudes.webp',
     isAvailable: true
@@ -109,7 +113,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: 'LE NUAGE MESSAGER',
     category: ProductCategory.EssenceGarment,
     description: 'The Essence Garment',
-    productPageLink: 'https://door.metta-garment.com/the-essence-garment-le-nuage-messager/',
+    price: 825,
+    productPageLink: 'https://door.metta-garment.com/product/le-nuage-messager/',
     imageUrlDesktop: 'assets/products/005prime-essence-garment-nuage-messager.webp',
     imageUrlMobile: 'assets/products/005prime-essence-garment-nuage-messager.webp',
     isAvailable: true
@@ -130,7 +135,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: 'NUIT DE FEU',
     category: ProductCategory.EssenceGarment,
     description: 'The Essence Garment',
-    productPageLink: 'https://door.metta-garment.com/essence-garment-nuit-de-feu/',
+    price: 825,
+    productPageLink: 'https://door.metta-garment.com/product/nuit-de-feu/',
     imageUrlDesktop: 'assets/products/006prime-essence-garment-nuit-de-feu.webp',
     imageUrlMobile: 'assets/products/006prime-essence-garment-nuit-de-feu.webp',
     isAvailable: true
@@ -151,7 +157,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: 'HIÉRARCHIE DES ÉTATS',
     category: ProductCategory.EssenceGarment,
     description: 'The Essence Garment',
-    productPageLink: 'https://door.metta-garment.com/essence-garment-hierarchie-des-etats/',
+    price: 925,
+    productPageLink: 'https://door.metta-garment.com/product/hierarchie-des-etats/',
     imageUrlDesktop: 'assets/products/007prime-essence-garment-hierarchie-des-etats.webp',
     imageUrlMobile: 'assets/products/007prime-essence-garment-hierarchie-des-etats.webp',
     isAvailable: true
