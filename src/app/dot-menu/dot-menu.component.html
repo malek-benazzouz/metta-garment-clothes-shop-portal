@@ -23,12 +23,15 @@
   <div class="submenu">
     <!-- Submenu toggle -->
     <div class="submenu-toggle menu-title d-flex justify-content-between align-items-center" (click)="toggleGarmentMenu()">
-      <span id="garment-label">GARMENT</span>
+      <span id="garment-label">CREATION</span>
       <span class="submenu-toggle-icon" *ngIf="garmentMenuExpanded">-</span>
       <span class="submenu-toggle-icon" *ngIf="!garmentMenuExpanded">+</span>
     </div>
     <!-- Submenu content -->
     <div class="mt-2 mb-4 mr-2 text-right" *ngIf="garmentMenuExpanded">
+      <a class="menu-item" href="https://door.metta-garment.com/4-de-chiffre/">
+        <div>4-DE-CHIFFRE</div>
+      </a>
       <a class="menu-item" href="https://door.metta-garment.com/the-life-garment/">
         <div>The Life Garment</div>
       </a>

@@ -32,25 +32,25 @@
 
 #garment-label {
   // Align garment label with the end of philosophy label
-  margin-left: 158px;
+  margin-left: 135px;
 
   @media all and (max-width: 900px) {
-    margin-left: 125px;
+    margin-left: 111px;
   }
 
   @include media-breakpoint-down('sm') {
-    margin-left: 106px;
+    margin-left: 96px;
   }
 
   @media all and (max-width: 665px) {
-    margin-left: 100px;
+    margin-left: 90px;
   }
 
   @include media-breakpoint-down('xs') {
-    margin-left: 81px;
+    margin-left: 75px;
   }
 
   @include media-breakpoint-down('2xs') {
-    margin-left: 64px;
+    margin-left: 61px;
   }
 }
