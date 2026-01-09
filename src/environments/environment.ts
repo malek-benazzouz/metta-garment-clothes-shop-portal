@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   firebase: {
+    // Public key - it is OK to store in the source code. See https://firebase.google.com/docs/projects/api-keys
     apiKey: "AIzaSyAa15mSqpwcHLEtOwNQvpV8DhHB8bywpM0",
     authDomain: "metta-backend.firebaseapp.com",
     projectId: "metta-backend",
